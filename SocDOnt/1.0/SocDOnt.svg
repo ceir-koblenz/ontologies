@@ -1,0 +1,2382 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="88cm"
+   height="68cm"
+   viewBox="48 58 1743 1353"
+   version="1.1"
+   id="svg940"
+   sodipodi:docname="Edit_SocDOnt.svg"
+   inkscape:version="1.1.2 (b8e25be833, 2022-02-05)"
+   inkscape:export-filename="D:\Documents\WiMi\fgbas_ontologies\SocDOnt\1.0\Edit_SocDOnt.png"
+   inkscape:export-xdpi="50"
+   inkscape:export-ydpi="50"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs944" />
+  <sodipodi:namedview
+     id="namedview942"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="1"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="cm"
+     showgrid="false"
+     inkscape:zoom="0.32061275"
+     inkscape:cx="1308.4321"
+     inkscape:cy="2161.4861"
+     inkscape:window-width="3840"
+     inkscape:window-height="2089"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg940" />
+  <g
+     id="g6">
+    <rect
+       style="fill: #ffffff"
+       x="50"
+       y="720"
+       width="1740"
+       height="620"
+       id="rect2" />
+    <rect
+       style="fill: none; fill-opacity:0; stroke-width: 2; stroke-dasharray: 6; stroke: #858282"
+       x="50"
+       y="720"
+       width="1740"
+       height="620"
+       id="rect4" />
+  </g>
+  <g
+     id="g12">
+    <rect
+       style="fill: #ffffff"
+       x="50"
+       y="59.9996"
+       width="1740"
+       height="660.097"
+       id="rect8" />
+    <rect
+       style="fill: none; fill-opacity:0; stroke-width: 2; stroke-dasharray: 6; stroke: #858282"
+       x="50"
+       y="59.9996"
+       width="1740"
+       height="660.097"
+       id="rect10" />
+  </g>
+  <g
+     id="g42">
+    <rect
+       style="fill: #d8d8d8"
+       x="773.568"
+       y="399.792"
+       width="171.7"
+       height="58"
+       id="rect14" />
+    <rect
+       style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000"
+       x="773.568"
+       y="399.792"
+       width="171.7"
+       height="58"
+       id="rect16" />
+    <text
+       font-size="12.8"
+       style="fill: #000000;text-anchor:middle;font-family:monospace;font-style:normal;font-weight:normal"
+       x="859.418"
+       y="414.992"
+       id="text18">&lt;&lt;SocDOnt&gt;&gt;</text>
+    <text
+       font-size="16"
+       style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:oblique;font-weight:700"
+       x="859.418"
+       y="435.792"
+       id="text20">IntellectualEntity</text>
+    <text
+       font-size="11.2"
+       style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal"
+       x="859.418"
+       y="450.992"
+       id="text22">{abstract}</text>
+    <rect
+       style="fill: #d8d8d8"
+       x="773.568"
+       y="457.792"
+       width="171.7"
+       height="116"
+       id="rect24" />
+    <rect
+       style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000"
+       x="773.568"
+       y="457.792"
+       width="171.7"
+       height="116"
+       id="rect26" />
+    <text
+       font-size="12.8"
+       style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal"
+       x="776.568"
+       y="470.992"
+       id="text28">+content: Object</text>
+    <text
+       font-size="12.8"
+       style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal"
+       x="776.568"
+       y="486.992"
+       id="text30">+contributors: User[]</text>
+    <text
+       font-size="12.8"
+       style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal"
+       x="776.568"
+       y="502.992"
+       id="text32">+last_update: Date</text>
+    <text
+       font-size="12.8"
+       style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal"
+       x="776.568"
+       y="518.992"
+       id="text34">+mentionees: User[]</text>
+    <text
+       font-size="12.8"
+       style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal"
+       x="776.568"
+       y="534.992"
+       id="text36">+references: Item[]</text>
+    <text
+       font-size="12.8"
+       style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal"
+       x="776.568"
+       y="550.992"
+       id="text38">+title: String</text>
+    <text
+       font-size="12.8"
+       style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal"
+       x="776.568"
+       y="566.992"
+       id="text40">+views: Integer</text>
+  </g>
+  <g
+     id="g64">
+    <rect
+       style="fill: #ffffff"
+       x="1130"
+       y="183.334"
+       width="117.8"
+       height="58"
+       id="rect44" />
+    <rect
+       style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000"
+       x="1130"
+       y="183.334"
+       width="117.8"
+       height="58"
+       id="rect46" />
+    <text
+       font-size="12.8"
+       style="fill: #000000;text-anchor:middle;font-family:monospace;font-style:normal;font-weight:normal"
+       x="1188.9"
+       y="198.534"
+       id="text48">&lt;&lt;sioc&gt;&gt;</text>
+    <text
+       font-size="16"
+       style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:oblique;font-weight:700"
+       x="1188.9"
+       y="219.334"
+       id="text50">Item</text>
+    <text
+       font-size="11.2"
+       style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal"
+       x="1188.9"
+       y="234.534"
+       id="text52">{abstract}</text>
+    <rect
+       style="fill: #ffffff"
+       x="1130"
+       y="241.334"
+       width="117.8"
+       height="52"
+       id="rect54" />
+    <rect
+       style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000"
+       x="1130"
+       y="241.334"
+       width="117.8"
+       height="52"
+       id="rect56" />
+    <text
+       font-size="12.8"
+       style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal"
+       x="1133"
+       y="254.534"
+       id="text58">+id: String</text>
+    <text
+       font-size="12.8"
+       style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal"
+       x="1133"
+       y="270.534"
+       id="text60">+creator: User</text>
+    <text
+       font-size="12.8"
+       style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal"
+       x="1133"
+       y="286.534"
+       id="text62">+created: Date</text>
+  </g>
+  <g
+     id="g74">
+    <rect
+       style="fill: #ffffff"
+       x="1242.15"
+       y="800.296"
+       width="87.5"
+       height="44"
+       id="rect66" />
+    <rect
+       style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000"
+       x="1242.15"
+       y="800.296"
+       width="87.5"
+       height="44"
+       id="rect68" />
+    <text
+       font-size="12.8"
+       style="fill: #000000;text-anchor:middle;font-family:monospace;font-style:normal;font-weight:normal"
+       x="1285.9"
+       y="815.496"
+       id="text70">&lt;&lt;sioct&gt;&gt;</text>
+    <text
+       font-size="16"
+       style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700"
+       x="1285.9"
+       y="836.296"
+       id="text72">Comment</text>
+  </g>
+  <g
+     id="g84">
+    <rect
+       style="fill: #d8d8d8"
+       x="1621.85"
+       y="800.296"
+       width="94.7"
+       height="44"
+       id="rect76" />
+    <rect
+       style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000"
+       x="1621.85"
+       y="800.296"
+       width="94.7"
+       height="44"
+       id="rect78" />
+    <text
+       font-size="12.8"
+       style="fill: #000000;text-anchor:middle;font-family:monospace;font-style:normal;font-weight:normal"
+       x="1669.2"
+       y="815.496"
+       id="text80">&lt;&lt;SocDOnt&gt;&gt;</text>
+    <text
+       font-size="16"
+       style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700"
+       x="1669.2"
+       y="836.296"
+       id="text82">Like</text>
+  </g>
+  <g
+     id="g100">
+    <rect
+       style="fill: #ffffff"
+       x="1477.77"
+       y="800.296"
+       width="117.8"
+       height="44"
+       id="rect86" />
+    <rect
+       style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000"
+       x="1477.77"
+       y="800.296"
+       width="117.8"
+       height="44"
+       id="rect88" />
+    <text
+       font-size="12.8"
+       style="fill: #000000;text-anchor:middle;font-family:monospace;font-style:normal;font-weight:normal"
+       x="1536.67"
+       y="815.496"
+       id="text90">&lt;&lt;sioct&gt;&gt;</text>
+    <text
+       font-size="16"
+       style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700"
+       x="1536.67"
+       y="836.296"
+       id="text92">Tag</text>
+    <rect
+       style="fill: #ffffff"
+       x="1477.77"
+       y="844.296"
+       width="117.8"
+       height="20"
+       id="rect94" />
+    <rect
+       style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000"
+       x="1477.77"
+       y="844.296"
+       width="117.8"
+       height="20"
+       id="rect96" />
+    <text
+       font-size="12.8"
+       style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal"
+       x="1480.77"
+       y="857.496"
+       id="text98">+label: String</text>
+  </g>
+  <g
+     id="g110">
+    <rect
+       style="fill: #d8d8d8"
+       x="1072.83"
+       y="800.296"
+       width="104.35"
+       height="44"
+       id="rect102" />
+    <rect
+       style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000"
+       x="1072.83"
+       y="800.296"
+       width="104.35"
+       height="44"
+       id="rect104" />
+    <text
+       font-size="12.8"
+       style="fill: #000000;text-anchor:middle;font-family:monospace;font-style:normal;font-weight:normal"
+       x="1125.01"
+       y="815.496"
+       id="text106">&lt;&lt;SocDOnt&gt;&gt;</text>
+    <text
+       font-size="16"
+       style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700"
+       x="1125.01"
+       y="836.296"
+       id="text108">Attachment</text>
+  </g>
+  <g
+     id="g126">
+    <polyline
+       style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000"
+       points="1125.01,844.296 1125.01,920.296 1285.9,920.296 1285.9,869.468 "
+       id="polyline112" />
+    <polygon
+       style="fill: #000000"
+       points="1285.9,844.296 1290.7,858.296 1285.9,872.296 1281.1,858.296 "
+       id="polygon114" />
+    <polygon
+       style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000"
+       points="1285.9,844.296 1290.7,858.296 1285.9,872.296 1281.1,858.296 "
+       id="polygon116" />
+    <text
+       font-size="12.7998"
+       style="fill: #000000;text-anchor:middle;font-family:monospace;font-style:normal;font-weight:normal"
+       x="1205.45"
+       y="916.296"
+       id="text118">has</text>
+    <polygon
+       style="fill: #000000"
+       points="1189.91,916.296 1189.91,908.296 1181.91,912.296 "
+       id="polygon120" />
+    <text
+       font-size="12.7998"
+       style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal"
+       x="1129.01"
+       y="856.296"
+       id="text122">*</text>
+    <text
+       font-size="12.7998"
+       style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal"
+       x="1296.9"
+       y="856.296"
+       id="text124">0..1</text>
+  </g>
+  <g
+     id="g134">
+    <polyline
+       style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000"
+       points="1208.95,712.138 1208.95,780.296 1125.01,780.296 1125.01,799.307 "
+       id="polyline128" />
+    <polygon
+       style="fill: #ffffff"
+       points="1216.95,712.138 1208.95,696.138 1200.95,712.138 "
+       id="polygon130" />
+    <polygon
+       style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000"
+       points="1216.95,712.138 1208.95,696.138 1200.95,712.138 "
+       id="polygon132" />
+  </g>
+  <g
+     id="g142">
+    <polyline
+       style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000"
+       points="1609.68,596.138 1609.68,780.296 1536.67,780.296 1536.67,800.296 "
+       id="polyline136" />
+    <polygon
+       style="fill: #ffffff"
+       points="1617.68,596.138 1609.68,580.138 1601.68,596.138 "
+       id="polygon138" />
+    <polygon
+       style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000"
+       points="1617.68,596.138 1609.68,580.138 1601.68,596.138 "
+       id="polygon140" />
+  </g>
+  <g
+     id="g150">
+    <polyline
+       style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000"
+       points="1208.95,712.138 1208.95,780.296 1285.9,780.296 1285.9,799.307 "
+       id="polyline144" />
+    <polygon
+       style="fill: #ffffff"
+       points="1216.95,712.138 1208.95,696.138 1200.95,712.138 "
+       id="polygon146" />
+    <polygon
+       style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000"
+       points="1216.95,712.138 1208.95,696.138 1200.95,712.138 "
+       id="polygon148" />
+  </g>
+  <g
+     id="g158">
+    <polyline
+       style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000"
+       points="1609.68,596.138 1609.68,780.296 1669.2,780.296 1669.2,799.307 "
+       id="polyline152" />
+    <polygon
+       style="fill: #ffffff"
+       points="1617.68,596.138 1609.68,580.138 1601.68,596.138 "
+       id="polygon154" />
+    <polygon
+       style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000"
+       points="1617.68,596.138 1609.68,580.138 1601.68,596.138 "
+       id="polygon156" />
+  </g>
+  <g
+     id="g174">
+    <polyline
+       style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000"
+       points="1177.18,869.468 1177.18,880.296 1242.15,880.296 1242.15,844.296 "
+       id="polyline160" />
+    <polygon
+       style="fill: #000000"
+       points="1177.18,844.296 1181.98,858.296 1177.18,872.296 1172.38,858.296 "
+       id="polygon162" />
+    <polygon
+       style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000"
+       points="1177.18,844.296 1181.98,858.296 1177.18,872.296 1172.38,858.296 "
+       id="polygon164" />
+    <text
+       font-size="12.7998"
+       style="fill: #000000;text-anchor:middle;font-family:monospace;font-style:normal;font-weight:normal"
+       x="1209.67"
+       y="876.296"
+       id="text166">has</text>
+    <polygon
+       style="fill: #000000"
+       points="1223.22,876.296 1223.22,868.296 1231.22,872.296 "
+       id="polygon168" />
+    <text
+       font-size="12.7998"
+       style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal"
+       x="1188.18"
+       y="856.296"
+       id="text170">0..1</text>
+    <text
+       font-size="12.7998"
+       style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal"
+       x="1246.15"
+       y="856.296"
+       id="text172">*</text>
+  </g>
+  <g
+     id="g194">
+    <polyline
+       style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000"
+       points="1354.83,822.296 1448.69,822.296 1448.69,920.296 1329.65,920.296 1329.65,844.296 "
+       id="polyline176" />
+    <polygon
+       style="fill: #000000"
+       points="1329.65,822.296 1343.65,817.496 1357.65,822.296 1343.65,827.096 "
+       id="polygon178" />
+    <polygon
+       style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000"
+       points="1329.65,822.296 1343.65,817.496 1357.65,822.296 1343.65,827.096 "
+       id="polygon180" />
+    <text
+       font-size="12.7998"
+       style="fill: #000000;text-anchor:middle;font-family:monospace;font-style:normal;font-weight:normal"
+       x="1389.17"
+       y="916.296"
+       id="text182">comments on</text>
+    <polygon
+       style="fill: #000000"
+       points="1433.52,916.296 1433.52,908.296 1441.52,912.296 "
+       id="polygon184" />
+    <text
+       font-size="12.7998"
+       style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal"
+       x="1361.65"
+       y="818.296"
+       id="text186"> parent</text>
+    <text
+       font-size="12.7998"
+       style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal"
+       x="1361.65"
+       y="834.296"
+       id="text188">0..1</text>
+    <text
+       font-size="12.7998"
+       style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal"
+       x="1333.65"
+       y="856.296"
+       id="text190"> child</text>
+    <text
+       font-size="12.7998"
+       style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal"
+       x="1333.65"
+       y="872.296"
+       id="text192">*</text>
+  </g>
+  <g
+     id="g212">
+    <polyline
+       style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000"
+       points="748.396,573.792 632.198,573.792 632.198,428.792 773.568,428.792 "
+       id="polyline196" />
+    <polygon
+       style="fill: #000000"
+       points="773.568,573.792 759.568,578.592 745.568,573.792 759.568,568.992 "
+       id="polygon198" />
+    <polygon
+       style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000"
+       points="773.568,573.792 759.568,578.592 745.568,573.792 759.568,568.992 "
+       id="polygon200" />
+    <text
+       font-size="12.7998"
+       style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal"
+       x="634.198"
+       y="497.292"
+       id="text202">has</text>
+    <text
+       font-size="12.7998"
+       style="fill: #000000;text-anchor:end;font-family:monospace;font-style:normal;font-weight:normal"
+       x="741.568"
+       y="569.792"
+       id="text204"> recent version</text>
+    <text
+       font-size="12.7998"
+       style="fill: #000000;text-anchor:end;font-family:monospace;font-style:normal;font-weight:normal"
+       x="741.568"
+       y="585.792"
+       id="text206">1</text>
+    <text
+       font-size="12.7998"
+       style="fill: #000000;text-anchor:end;font-family:monospace;font-style:normal;font-weight:normal"
+       x="769.568"
+       y="424.792"
+       id="text208"> previous version</text>
+    <text
+       font-size="12.7998"
+       style="fill: #000000;text-anchor:end;font-family:monospace;font-style:normal;font-weight:normal"
+       x="769.568"
+       y="440.792"
+       id="text210">*</text>
+  </g>
+  <g
+     id="g224">
+    <rect
+       style="fill: #d8d8d8"
+       x="810"
+       y="183.334"
+       width="142.4"
+       height="58"
+       id="rect214" />
+    <rect
+       style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000"
+       x="810"
+       y="183.334"
+       width="142.4"
+       height="58"
+       id="rect216" />
+    <text
+       font-size="12.8"
+       style="fill: #000000;text-anchor:middle;font-family:monospace;font-style:normal;font-weight:normal"
+       x="881.2"
+       y="198.534"
+       id="text218">&lt;&lt;SocDOnt&gt;&gt;</text>
+    <text
+       font-size="16"
+       style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:oblique;font-weight:700"
+       x="881.2"
+       y="219.334"
+       id="text220">SocialDocument</text>
+    <text
+       font-size="11.2"
+       style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal"
+       x="881.2"
+       y="234.534"
+       id="text222">{abstract}</text>
+  </g>
+  <g
+     id="g236">
+    <rect
+       style="fill: #d8d8d8"
+       x="450"
+       y="125.334"
+       width="94.7"
+       height="58"
+       id="rect226" />
+    <rect
+       style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000"
+       x="450"
+       y="125.334"
+       width="94.7"
+       height="58"
+       id="rect228" />
+    <text
+       font-size="12.8"
+       style="fill: #000000;text-anchor:middle;font-family:monospace;font-style:normal;font-weight:normal"
+       x="497.35"
+       y="140.534"
+       id="text230">&lt;&lt;SocDOnt&gt;&gt;</text>
+    <text
+       font-size="16"
+       style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:oblique;font-weight:700"
+       x="497.35"
+       y="161.334"
+       id="text232">Collection</text>
+    <text
+       font-size="11.2"
+       style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal"
+       x="497.35"
+       y="176.534"
+       id="text234">{abstract}</text>
+  </g>
+  <g
+     id="g244">
+    <polyline
+       style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000"
+       points="1188.9,312.57 1188.9,379.902 859.418,379.902 859.418,399.792 "
+       id="polyline238" />
+    <polygon
+       style="fill: #ffffff"
+       points="1196.9,312.57 1188.9,296.57 1180.9,312.57 "
+       id="polygon240" />
+    <polygon
+       style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000"
+       points="1196.9,312.57 1188.9,296.57 1180.9,312.57 "
+       id="polygon242" />
+  </g>
+  <g
+     id="g274">
+    <rect
+       style="fill: #d8d8d8"
+       x="1110"
+       y="519.902"
+       width="197.9"
+       height="58"
+       id="rect246" />
+    <rect
+       style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000"
+       x="1110"
+       y="519.902"
+       width="197.9"
+       height="58"
+       id="rect248" />
+    <text
+       font-size="12.8"
+       style="fill: #000000;text-anchor:middle;font-family:monospace;font-style:normal;font-weight:normal"
+       x="1208.95"
+       y="535.102"
+       id="text250">&lt;&lt;SocDOnt&gt;&gt;</text>
+    <text
+       font-size="16"
+       style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:oblique;font-weight:700"
+       x="1208.95"
+       y="555.902"
+       id="text252">IntellectualComponent</text>
+    <text
+       font-size="11.2"
+       style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal"
+       x="1208.95"
+       y="571.102"
+       id="text254">{abstract}</text>
+    <rect
+       style="fill: #d8d8d8"
+       x="1110"
+       y="577.902"
+       width="197.9"
+       height="116"
+       id="rect256" />
+    <rect
+       style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000"
+       x="1110"
+       y="577.902"
+       width="197.9"
+       height="116"
+       id="rect258" />
+    <text
+       font-size="12.8"
+       style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal"
+       x="1113"
+       y="591.102"
+       id="text260">+content: Object</text>
+    <text
+       font-size="12.8"
+       style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal"
+       x="1113"
+       y="607.102"
+       id="text262">+contributors: User[]</text>
+    <text
+       font-size="12.8"
+       style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal"
+       x="1113"
+       y="623.102"
+       id="text264">+last_update: Date</text>
+    <text
+       font-size="12.8"
+       style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal"
+       x="1113"
+       y="639.102"
+       id="text266">+mentionees: User[]</text>
+    <text
+       font-size="12.8"
+       style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal"
+       x="1113"
+       y="655.102"
+       id="text268">+references: Item[]</text>
+    <text
+       font-size="12.8"
+       style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal"
+       x="1113"
+       y="671.102"
+       id="text270">+title: String</text>
+    <text
+       font-size="12.8"
+       style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal"
+       x="1113"
+       y="687.102"
+       id="text272">+views: Integer</text>
+  </g>
+  <g
+     id="g286">
+    <rect
+       style="fill: #d8d8d8"
+       x="1530"
+       y="519.902"
+       width="159.35"
+       height="58"
+       id="rect276" />
+    <rect
+       style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000"
+       x="1530"
+       y="519.902"
+       width="159.35"
+       height="58"
+       id="rect278" />
+    <text
+       font-size="12.8"
+       style="fill: #000000;text-anchor:middle;font-family:monospace;font-style:normal;font-weight:normal"
+       x="1609.68"
+       y="535.102"
+       id="text280">&lt;&lt;SocDOnt&gt;&gt;</text>
+    <text
+       font-size="16"
+       style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:oblique;font-weight:700"
+       x="1609.68"
+       y="555.902"
+       id="text282">SimpleComponent</text>
+    <text
+       font-size="11.2"
+       style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal"
+       x="1609.68"
+       y="571.102"
+       id="text284">{abstract}</text>
+  </g>
+  <g
+     id="g302">
+    <polyline
+       style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000"
+       points="569.872,183.334 684.266,183.334 684.266,183.334 810,183.334 "
+       id="polyline288" />
+    <polygon
+       style="fill: #ffffff"
+       points="544.7,183.334 558.7,178.534 572.7,183.334 558.7,188.134 "
+       id="polygon290" />
+    <polygon
+       style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000"
+       points="544.7,183.334 558.7,178.534 572.7,183.334 558.7,188.134 "
+       id="polygon292" />
+    <text
+       font-size="12.7998"
+       style="fill: #000000;text-anchor:middle;font-family:monospace;font-style:normal;font-weight:normal"
+       x="684.266"
+       y="179.334"
+       id="text294">contains</text>
+    <polygon
+       style="fill: #000000"
+       points="717.066,179.334 717.066,171.334 725.066,175.334 "
+       id="polygon296" />
+    <text
+       font-size="12.7998"
+       style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal"
+       x="576.7"
+       y="179.334"
+       id="text298">0..*</text>
+    <text
+       font-size="12.7998"
+       style="fill: #000000;text-anchor:end;font-family:monospace;font-style:normal;font-weight:normal"
+       x="806"
+       y="179.334"
+       id="text300">2..*</text>
+  </g>
+  <g
+     id="g314">
+    <rect
+       style="fill: #ffffff"
+       x="150"
+       y="183.334"
+       width="71.6"
+       height="58"
+       id="rect304" />
+    <rect
+       style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000"
+       x="150"
+       y="183.334"
+       width="71.6"
+       height="58"
+       id="rect306" />
+    <text
+       font-size="12.8"
+       style="fill: #000000;text-anchor:middle;font-family:monospace;font-style:normal;font-weight:normal"
+       x="185.8"
+       y="198.534"
+       id="text308">&lt;&lt;sioc&gt;&gt;</text>
+    <text
+       font-size="16"
+       style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:oblique;font-weight:700"
+       x="185.8"
+       y="219.334"
+       id="text310">Space</text>
+    <text
+       font-size="11.2"
+       style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal"
+       x="185.8"
+       y="234.534"
+       id="text312">{abstract]</text>
+  </g>
+  <g
+     id="g322">
+    <polyline
+       style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000"
+       points="185.8,260.54 185.8,780 185.8,780 185.8,798.228 "
+       id="polyline316" />
+    <polygon
+       style="fill: #ffffff"
+       points="193.8,260.54 185.8,244.54 177.8,260.54 "
+       id="polygon318" />
+    <polygon
+       style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000"
+       points="193.8,260.54 185.8,244.54 177.8,260.54 "
+       id="polygon320" />
+  </g>
+  <g
+     id="g330">
+    <polyline
+       style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000"
+       points="185.8,260.54 185.8,780 70,780 70,860 185.8,860 185.8,880.346 "
+       id="polyline324" />
+    <polygon
+       style="fill: #ffffff"
+       points="193.8,260.54 185.8,244.54 177.8,260.54 "
+       id="polygon326" />
+    <polygon
+       style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000"
+       points="193.8,260.54 185.8,244.54 177.8,260.54 "
+       id="polygon328" />
+  </g>
+  <g
+     id="g346">
+    <polyline
+       style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000"
+       points="450,100.163 450,83.3342 330,83.3342 330,154.334 450,154.334 "
+       id="polyline332" />
+    <polygon
+       style="fill: #ffffff"
+       points="450,125.334 445.2,111.334 450,97.3342 454.8,111.334 "
+       id="polygon334" />
+    <polygon
+       style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000"
+       points="450,125.334 445.2,111.334 450,97.3342 454.8,111.334 "
+       id="polygon336" />
+    <text
+       font-size="12.7998"
+       style="fill: #000000;text-anchor:middle;font-family:monospace;font-style:normal;font-weight:normal"
+       x="390"
+       y="79.3342"
+       id="text338">contains</text>
+    <text
+       font-size="12.7998"
+       style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal"
+       x="461"
+       y="121.334"
+       id="text340">0..1</text>
+    <text
+       font-size="12.7998"
+       style="fill: #000000;text-anchor:end;font-family:monospace;font-style:normal;font-weight:normal"
+       x="446"
+       y="150.334"
+       id="text342"> sub collection</text>
+    <text
+       font-size="12.7998"
+       style="fill: #000000;text-anchor:end;font-family:monospace;font-style:normal;font-weight:normal"
+       x="446"
+       y="166.334"
+       id="text344">*</text>
+  </g>
+  <g
+     id="g356">
+    <rect
+       style="fill: #d8d8d8"
+       x="111.875"
+       y="880.346"
+       width="147.85"
+       height="44"
+       id="rect348" />
+    <rect
+       style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000"
+       x="111.875"
+       y="880.346"
+       width="147.85"
+       height="44"
+       id="rect350" />
+    <text
+       font-size="12.8"
+       style="fill: #000000;text-anchor:middle;font-family:monospace;font-style:normal;font-weight:normal"
+       x="185.8"
+       y="895.546"
+       id="text352">&lt;&lt;SocDOnt&gt;&gt;</text>
+    <text
+       font-size="16"
+       style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700"
+       x="185.8"
+       y="916.346"
+       id="text354">GroupWorkspace</text>
+  </g>
+  <g
+     id="g366">
+    <rect
+       style="fill: #d8d8d8"
+       x="118.15"
+       y="961.464"
+       width="135.3"
+       height="44"
+       id="rect358" />
+    <rect
+       style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000"
+       x="118.15"
+       y="961.464"
+       width="135.3"
+       height="44"
+       id="rect360" />
+    <text
+       font-size="12.8"
+       style="fill: #000000;text-anchor:middle;font-family:monospace;font-style:normal;font-weight:normal"
+       x="185.8"
+       y="976.664"
+       id="text362">&lt;&lt;SocDOnt&gt;&gt;</text>
+    <text
+       font-size="16"
+       style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700"
+       x="185.8"
+       y="997.464"
+       id="text364">UserWorkspace</text>
+  </g>
+  <g
+     id="g376">
+    <rect
+       style="fill: #d8d8d8"
+       x="86.925"
+       y="799.226"
+       width="197.75"
+       height="44"
+       id="rect368" />
+    <rect
+       style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000"
+       x="86.925"
+       y="799.226"
+       width="197.75"
+       height="44"
+       id="rect370" />
+    <text
+       font-size="12.8"
+       style="fill: #000000;text-anchor:middle;font-family:monospace;font-style:normal;font-weight:normal"
+       x="185.8"
+       y="814.426"
+       id="text372">&lt;&lt;SocDOnt&gt;&gt;</text>
+    <text
+       font-size="16"
+       style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700"
+       x="185.8"
+       y="835.226"
+       id="text374">OrganisationalPlatform</text>
+  </g>
+  <g
+     id="g384">
+    <polyline
+       style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000"
+       points="185.8,259.57 185.8,780 70,780 70,940 185.8,940 185.8,961.464 "
+       id="polyline378" />
+    <polygon
+       style="fill: #ffffff"
+       points="193.8,259.57 185.8,243.57 177.8,259.57 "
+       id="polygon380" />
+    <polygon
+       style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000"
+       points="193.8,259.57 185.8,243.57 177.8,259.57 "
+       id="polygon382" />
+  </g>
+  <g
+     id="g400">
+    <polyline
+       style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000"
+       points="977.572,212.334 1042.22,212.334 1042.22,212.334 1130,212.334 "
+       id="polyline386" />
+    <polygon
+       style="fill: #000000"
+       points="952.4,212.334 966.4,207.534 980.4,212.334 966.4,217.134 "
+       id="polygon388" />
+    <polygon
+       style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000"
+       points="952.4,212.334 966.4,207.534 980.4,212.334 966.4,217.134 "
+       id="polygon390" />
+    <text
+       font-size="12.7998"
+       style="fill: #000000;text-anchor:middle;font-family:monospace;font-style:normal;font-weight:normal"
+       x="1042.22"
+       y="208.334"
+       id="text392">contains</text>
+    <polygon
+       style="fill: #000000"
+       points="1075.02,208.334 1075.02,200.334 1083.02,204.334 "
+       id="polygon394" />
+    <text
+       font-size="12.7998"
+       style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal"
+       x="984.4"
+       y="208.334"
+       id="text396">1</text>
+    <text
+       font-size="12.7998"
+       style="fill: #000000;text-anchor:end;font-family:monospace;font-style:normal;font-weight:normal"
+       x="1126"
+       y="208.334"
+       id="text398">1..*</text>
+  </g>
+  <g
+     id="g416">
+    <polyline
+       style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000"
+       points="970.44,428.792 1154.31,428.792 1154.31,428.902 1368.89,428.902 "
+       id="polyline402" />
+    <polygon
+       style="fill: #000000"
+       points="945.268,428.792 959.268,423.992 973.268,428.792 959.268,433.592 "
+       id="polygon404" />
+    <polygon
+       style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000"
+       points="945.268,428.792 959.268,423.992 973.268,428.792 959.268,433.592 "
+       id="polygon406" />
+    <text
+       font-size="12.7998"
+       style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal"
+       x="1156.31"
+       y="424.847"
+       id="text408">has</text>
+    <polygon
+       style="fill: #000000"
+       points="1181.41,424.847 1181.41,416.847 1189.41,420.847 "
+       id="polygon410" />
+    <text
+       font-size="12.7998"
+       style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal"
+       x="977.268"
+       y="424.792"
+       id="text412">1</text>
+    <text
+       font-size="12.7998"
+       style="fill: #000000;text-anchor:end;font-family:monospace;font-style:normal;font-weight:normal"
+       x="1364.89"
+       y="424.902"
+       id="text414">*</text>
+  </g>
+  <g
+     id="g426">
+    <rect
+       style="fill: #ffffff"
+       x="816.94"
+       y="1160"
+       width="81.1"
+       height="44"
+       id="rect418" />
+    <rect
+       style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000"
+       x="816.94"
+       y="1160"
+       width="81.1"
+       height="44"
+       id="rect420" />
+    <text
+       font-size="12.8"
+       style="fill: #000000;text-anchor:middle;font-family:monospace;font-style:normal;font-weight:normal"
+       x="857.49"
+       y="1175.2"
+       id="text422">&lt;&lt;sioct&gt;&gt;</text>
+    <text
+       font-size="16"
+       style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700"
+       x="857.49"
+       y="1196"
+       id="text424">BlogPost</text>
+  </g>
+  <g
+     id="g436">
+    <rect
+       style="fill: #ffffff"
+       x="794.81"
+       y="959.226"
+       width="124.65"
+       height="44"
+       id="rect428" />
+    <rect
+       style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000"
+       x="794.81"
+       y="959.226"
+       width="124.65"
+       height="44"
+       id="rect430" />
+    <text
+       font-size="12.8"
+       style="fill: #000000;text-anchor:middle;font-family:monospace;font-style:normal;font-weight:normal"
+       x="857.135"
+       y="974.426"
+       id="text432">&lt;&lt;sioct&gt;&gt;</text>
+    <text
+       font-size="16"
+       style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700"
+       x="857.135"
+       y="995.226"
+       id="text434">MicroblogPost</text>
+  </g>
+  <g
+     id="g446">
+    <rect
+       style="fill: #ffffff"
+       x="808.342"
+       y="1240"
+       width="98"
+       height="44"
+       id="rect438" />
+    <rect
+       style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000"
+       x="808.342"
+       y="1240"
+       width="98"
+       height="44"
+       id="rect440" />
+    <text
+       font-size="12.8"
+       style="fill: #000000;text-anchor:middle;font-family:monospace;font-style:normal;font-weight:normal"
+       x="857.342"
+       y="1255.2"
+       id="text442">&lt;&lt;sioct&gt;&gt;</text>
+    <text
+       font-size="16"
+       style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700"
+       x="857.342"
+       y="1276"
+       id="text444">WikiArticle</text>
+  </g>
+  <g
+     id="g454">
+    <polyline
+       style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000"
+       points="859.418,593 859.418,779.628 970,779.628 970,1220 857.342,1220 857.342,1240 "
+       id="polyline448" />
+    <polygon
+       style="fill: #ffffff"
+       points="867.418,593 859.418,577 851.418,593 "
+       id="polygon450" />
+    <polygon
+       style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000"
+       points="867.418,593 859.418,577 851.418,593 "
+       id="polygon452" />
+  </g>
+  <g
+     id="g472">
+    <polyline
+       style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000"
+       points="857.342,1309.17 857.342,1320.77 965.19,1320.77 965.19,1262 906.342,1262 "
+       id="polyline456" />
+    <polygon
+       style="fill: #000000"
+       points="857.342,1284 862.142,1298 857.342,1312 852.542,1298 "
+       id="polygon458" />
+    <polygon
+       style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000"
+       points="857.342,1284 862.142,1298 857.342,1312 852.542,1298 "
+       id="polygon460" />
+    <text
+       font-size="12.7998"
+       style="fill: #000000;text-anchor:middle;font-family:monospace;font-style:normal;font-weight:normal"
+       x="911.266"
+       y="1316.77"
+       id="text462">has</text>
+    <text
+       font-size="12.7998"
+       style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal"
+       x="868.342"
+       y="1296"
+       id="text464"> parent</text>
+    <text
+       font-size="12.7998"
+       style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal"
+       x="868.342"
+       y="1312"
+       id="text466">0..1</text>
+    <text
+       font-size="12.7998"
+       style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal"
+       x="910.342"
+       y="1258"
+       id="text468"> child</text>
+    <text
+       font-size="12.7998"
+       style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal"
+       x="910.342"
+       y="1274"
+       id="text470">*</text>
+  </g>
+  <g
+     id="g480">
+    <rect
+       style="fill: #ffffff"
+       x="840.152"
+       y="801.888"
+       width="38.5"
+       height="28"
+       id="rect474" />
+    <rect
+       style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000"
+       x="840.152"
+       y="801.888"
+       width="38.5"
+       height="28"
+       id="rect476" />
+    <text
+       font-size="16"
+       style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700"
+       x="859.402"
+       y="821.888"
+       id="text478">File</text>
+  </g>
+  <g
+     id="g490">
+    <rect
+       style="fill: #ffffff"
+       x="823.558"
+       y="1039.23"
+       width="63.9"
+       height="44"
+       id="rect482" />
+    <rect
+       style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000"
+       x="823.558"
+       y="1039.23"
+       width="63.9"
+       height="44"
+       id="rect484" />
+    <text
+       font-size="12.8"
+       style="fill: #000000;text-anchor:middle;font-family:monospace;font-style:normal;font-weight:normal"
+       x="855.508"
+       y="1054.43"
+       id="text486">&lt;&lt;tmo&gt;&gt;</text>
+    <text
+       font-size="16"
+       style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700"
+       x="855.508"
+       y="1075.23"
+       id="text488">Task</text>
+  </g>
+  <g
+     id="g500">
+    <rect
+       style="fill: #ffffff"
+       x="454.73"
+       y="1160"
+       width="79.3"
+       height="44"
+       id="rect492" />
+    <rect
+       style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000"
+       x="454.73"
+       y="1160"
+       width="79.3"
+       height="44"
+       id="rect494" />
+    <text
+       font-size="12.8"
+       style="fill: #000000;text-anchor:middle;font-family:monospace;font-style:normal;font-weight:normal"
+       x="494.38"
+       y="1175.2"
+       id="text496">&lt;&lt;sioct&gt;&gt;</text>
+    <text
+       font-size="16"
+       style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700"
+       x="494.38"
+       y="1196"
+       id="text498">Weblog</text>
+  </g>
+  <g
+     id="g516">
+    <polyline
+       style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000"
+       points="560.206,1182 690,1182 690,1182 816.94,1182 "
+       id="polyline502" />
+    <polygon
+       style="fill: #000000"
+       points="535.035,1182 549.035,1177.2 563.035,1182 549.035,1186.8 "
+       id="polygon504" />
+    <polygon
+       style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000"
+       points="535.035,1182 549.035,1177.2 563.035,1182 549.035,1186.8 "
+       id="polygon506" />
+    <text
+       font-size="12.7998"
+       style="fill: #000000;text-anchor:middle;font-family:monospace;font-style:normal;font-weight:normal"
+       x="690"
+       y="1178"
+       id="text508">sioc:container_of</text>
+    <polygon
+       style="fill: #000000"
+       points="757.45,1178 757.45,1170 765.45,1174 "
+       id="polygon510" />
+    <text
+       font-size="12.7998"
+       style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal"
+       x="567.035"
+       y="1178"
+       id="text512">1</text>
+    <text
+       font-size="12.7998"
+       style="fill: #000000;text-anchor:end;font-family:monospace;font-style:normal;font-weight:normal"
+       x="812.94"
+       y="1178"
+       id="text514">*</text>
+  </g>
+  <g
+     id="g526">
+    <rect
+       style="fill: #ffffff"
+       x="454.584"
+       y="1240"
+       width="79.3"
+       height="44"
+       id="rect518" />
+    <rect
+       style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000"
+       x="454.584"
+       y="1240"
+       width="79.3"
+       height="44"
+       id="rect520" />
+    <text
+       font-size="12.8"
+       style="fill: #000000;text-anchor:middle;font-family:monospace;font-style:normal;font-weight:normal"
+       x="494.234"
+       y="1255.2"
+       id="text522">&lt;&lt;sioct&gt;&gt;</text>
+    <text
+       font-size="16"
+       style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700"
+       x="494.234"
+       y="1276"
+       id="text524">Wiki</text>
+  </g>
+  <g
+     id="g534">
+    <rect
+       style="fill: #ffffff"
+       x="464.934"
+       y="801.668"
+       width="60.55"
+       height="28"
+       id="rect528" />
+    <rect
+       style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000"
+       x="464.934"
+       y="801.668"
+       width="60.55"
+       height="28"
+       id="rect530" />
+    <text
+       font-size="16"
+       style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700"
+       x="495.209"
+       y="821.668"
+       id="text532">Folder</text>
+  </g>
+  <g
+     id="g544">
+    <rect
+       style="fill: #ffffff"
+       x="449.35"
+       y="959.226"
+       width="89.35"
+       height="44"
+       id="rect536" />
+    <rect
+       style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000"
+       x="449.35"
+       y="959.226"
+       width="89.35"
+       height="44"
+       id="rect538" />
+    <text
+       font-size="12.8"
+       style="fill: #000000;text-anchor:middle;font-family:monospace;font-style:normal;font-weight:normal"
+       x="494.025"
+       y="974.426"
+       id="text540">&lt;&lt;sioct&gt;&gt;</text>
+    <text
+       font-size="16"
+       style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700"
+       x="494.025"
+       y="995.226"
+       id="text542">Microblog</text>
+  </g>
+  <g
+     id="g560">
+    <polyline
+       style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000"
+       points="564.865,981.226 690,981.226 690,981.226 794.81,981.226 "
+       id="polyline546" />
+    <polygon
+       style="fill: #000000"
+       points="539.693,981.226 553.693,976.426 567.693,981.226 553.693,986.026 "
+       id="polygon548" />
+    <polygon
+       style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000"
+       points="539.693,981.226 553.693,976.426 567.693,981.226 553.693,986.026 "
+       id="polygon550" />
+    <text
+       font-size="12.7998"
+       style="fill: #000000;text-anchor:middle;font-family:monospace;font-style:normal;font-weight:normal"
+       x="690"
+       y="977.226"
+       id="text552">sioc:container_of</text>
+    <polygon
+       style="fill: #000000"
+       points="757.45,977.226 757.45,969.226 765.45,973.226 "
+       id="polygon554" />
+    <text
+       font-size="12.7998"
+       style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal"
+       x="571.693"
+       y="977.226"
+       id="text556">1</text>
+    <text
+       font-size="12.7998"
+       style="fill: #000000;text-anchor:end;font-family:monospace;font-style:normal;font-weight:normal"
+       x="790.81"
+       y="977.226"
+       id="text558">*</text>
+  </g>
+  <g
+     id="g576">
+    <polyline
+       style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000"
+       points="551.651,815.668 630,815.668 630,815.888 840.152,815.888 "
+       id="polyline562" />
+    <polygon
+       style="fill: #000000"
+       points="526.48,815.668 540.48,810.868 554.48,815.668 540.48,820.468 "
+       id="polygon564" />
+    <polygon
+       style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000"
+       points="526.48,815.668 540.48,810.868 554.48,815.668 540.48,820.468 "
+       id="polygon566" />
+    <text
+       font-size="12.7998"
+       style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal"
+       x="632"
+       y="811.778"
+       id="text568">container_of</text>
+    <polygon
+       style="fill: #000000"
+       points="726.4,811.778 726.4,803.778 734.4,807.778 "
+       id="polygon570" />
+    <text
+       font-size="12.7998"
+       style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal"
+       x="558.48"
+       y="811.668"
+       id="text572">1</text>
+    <text
+       font-size="12.7998"
+       style="fill: #000000;text-anchor:end;font-family:monospace;font-style:normal;font-weight:normal"
+       x="836.152"
+       y="811.888"
+       id="text574">*</text>
+  </g>
+  <g
+     id="g586">
+    <rect
+       style="fill: #ffffff"
+       x="429.35"
+       y="1039.23"
+       width="126.1"
+       height="44"
+       id="rect578" />
+    <rect
+       style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000"
+       x="429.35"
+       y="1039.23"
+       width="126.1"
+       height="44"
+       id="rect580" />
+    <text
+       font-size="12.8"
+       style="fill: #000000;text-anchor:middle;font-family:monospace;font-style:normal;font-weight:normal"
+       x="492.4"
+       y="1054.43"
+       id="text582">&lt;&lt;tmo&gt;&gt;</text>
+    <text
+       font-size="16"
+       style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700"
+       x="492.4"
+       y="1075.23"
+       id="text584">TaskContainer</text>
+  </g>
+  <g
+     id="g602">
+    <polyline
+       style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000"
+       points="581.251,1061.23 690,1061.23 690,1061.23 822.566,1061.23 "
+       id="polyline588" />
+    <polygon
+       style="fill: #000000"
+       points="556.08,1061.23 570.08,1056.43 584.08,1061.23 570.08,1066.03 "
+       id="polygon590" />
+    <polygon
+       style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000"
+       points="556.08,1061.23 570.08,1056.43 584.08,1061.23 570.08,1066.03 "
+       id="polygon592" />
+    <text
+       font-size="12.7998"
+       style="fill: #000000;text-anchor:middle;font-family:monospace;font-style:normal;font-weight:normal"
+       x="690"
+       y="1057.23"
+       id="text594">container_of</text>
+    <polygon
+       style="fill: #000000"
+       points="738.2,1057.23 738.2,1049.23 746.2,1053.23 "
+       id="polygon596" />
+    <text
+       font-size="12.7998"
+       style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal"
+       x="588.08"
+       y="1057.23"
+       id="text598">1</text>
+    <text
+       font-size="12.7998"
+       style="fill: #000000;text-anchor:end;font-family:monospace;font-style:normal;font-weight:normal"
+       x="818.566"
+       y="1057.23"
+       id="text600">*</text>
+  </g>
+  <g
+     id="g610">
+    <polyline
+       style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000"
+       points="495.126,317.468 495.126,780 410,780 410,1220 494.234,1220 494.234,1240 "
+       id="polyline604" />
+    <polygon
+       style="fill: #ffffff"
+       points="503.126,317.468 495.126,301.468 487.126,317.468 "
+       id="polygon606" />
+    <polygon
+       style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000"
+       points="503.126,317.468 495.126,301.468 487.126,317.468 "
+       id="polygon608" />
+  </g>
+  <g
+     id="g628">
+    <polyline
+       style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000"
+       points="855.508,1108.4 855.508,1120 946.972,1120 946.972,1061.23 887.458,1061.23 "
+       id="polyline612" />
+    <polygon
+       style="fill: #000000"
+       points="855.508,1083.23 860.308,1097.23 855.508,1111.23 850.708,1097.23 "
+       id="polygon614" />
+    <polygon
+       style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000"
+       points="855.508,1083.23 860.308,1097.23 855.508,1111.23 850.708,1097.23 "
+       id="polygon616" />
+    <text
+       font-size="12.7998"
+       style="fill: #000000;text-anchor:middle;font-family:monospace;font-style:normal;font-weight:normal"
+       x="901.24"
+       y="1116"
+       id="text618">has</text>
+    <polygon
+       style="fill: #000000"
+       points="914.79,1116 914.79,1108 922.79,1112 "
+       id="polygon620" />
+    <text
+       font-size="12.7998"
+       style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal"
+       x="866.508"
+       y="1095.23"
+       id="text622">0..1</text>
+    <text
+       font-size="12.7998"
+       style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal"
+       x="891.458"
+       y="1057.23"
+       id="text624"> subtask</text>
+    <text
+       font-size="12.7998"
+       style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal"
+       x="891.458"
+       y="1073.23"
+       id="text626">*</text>
+  </g>
+  <g
+     id="g636">
+    <polyline
+       style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000"
+       points="495.125,318.471 495.125,702 495.209,702 495.209,800.669 "
+       id="polyline630" />
+    <polygon
+       style="fill: #ffffff"
+       points="503.125,318.471 495.125,302.471 487.125,318.471 "
+       id="polygon632" />
+    <polygon
+       style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000"
+       points="503.125,318.471 495.125,302.471 487.125,318.471 "
+       id="polygon634" />
+  </g>
+  <g
+     id="g644">
+    <polyline
+       style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000"
+       points="1188.9,312.57 1188.9,379.902 1420.89,379.902 1420.89,398.923 "
+       id="polyline638" />
+    <polygon
+       style="fill: #ffffff"
+       points="1196.9,312.57 1188.9,296.57 1180.9,312.57 "
+       id="polygon640" />
+    <polygon
+       style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000"
+       points="1196.9,312.57 1188.9,296.57 1180.9,312.57 "
+       id="polygon642" />
+  </g>
+  <g
+     id="g652">
+    <polyline
+       style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000"
+       points="1420.89,477.135 1420.89,499.902 1208.95,499.902 1208.95,518.907 "
+       id="polyline646" />
+    <polygon
+       style="fill: #ffffff"
+       points="1428.89,477.135 1420.89,461.135 1412.89,477.135 "
+       id="polygon648" />
+    <polygon
+       style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000"
+       points="1428.89,477.135 1420.89,461.135 1412.89,477.135 "
+       id="polygon650" />
+  </g>
+  <g
+     id="g660">
+    <polyline
+       style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000"
+       points="1420.89,477.135 1420.89,499.902 1609.68,499.902 1609.68,519.902 "
+       id="polyline654" />
+    <polygon
+       style="fill: #ffffff"
+       points="1428.89,477.135 1420.89,461.135 1412.89,477.135 "
+       id="polygon656" />
+    <polygon
+       style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000"
+       points="1428.89,477.135 1420.89,461.135 1412.89,477.135 "
+       id="polygon658" />
+  </g>
+  <g
+     id="g672">
+    <rect
+       style="fill: #d8d8d8"
+       x="1368.89"
+       y="399.902"
+       width="104"
+       height="58"
+       id="rect662" />
+    <rect
+       style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000"
+       x="1368.89"
+       y="399.902"
+       width="104"
+       height="58"
+       id="rect664" />
+    <text
+       font-size="12.8"
+       style="fill: #000000;text-anchor:middle;font-family:monospace;font-style:normal;font-weight:normal"
+       x="1420.89"
+       y="415.102"
+       id="text666">&lt;&lt;SocDOnt&gt;&gt;</text>
+    <text
+       font-size="16"
+       style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:oblique;font-weight:700"
+       x="1420.89"
+       y="435.902"
+       id="text668">Component</text>
+    <text
+       font-size="11.2"
+       style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal"
+       x="1420.89"
+       y="451.102"
+       id="text670">{abstract}</text>
+  </g>
+  <g
+     id="g690">
+    <polyline
+       style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000"
+       points="1084.83,693.902 970,693.902 970,548.902 1110,548.902 "
+       id="polyline674" />
+    <polygon
+       style="fill: #000000"
+       points="1110,693.902 1096,698.702 1082,693.902 1096,689.102 "
+       id="polygon676" />
+    <polygon
+       style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000"
+       points="1110,693.902 1096,698.702 1082,693.902 1096,689.102 "
+       id="polygon678" />
+    <text
+       font-size="12.7998"
+       style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal"
+       x="972"
+       y="617.402"
+       id="text680">has</text>
+    <text
+       font-size="12.7998"
+       style="fill: #000000;text-anchor:end;font-family:monospace;font-style:normal;font-weight:normal"
+       x="1078"
+       y="689.902"
+       id="text682"> recent version</text>
+    <text
+       font-size="12.7998"
+       style="fill: #000000;text-anchor:end;font-family:monospace;font-style:normal;font-weight:normal"
+       x="1078"
+       y="705.902"
+       id="text684">1</text>
+    <text
+       font-size="12.7998"
+       style="fill: #000000;text-anchor:end;font-family:monospace;font-style:normal;font-weight:normal"
+       x="1106"
+       y="544.902"
+       id="text686"> previous version</text>
+    <text
+       font-size="12.7998"
+       style="fill: #000000;text-anchor:end;font-family:monospace;font-style:normal;font-weight:normal"
+       x="1106"
+       y="560.902"
+       id="text688">*</text>
+  </g>
+  <g
+     id="g706">
+    <polyline
+       style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000"
+       points="1333.07,548.902 1428.7,548.902 1428.7,548.902 1530,548.902 "
+       id="polyline692" />
+    <polygon
+       style="fill: #000000"
+       points="1307.9,548.902 1321.9,544.102 1335.9,548.902 1321.9,553.702 "
+       id="polygon694" />
+    <polygon
+       style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000"
+       points="1307.9,548.902 1321.9,544.102 1335.9,548.902 1321.9,553.702 "
+       id="polygon696" />
+    <text
+       font-size="12.7998"
+       style="fill: #000000;text-anchor:middle;font-family:monospace;font-style:normal;font-weight:normal"
+       x="1428.7"
+       y="544.902"
+       id="text698">has</text>
+    <polygon
+       style="fill: #000000"
+       points="1442.25,544.902 1442.25,536.902 1450.25,540.902 "
+       id="polygon700" />
+    <text
+       font-size="12.7998"
+       style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal"
+       x="1339.9"
+       y="544.902"
+       id="text702">0..1</text>
+    <text
+       font-size="12.7998"
+       style="fill: #000000;text-anchor:end;font-family:monospace;font-style:normal;font-weight:normal"
+       x="1526"
+       y="544.902"
+       id="text704">*</text>
+  </g>
+  <g
+     id="g722">
+    <polyline
+       style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000"
+       points="565.422,241.232 652.158,241.232 652.158,241.334 810,241.334 "
+       id="polyline708" />
+    <polygon
+       style="fill: #000000"
+       points="540.25,241.232 554.25,236.432 568.25,241.232 554.25,246.032 "
+       id="polygon710" />
+    <polygon
+       style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000"
+       points="540.25,241.232 554.25,236.432 568.25,241.232 554.25,246.032 "
+       id="polygon712" />
+    <text
+       font-size="12.7998"
+       style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal"
+       x="654.158"
+       y="237.283"
+       id="text714">contains</text>
+    <polygon
+       style="fill: #000000"
+       points="717.758,237.283 717.758,229.283 725.758,233.283 "
+       id="polygon716" />
+    <text
+       font-size="12.7998"
+       style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal"
+       x="572.25"
+       y="237.232"
+       id="text718">1</text>
+    <text
+       font-size="12.7998"
+       style="fill: #000000;text-anchor:end;font-family:monospace;font-style:normal;font-weight:normal"
+       x="806"
+       y="237.334"
+       id="text720">*</text>
+  </g>
+  <g
+     id="g734">
+    <rect
+       style="fill: #ffffff"
+       x="450"
+       y="241.232"
+       width="90.25"
+       height="58"
+       id="rect724" />
+    <rect
+       style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000"
+       x="450"
+       y="241.232"
+       width="90.25"
+       height="58"
+       id="rect726" />
+    <text
+       font-size="12.8"
+       style="fill: #000000;text-anchor:middle;font-family:monospace;font-style:normal;font-weight:normal"
+       x="495.125"
+       y="256.432"
+       id="text728">&lt;&lt;sioc&gt;&gt;</text>
+    <text
+       font-size="16"
+       style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:oblique;font-weight:700"
+       x="495.125"
+       y="277.232"
+       id="text730">Container</text>
+    <text
+       font-size="11.2"
+       style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal"
+       x="495.125"
+       y="292.432"
+       id="text732">{abstract]</text>
+  </g>
+  <g
+     id="g750">
+    <polyline
+       style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000"
+       points="246.772,241.334 278.75,241.334 278.75,241.232 450,241.232 "
+       id="polyline736" />
+    <polygon
+       style="fill: #000000"
+       points="221.6,241.334 235.6,236.534 249.6,241.334 235.6,246.134 "
+       id="polygon738" />
+    <polygon
+       style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000"
+       points="221.6,241.334 235.6,236.534 249.6,241.334 235.6,246.134 "
+       id="polygon740" />
+    <text
+       font-size="12.7998"
+       style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal"
+       x="280.75"
+       y="237.283"
+       id="text742">sioc:has_container</text>
+    <polygon
+       style="fill: #000000"
+       points="421.35,237.283 421.35,229.283 429.35,233.283 "
+       id="polygon744" />
+    <text
+       font-size="12.7998"
+       style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal"
+       x="253.6"
+       y="237.334"
+       id="text746">1</text>
+    <text
+       font-size="12.7998"
+       style="fill: #000000;text-anchor:end;font-family:monospace;font-style:normal;font-weight:normal"
+       x="446"
+       y="237.232"
+       id="text748">*</text>
+  </g>
+  <g
+     id="g766">
+    <polyline
+       style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000"
+       points="450,324.404 450,343.334 330,343.334 330,270.232 450,270.232 "
+       id="polyline752" />
+    <polygon
+       style="fill: #000000"
+       points="450,299.232 454.8,313.232 450,327.232 445.2,313.232 "
+       id="polygon754" />
+    <polygon
+       style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000"
+       points="450,299.232 454.8,313.232 450,327.232 445.2,313.232 "
+       id="polygon756" />
+    <text
+       font-size="12.7998"
+       style="fill: #000000;text-anchor:middle;font-family:monospace;font-style:normal;font-weight:normal"
+       x="390"
+       y="339.334"
+       id="text758">sioc:parent_of</text>
+    <text
+       font-size="12.7998"
+       style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal"
+       x="461"
+       y="311.232"
+       id="text760">1</text>
+    <text
+       font-size="12.7998"
+       style="fill: #000000;text-anchor:end;font-family:monospace;font-style:normal;font-weight:normal"
+       x="446"
+       y="266.232"
+       id="text762"> sub container</text>
+    <text
+       font-size="12.7998"
+       style="fill: #000000;text-anchor:end;font-family:monospace;font-style:normal;font-weight:normal"
+       x="446"
+       y="282.232"
+       id="text764">*</text>
+  </g>
+  <g
+     id="g776">
+    <rect
+       style="fill: #ffffff"
+       x="809.534"
+       y="879.226"
+       width="92.8"
+       height="44"
+       id="rect768" />
+    <rect
+       style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000"
+       x="809.534"
+       y="879.226"
+       width="92.8"
+       height="44"
+       id="rect770" />
+    <text
+       font-size="12.8"
+       style="fill: #000000;text-anchor:middle;font-family:monospace;font-style:normal;font-weight:normal"
+       x="855.934"
+       y="894.426"
+       id="text772">&lt;&lt;sioct&gt;&gt;</text>
+    <text
+       font-size="16"
+       style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700"
+       x="855.934"
+       y="915.226"
+       id="text774">BoardPost</text>
+  </g>
+  <g
+     id="g786">
+    <rect
+       style="fill: #ffffff"
+       x="429.35"
+       y="879.226"
+       width="126.95"
+       height="44"
+       id="rect778" />
+    <rect
+       style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000"
+       x="429.35"
+       y="879.226"
+       width="126.95"
+       height="44"
+       id="rect780" />
+    <text
+       font-size="12.8"
+       style="fill: #000000;text-anchor:middle;font-family:monospace;font-style:normal;font-weight:normal"
+       x="492.825"
+       y="894.426"
+       id="text782">&lt;&lt;sioct&gt;&gt;</text>
+    <text
+       font-size="16"
+       style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700"
+       x="492.825"
+       y="915.226"
+       id="text784">MessageBoard</text>
+  </g>
+  <g
+     id="g802">
+    <polyline
+       style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000"
+       points="582.466,901.226 690,901.226 690,901.226 809.534,901.226 "
+       id="polyline788" />
+    <polygon
+       style="fill: #000000"
+       points="557.294,901.226 571.294,896.426 585.294,901.226 571.294,906.026 "
+       id="polygon790" />
+    <polygon
+       style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000"
+       points="557.294,901.226 571.294,896.426 585.294,901.226 571.294,906.026 "
+       id="polygon792" />
+    <text
+       font-size="12.7998"
+       style="fill: #000000;text-anchor:middle;font-family:monospace;font-style:normal;font-weight:normal"
+       x="690"
+       y="897.226"
+       id="text794">sioc:container_of</text>
+    <polygon
+       style="fill: #000000"
+       points="757.45,897.226 757.45,889.226 765.45,893.226 "
+       id="polygon796" />
+    <text
+       font-size="12.7998"
+       style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal"
+       x="589.294"
+       y="897.226"
+       id="text798">1</text>
+    <text
+       font-size="12.7998"
+       style="fill: #000000;text-anchor:end;font-family:monospace;font-style:normal;font-weight:normal"
+       x="805.534"
+       y="897.226"
+       id="text800">*</text>
+  </g>
+  <g
+     id="g810">
+    <polyline
+       style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000"
+       points="495.126,317.468 495.126,780 410,780 410,1140 494.38,1140 494.38,1160 "
+       id="polyline804" />
+    <polygon
+       style="fill: #ffffff"
+       points="503.126,317.468 495.126,301.468 487.126,317.468 "
+       id="polygon806" />
+    <polygon
+       style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000"
+       points="503.126,317.468 495.126,301.468 487.126,317.468 "
+       id="polygon808" />
+  </g>
+  <g
+     id="g818">
+    <polyline
+       style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000"
+       points="495.126,317.468 495.126,780 410,780 410,1020 492.4,1020 492.4,1038.23 "
+       id="polyline812" />
+    <polygon
+       style="fill: #ffffff"
+       points="503.126,317.468 495.126,301.468 487.126,317.468 "
+       id="polygon814" />
+    <polygon
+       style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000"
+       points="503.126,317.468 495.126,301.468 487.126,317.468 "
+       id="polygon816" />
+  </g>
+  <g
+     id="g826">
+    <polyline
+       style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000"
+       points="495.126,317.468 495.126,780 410,780 410,940 494.026,940 494.026,959.226 "
+       id="polyline820" />
+    <polygon
+       style="fill: #ffffff"
+       points="503.126,317.468 495.126,301.468 487.126,317.468 "
+       id="polygon822" />
+    <polygon
+       style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000"
+       points="503.126,317.468 495.126,301.468 487.126,317.468 "
+       id="polygon824" />
+  </g>
+  <g
+     id="g834">
+    <polyline
+       style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000"
+       points="495.126,317.468 495.126,780 410,780 410,860 492.826,860 492.826,879.226 "
+       id="polyline828" />
+    <polygon
+       style="fill: #ffffff"
+       points="503.126,317.468 495.126,301.468 487.126,317.468 "
+       id="polygon830" />
+    <polygon
+       style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000"
+       points="503.126,317.468 495.126,301.468 487.126,317.468 "
+       id="polygon832" />
+  </g>
+  <g
+     id="g842">
+    <polyline
+       style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000"
+       points="859.418,592.028 859.418,780 970,780 970,1140 857.49,1140 857.49,1160 "
+       id="polyline836" />
+    <polygon
+       style="fill: #ffffff"
+       points="867.418,592.028 859.418,576.028 851.418,592.028 "
+       id="polygon838" />
+    <polygon
+       style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000"
+       points="867.418,592.028 859.418,576.028 851.418,592.028 "
+       id="polygon840" />
+  </g>
+  <g
+     id="g850">
+    <polyline
+       style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000"
+       points="859.418,592.028 859.418,780 970,780 970,860 855.934,860 855.934,879.226 "
+       id="polyline844" />
+    <polygon
+       style="fill: #ffffff"
+       points="867.418,592.028 859.418,576.028 851.418,592.028 "
+       id="polygon846" />
+    <polygon
+       style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000"
+       points="867.418,592.028 859.418,576.028 851.418,592.028 "
+       id="polygon848" />
+  </g>
+  <g
+     id="g858">
+    <polyline
+       style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000"
+       points="859.418,592.028 859.418,695.84 859.402,695.84 859.402,801.888 "
+       id="polyline852" />
+    <polygon
+       style="fill: #ffffff"
+       points="867.418,592.028 859.418,576.028 851.418,592.028 "
+       id="polygon854" />
+    <polygon
+       style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000"
+       points="867.418,592.028 859.418,576.028 851.418,592.028 "
+       id="polygon856" />
+  </g>
+  <g
+     id="g866">
+    <polyline
+       style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000"
+       points="859.418,592.028 859.418,780 970,780 970,940 857.136,940 857.136,959.226 "
+       id="polyline860" />
+    <polygon
+       style="fill: #ffffff"
+       points="867.418,592.028 859.418,576.028 851.418,592.028 "
+       id="polygon862" />
+    <polygon
+       style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000"
+       points="867.418,592.028 859.418,576.028 851.418,592.028 "
+       id="polygon864" />
+  </g>
+  <g
+     id="g874">
+    <polyline
+       style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000"
+       points="859.418,592.028 859.418,780 970,780 970,1020 855.508,1020 855.508,1039.23 "
+       id="polyline868" />
+    <polygon
+       style="fill: #ffffff"
+       points="867.418,592.028 859.418,576.028 851.418,592.028 "
+       id="polygon870" />
+    <polygon
+       style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000"
+       points="867.418,592.028 859.418,576.028 851.418,592.028 "
+       id="polygon872" />
+  </g>
+  <g
+     id="g890">
+    <polyline
+       style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000"
+       points="559.056,1262 548.884,1262 807.342,1262 808.342,1262 "
+       id="polyline876" />
+    <polygon
+       style="fill: #000000"
+       points="533.884,1262 547.884,1257.2 561.884,1262 547.884,1266.8 "
+       id="polygon878" />
+    <polygon
+       style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000"
+       points="533.884,1262 547.884,1257.2 561.884,1262 547.884,1266.8 "
+       id="polygon880" />
+    <text
+       font-size="12.7998"
+       style="fill: #000000;text-anchor:middle;font-family:monospace;font-style:normal;font-weight:normal"
+       x="678.113"
+       y="1258"
+       id="text882">sioc:container_of</text>
+    <polygon
+       style="fill: #000000"
+       points="745.563,1258 745.563,1250 753.563,1254 "
+       id="polygon884" />
+    <text
+       font-size="12.7998"
+       style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal"
+       x="565.884"
+       y="1258"
+       id="text886">1</text>
+    <text
+       font-size="12.7998"
+       style="fill: #000000;text-anchor:end;font-family:monospace;font-style:normal;font-weight:normal"
+       x="804.342"
+       y="1258"
+       id="text888">*</text>
+  </g>
+  <g
+     id="g904">
+    <polygon
+       style="fill: #ffffff"
+       points="1590,1360 1765.4,1360 1777.4,1372 1777.4,1410 1590,1410 "
+       id="polygon892" />
+    <polygon
+       style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000"
+       points="1590,1360 1765.4,1360 1777.4,1372 1777.4,1410 1590,1410 "
+       id="polygon894" />
+    <polyline
+       style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000"
+       points="1765.4,1360 1765.4,1372 1777.4,1372 "
+       id="polyline896" />
+    <text
+       font-size="12.8"
+       style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal"
+       x="1597"
+       y="1383.65"
+       id="text902"><tspan
+         x="1597"
+         y="1383.65"
+         id="tspan898">Concepts from existing</tspan><tspan
+         x="1597"
+         y="1399.65"
+         id="tspan900">ontologies</tspan></text>
+  </g>
+  <g
+     id="g918">
+    <polygon
+       style="fill: #d8d8d8"
+       points="1370,1360 1537.7,1360 1549.7,1372 1549.7,1410 1370,1410 "
+       id="polygon906" />
+    <polygon
+       style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000"
+       points="1370,1360 1537.7,1360 1549.7,1372 1549.7,1410 1370,1410 "
+       id="polygon908" />
+    <polyline
+       style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000"
+       points="1537.7,1360 1537.7,1372 1549.7,1372 "
+       id="polyline910" />
+    <text
+       font-size="12.8"
+       style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal"
+       x="1377"
+       y="1383.65"
+       id="text916"><tspan
+         x="1377"
+         y="1383.65"
+         id="tspan912">Concepts from SocDOnt</tspan><tspan
+         x="1377"
+         y="1399.65"
+         id="tspan914" /></text>
+  </g>
+  <g
+     id="g924">
+    <rect
+       style="fill: #d8d8d8"
+       x="50"
+       y="59.9996"
+       width="260"
+       height="39.8089"
+       id="rect920" />
+    <rect
+       style="fill: none; fill-opacity:0; stroke-width: 2; stroke-dasharray: 6; stroke: #858282"
+       x="50"
+       y="59.9996"
+       width="260"
+       height="39.8089"
+       id="rect922" />
+  </g>
+  <text
+     font-size="20.32"
+     style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal"
+     x="180"
+     y="87.954"
+     id="text928"><tspan
+       x="180"
+       y="87.954"
+       id="tspan926">High-Level Concepts</tspan></text>
+  <g
+     id="g934">
+    <rect
+       style="fill: #d8d8d8"
+       x="50"
+       y="720"
+       width="232.786"
+       height="39.8089"
+       id="rect930" />
+    <rect
+       style="fill: none; fill-opacity:0; stroke-width: 2; stroke-dasharray: 6; stroke: #858282"
+       x="50"
+       y="720"
+       width="232.786"
+       height="39.8089"
+       id="rect932" />
+  </g>
+  <text
+     font-size="20.32"
+     style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal"
+     x="166.393"
+     y="747.954"
+     id="text938"><tspan
+       x="166.393"
+       y="747.954"
+       id="tspan936">Concrete Classes</tspan></text>
+  <text
+     xml:space="preserve"
+     style="font-style:normal;font-weight:normal;font-size:21.0577px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.526443"
+     x="237.98354"
+     y="1371.0941"
+     id="text3567"><tspan
+       sodipodi:role="line"
+       id="tspan3565"
+       style="stroke-width:0.526443"
+       x="237.98354"
+       y="1371.0941">Williams, S. P., Mosen, J., &amp; Schubert, P. (2020). The Structure of Social Documents in</tspan><tspan
+       sodipodi:role="line"
+       style="stroke-width:0.526443"
+       x="237.98354"
+       y="1397.4163"
+       id="tspan9983"> <tspan
+   style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:sans-serif;-inkscape-font-specification:'sans-serif Italic'"
+   id="tspan16639">53rd Hawaii International Conference on System Sciences</tspan>, 2825–2834</tspan></text>
+</svg>

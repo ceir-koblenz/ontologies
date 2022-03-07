@@ -6,6 +6,7 @@ This repo contains the ontologies developed by the [CEIR - Center for Enterprise
 - [ColActDOnt - Collaborative Actions on Documents Ontology](ColActDOnt/current/ColActDOnt.html)
 - [SocDOnt - Social Document Ontology](SocDOnt/current/SocDOnt.html) 
 
+\
 Shield: [![CC BY 4.0][cc-by-shield]][cc-by]
 
 This work is licensed under a
