@@ -1,0 +1,1586 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="https://w3id.org/SocDOnt"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="https://w3id.org/SocDOnt"
+     versionIRI="https://w3id.org/SocDOnt/1.0">
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
+        <Literal>Susan Williams, Julian Mosen, Petra Schubert</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/date"/>
+        <Literal>01/2020</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/description"/>
+        <Literal xml:lang="en">The Social Document Ontology (SocDOnt) expresses the generic structure of social documents. At the micro-level a social document is defined as a composition of an intellectual entity enhanced by both intellectual and simple components and at the macro-level a collection is defined as an aggregation of social documents.</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/publisher"/>
+        <Literal>https://ceir.de</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/rights"/>
+        <Literal>https://creativecommons.org/licenses/by/4.0</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/title"/>
+        <Literal xml:lang="en">SocDOnt - Social Document Ontology</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="owl:versionInfo"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">1.0</Literal>
+    </Annotation>
+    <Declaration>
+        <Class IRI="/1.0#Attachment"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/1.0#BlogPost"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/1.0#BoardPost"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/1.0#Collection"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/1.0#Comment"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/1.0#Component"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/1.0#Container"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/1.0#File"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/1.0#FileLibrary"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/1.0#GroupWorkspace"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/1.0#IntellectualComponent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/1.0#IntellectualEntity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/1.0#Item"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/1.0#Like"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/1.0#MessageBoard"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/1.0#MicroBlog"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/1.0#MicroblogPost"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/1.0#OrganisationalPlatform"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/1.0#SimpleComponent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/1.0#SocialDocument"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/1.0#Space"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/1.0#Tag"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/1.0#Task"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/1.0#TaskContainer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/1.0#UserWorkspace"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/1.0#Weblog"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/1.0#Wiki"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/1.0#WikiArticle"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/1.0#attachment_has_comment"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/1.0#blogPost_contained_in_weblog"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/1.0#boardPost_contained_in_messageBoard"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/1.0#collection_contains_socialDocument"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/1.0#collection_has_child"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/1.0#collection_has_parent"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/1.0#comment_contains_attachment"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/1.0#comment_has_child"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/1.0#comment_has_parent"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/1.0#comment_of_attachment"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/1.0#component_of_intellectualEntity"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/1.0#container_contained_in_space"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/1.0#container_contains_socialDocument"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/1.0#container_has_child"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/1.0#container_has_parent"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/1.0#file_contained_in_folder"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/1.0#folder_contains_file"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/1.0#intellectualComponent_has_previousVersion"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/1.0#intellectualComponent_has_recentVersion"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/1.0#intellectualComponent_has_simpleComponent"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/1.0#intellectualEntity_has_component"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/1.0#intellectualEntity_has_previousVersion"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/1.0#intellectualEntity_has_recentVersion"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/1.0#item_contained_in_socialDocument"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/1.0#messageBoard_contains_boardPost"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/1.0#microblogPost_contained_in_microblog"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/1.0#microblog_contains_microblogPost"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/1.0#simpleComponent_of_intellectualComponent"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/1.0#socialDocument_contained_in_collection"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/1.0#socialDocument_contained_in_container"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/1.0#socialDocument_contains_item"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/1.0#space_contains_container"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/1.0#taskContainer_contains_task"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/1.0#task_contained_in_taskContainer"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/1.0#task_has_child"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/1.0#task_has_parent"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/1.0#weblog_contains_blogPost"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/1.0#wikiArticle_contained_in_wiki"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/1.0#wikiArticle_has_child"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/1.0#wikiArticle_has_parent"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/1.0#wiki_contains_wikiArticle"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/1.0/attachment_contained_in_comment"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/1.0#content"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/1.0#contributors"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/1.0#created"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/1.0#creator"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/1.0#id"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/1.0#label"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/1.0#last_update"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/1.0#mentionees"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/1.0#title"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/1.0#views"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/date"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/description"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/publisher"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/rights"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/title"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="owl:imports"/>
+    </Declaration>
+    <Declaration>
+        <Datatype abbreviatedIRI="xsd:object"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="/1.0#Attachment"/>
+        <Class IRI="/1.0#IntellectualComponent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/1.0#Attachment"/>
+        <ObjectMaxCardinality cardinality="1">
+            <ObjectProperty IRI="/1.0/attachment_contained_in_comment"/>
+            <Class IRI="/1.0#Comment"/>
+        </ObjectMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/1.0#BlogPost"/>
+        <Class IRI="/1.0#IntellectualEntity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/1.0#BlogPost"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="/1.0#blogPost_contained_in_weblog"/>
+            <Class IRI="/1.0#Weblog"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/1.0#BoardPost"/>
+        <Class IRI="/1.0#IntellectualEntity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/1.0#BoardPost"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="/1.0#boardPost_contained_in_messageBoard"/>
+            <Class IRI="/1.0#MessageBoard"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/1.0#Collection"/>
+        <ObjectMinCardinality cardinality="2">
+            <ObjectProperty IRI="/1.0#collection_contains_socialDocument"/>
+            <Class IRI="/1.0#SocialDocument"/>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/1.0#Collection"/>
+        <ObjectMaxCardinality cardinality="1">
+            <ObjectProperty IRI="/1.0#collection_has_parent"/>
+            <Class IRI="/1.0#Collection"/>
+        </ObjectMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/1.0#Comment"/>
+        <Class IRI="/1.0#IntellectualComponent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/1.0#Comment"/>
+        <ObjectMaxCardinality cardinality="1">
+            <ObjectProperty IRI="/1.0#comment_has_parent"/>
+            <Class IRI="/1.0#Comment"/>
+        </ObjectMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/1.0#Comment"/>
+        <ObjectMaxCardinality cardinality="1">
+            <ObjectProperty IRI="/1.0#comment_of_attachment"/>
+            <Class IRI="/1.0#Attachment"/>
+        </ObjectMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/1.0#Component"/>
+        <Class IRI="/1.0#Item"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/1.0#Component"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="/1.0#component_of_intellectualEntity"/>
+            <Class IRI="/1.0#IntellectualEntity"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/1.0#Container"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="/1.0#container_contained_in_space"/>
+            <Class IRI="/1.0#Space"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/1.0#Container"/>
+        <ObjectMaxCardinality cardinality="1">
+            <ObjectProperty IRI="/1.0#container_has_parent"/>
+            <Class IRI="/1.0#Container"/>
+        </ObjectMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/1.0#File"/>
+        <Class IRI="/1.0#IntellectualEntity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/1.0#File"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="/1.0#file_contained_in_folder"/>
+            <Class IRI="/1.0#FileLibrary"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/1.0#FileLibrary"/>
+        <Class IRI="/1.0#Container"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/1.0#GroupWorkspace"/>
+        <Class IRI="/1.0#Space"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/1.0#IntellectualComponent"/>
+        <Class IRI="/1.0#Component"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/1.0#IntellectualComponent"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="/1.0#intellectualComponent_has_recentVersion"/>
+            <Class IRI="/1.0#IntellectualComponent"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/1.0#IntellectualEntity"/>
+        <Class IRI="/1.0#Item"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/1.0#IntellectualEntity"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="/1.0#intellectualEntity_has_recentVersion"/>
+            <Class IRI="/1.0#IntellectualEntity"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/1.0#Item"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="/1.0#item_contained_in_socialDocument"/>
+            <Class IRI="/1.0#SocialDocument"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/1.0#Like"/>
+        <Class IRI="/1.0#SimpleComponent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/1.0#MessageBoard"/>
+        <Class IRI="/1.0#Container"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/1.0#MicroBlog"/>
+        <Class IRI="/1.0#Container"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/1.0#MicroblogPost"/>
+        <Class IRI="/1.0#IntellectualEntity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/1.0#MicroblogPost"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="/1.0#microblogPost_contained_in_microblog"/>
+            <Class IRI="/1.0#MicroBlog"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/1.0#OrganisationalPlatform"/>
+        <Class IRI="/1.0#Space"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/1.0#SimpleComponent"/>
+        <Class IRI="/1.0#Component"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/1.0#SimpleComponent"/>
+        <ObjectMaxCardinality cardinality="1">
+            <ObjectProperty IRI="/1.0#simpleComponent_of_intellectualComponent"/>
+            <Class IRI="/1.0#IntellectualComponent"/>
+        </ObjectMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/1.0#SocialDocument"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty IRI="/1.0#socialDocument_contains_item"/>
+            <Class IRI="/1.0#Item"/>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/1.0#SocialDocument"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="/1.0#socialDocument_contained_in_container"/>
+            <Class IRI="/1.0#Container"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/1.0#Tag"/>
+        <Class IRI="/1.0#SimpleComponent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/1.0#Task"/>
+        <Class IRI="/1.0#IntellectualEntity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/1.0#Task"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="/1.0#task_contained_in_taskContainer"/>
+            <Class IRI="/1.0#TaskContainer"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/1.0#Task"/>
+        <ObjectMaxCardinality cardinality="1">
+            <ObjectProperty IRI="/1.0#task_has_parent"/>
+            <Class IRI="/1.0#Task"/>
+        </ObjectMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/1.0#TaskContainer"/>
+        <Class IRI="/1.0#Container"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/1.0#UserWorkspace"/>
+        <Class IRI="/1.0#Space"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/1.0#Weblog"/>
+        <Class IRI="/1.0#Container"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/1.0#Wiki"/>
+        <Class IRI="/1.0#Container"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/1.0#WikiArticle"/>
+        <Class IRI="/1.0#IntellectualEntity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/1.0#WikiArticle"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="/1.0#wikiArticle_contained_in_wiki"/>
+            <Class IRI="/1.0#Wiki"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/1.0#WikiArticle"/>
+        <ObjectMaxCardinality cardinality="1">
+            <ObjectProperty IRI="/1.0#wikiArticle_has_parent"/>
+            <Class IRI="/1.0#WikiArticle"/>
+        </ObjectMaxCardinality>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="/1.0#Attachment"/>
+        <Class IRI="/1.0#Comment"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/1.0#BlogPost"/>
+        <Class IRI="/1.0#BoardPost"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/1.0#BlogPost"/>
+        <Class IRI="/1.0#File"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/1.0#BlogPost"/>
+        <Class IRI="/1.0#MicroblogPost"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/1.0#BlogPost"/>
+        <Class IRI="/1.0#Task"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/1.0#BlogPost"/>
+        <Class IRI="/1.0#WikiArticle"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/1.0#BoardPost"/>
+        <Class IRI="/1.0#File"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/1.0#BoardPost"/>
+        <Class IRI="/1.0#MicroblogPost"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/1.0#BoardPost"/>
+        <Class IRI="/1.0#Task"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/1.0#BoardPost"/>
+        <Class IRI="/1.0#WikiArticle"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/1.0#Collection"/>
+        <Class IRI="/1.0#Container"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/1.0#Collection"/>
+        <Class IRI="/1.0#Item"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/1.0#Collection"/>
+        <Class IRI="/1.0#SocialDocument"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/1.0#Collection"/>
+        <Class IRI="/1.0#Space"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/1.0#Component"/>
+        <Class IRI="/1.0#IntellectualEntity"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/1.0#Container"/>
+        <Class IRI="/1.0#Item"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/1.0#Container"/>
+        <Class IRI="/1.0#SocialDocument"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/1.0#Container"/>
+        <Class IRI="/1.0#Space"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/1.0#File"/>
+        <Class IRI="/1.0#MicroblogPost"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/1.0#File"/>
+        <Class IRI="/1.0#Task"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/1.0#File"/>
+        <Class IRI="/1.0#WikiArticle"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/1.0#FileLibrary"/>
+        <Class IRI="/1.0#MessageBoard"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/1.0#FileLibrary"/>
+        <Class IRI="/1.0#MicroBlog"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/1.0#FileLibrary"/>
+        <Class IRI="/1.0#TaskContainer"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/1.0#FileLibrary"/>
+        <Class IRI="/1.0#Weblog"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/1.0#FileLibrary"/>
+        <Class IRI="/1.0#Wiki"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/1.0#GroupWorkspace"/>
+        <Class IRI="/1.0#OrganisationalPlatform"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/1.0#GroupWorkspace"/>
+        <Class IRI="/1.0#UserWorkspace"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/1.0#IntellectualComponent"/>
+        <Class IRI="/1.0#SimpleComponent"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/1.0#Item"/>
+        <Class IRI="/1.0#SocialDocument"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/1.0#Item"/>
+        <Class IRI="/1.0#Space"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/1.0#Like"/>
+        <Class IRI="/1.0#Tag"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/1.0#MessageBoard"/>
+        <Class IRI="/1.0#MicroBlog"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/1.0#MessageBoard"/>
+        <Class IRI="/1.0#TaskContainer"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/1.0#MessageBoard"/>
+        <Class IRI="/1.0#Weblog"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/1.0#MessageBoard"/>
+        <Class IRI="/1.0#Wiki"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/1.0#MicroBlog"/>
+        <Class IRI="/1.0#TaskContainer"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/1.0#MicroBlog"/>
+        <Class IRI="/1.0#Weblog"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/1.0#MicroBlog"/>
+        <Class IRI="/1.0#Wiki"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/1.0#MicroblogPost"/>
+        <Class IRI="/1.0#Task"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/1.0#MicroblogPost"/>
+        <Class IRI="/1.0#WikiArticle"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/1.0#OrganisationalPlatform"/>
+        <Class IRI="/1.0#UserWorkspace"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/1.0#SocialDocument"/>
+        <Class IRI="/1.0#Space"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/1.0#Task"/>
+        <Class IRI="/1.0#WikiArticle"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/1.0#TaskContainer"/>
+        <Class IRI="/1.0#Weblog"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/1.0#TaskContainer"/>
+        <Class IRI="/1.0#Wiki"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/1.0#Weblog"/>
+        <Class IRI="/1.0#Wiki"/>
+    </DisjointClasses>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="/1.0#attachment_has_comment"/>
+        <ObjectProperty IRI="/1.0#comment_of_attachment"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="/1.0#blogPost_contained_in_weblog"/>
+        <ObjectProperty IRI="/1.0#weblog_contains_blogPost"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="/1.0#boardPost_contained_in_messageBoard"/>
+        <ObjectProperty IRI="/1.0#messageBoard_contains_boardPost"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="/1.0#collection_contains_socialDocument"/>
+        <ObjectProperty IRI="/1.0#socialDocument_contained_in_collection"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="/1.0#collection_has_child"/>
+        <ObjectProperty IRI="/1.0#collection_has_parent"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="/1.0#comment_contains_attachment"/>
+        <ObjectProperty IRI="/1.0/attachment_contained_in_comment"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="/1.0#comment_has_child"/>
+        <ObjectProperty IRI="/1.0#comment_has_parent"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="/1.0#component_of_intellectualEntity"/>
+        <ObjectProperty IRI="/1.0#intellectualEntity_has_component"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="/1.0#container_contained_in_space"/>
+        <ObjectProperty IRI="/1.0#space_contains_container"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="/1.0#container_contains_socialDocument"/>
+        <ObjectProperty IRI="/1.0#socialDocument_contained_in_container"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="/1.0#container_has_child"/>
+        <ObjectProperty IRI="/1.0#container_has_parent"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="/1.0#file_contained_in_folder"/>
+        <ObjectProperty IRI="/1.0#folder_contains_file"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="/1.0#intellectualComponent_has_previousVersion"/>
+        <ObjectProperty IRI="/1.0#intellectualComponent_has_recentVersion"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="/1.0#intellectualComponent_has_simpleComponent"/>
+        <ObjectProperty IRI="/1.0#simpleComponent_of_intellectualComponent"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="/1.0#intellectualEntity_has_previousVersion"/>
+        <ObjectProperty IRI="/1.0#intellectualEntity_has_recentVersion"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="/1.0#item_contained_in_socialDocument"/>
+        <ObjectProperty IRI="/1.0#socialDocument_contains_item"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="/1.0#microblogPost_contained_in_microblog"/>
+        <ObjectProperty IRI="/1.0#microblog_contains_microblogPost"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="/1.0#taskContainer_contains_task"/>
+        <ObjectProperty IRI="/1.0#task_contained_in_taskContainer"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="/1.0#task_has_child"/>
+        <ObjectProperty IRI="/1.0#task_has_parent"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="/1.0#wikiArticle_contained_in_wiki"/>
+        <ObjectProperty IRI="/1.0#wiki_contains_wikiArticle"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="/1.0#wikiArticle_has_child"/>
+        <ObjectProperty IRI="/1.0#wikiArticle_has_parent"/>
+    </InverseObjectProperties>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="/1.0#collection_has_parent"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="/1.0#comment_has_parent"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="/1.0#container_has_parent"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="/1.0#task_has_parent"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="/1.0#wikiArticle_has_parent"/>
+    </FunctionalObjectProperty>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/1.0#attachment_has_comment"/>
+        <Class IRI="/1.0#Attachment"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/1.0#blogPost_contained_in_weblog"/>
+        <Class IRI="/1.0#BlogPost"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/1.0#boardPost_contained_in_messageBoard"/>
+        <Class IRI="/1.0#BoardPost"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/1.0#collection_contains_socialDocument"/>
+        <Class IRI="/1.0#Collection"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/1.0#collection_has_child"/>
+        <Class IRI="/1.0#Collection"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/1.0#collection_has_parent"/>
+        <Class IRI="/1.0#Collection"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/1.0#comment_contains_attachment"/>
+        <Class IRI="/1.0#Comment"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/1.0#comment_has_child"/>
+        <Class IRI="/1.0#Comment"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/1.0#comment_has_parent"/>
+        <Class IRI="/1.0#Comment"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/1.0#comment_of_attachment"/>
+        <Class IRI="/1.0#Comment"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/1.0#component_of_intellectualEntity"/>
+        <Class IRI="/1.0#Component"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/1.0#container_contained_in_space"/>
+        <Class IRI="/1.0#Container"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/1.0#container_contains_socialDocument"/>
+        <Class IRI="/1.0#Container"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/1.0#container_has_child"/>
+        <Class IRI="/1.0#Container"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/1.0#container_has_parent"/>
+        <Class IRI="/1.0#Container"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/1.0#file_contained_in_folder"/>
+        <Class IRI="/1.0#File"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/1.0#folder_contains_file"/>
+        <Class IRI="/1.0#FileLibrary"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/1.0#intellectualComponent_has_previousVersion"/>
+        <Class IRI="/1.0#IntellectualComponent"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/1.0#intellectualComponent_has_recentVersion"/>
+        <Class IRI="/1.0#IntellectualComponent"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/1.0#intellectualComponent_has_simpleComponent"/>
+        <Class IRI="/1.0#IntellectualComponent"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/1.0#intellectualEntity_has_component"/>
+        <Class IRI="/1.0#IntellectualEntity"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/1.0#intellectualEntity_has_previousVersion"/>
+        <Class IRI="/1.0#IntellectualEntity"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/1.0#intellectualEntity_has_recentVersion"/>
+        <Class IRI="/1.0#IntellectualEntity"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/1.0#item_contained_in_socialDocument"/>
+        <Class IRI="/1.0#Item"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/1.0#messageBoard_contains_boardPost"/>
+        <Class IRI="/1.0#MessageBoard"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/1.0#microblogPost_contained_in_microblog"/>
+        <Class IRI="/1.0#MicroblogPost"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/1.0#microblog_contains_microblogPost"/>
+        <Class IRI="/1.0#MicroBlog"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/1.0#simpleComponent_of_intellectualComponent"/>
+        <Class IRI="/1.0#SimpleComponent"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/1.0#socialDocument_contained_in_collection"/>
+        <Class IRI="/1.0#SocialDocument"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/1.0#socialDocument_contained_in_container"/>
+        <Class IRI="/1.0#SocialDocument"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/1.0#socialDocument_contains_item"/>
+        <Class IRI="/1.0#SocialDocument"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/1.0#space_contains_container"/>
+        <Class IRI="/1.0#Space"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/1.0#taskContainer_contains_task"/>
+        <Class IRI="/1.0#TaskContainer"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/1.0#task_contained_in_taskContainer"/>
+        <Class IRI="/1.0#Task"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/1.0#task_has_child"/>
+        <Class IRI="/1.0#Task"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/1.0#task_has_parent"/>
+        <Class IRI="/1.0#Task"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/1.0#weblog_contains_blogPost"/>
+        <Class IRI="/1.0#Weblog"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/1.0#wikiArticle_contained_in_wiki"/>
+        <Class IRI="/1.0#WikiArticle"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/1.0#wikiArticle_has_child"/>
+        <Class IRI="/1.0#WikiArticle"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/1.0#wikiArticle_has_parent"/>
+        <Class IRI="/1.0#WikiArticle"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/1.0#wiki_contains_wikiArticle"/>
+        <Class IRI="/1.0#Wiki"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/1.0/attachment_contained_in_comment"/>
+        <Class IRI="/1.0#Attachment"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/1.0#attachment_has_comment"/>
+        <Class IRI="/1.0#Comment"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/1.0#blogPost_contained_in_weblog"/>
+        <Class IRI="/1.0#Weblog"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/1.0#boardPost_contained_in_messageBoard"/>
+        <Class IRI="/1.0#MessageBoard"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/1.0#collection_contains_socialDocument"/>
+        <Class IRI="/1.0#SocialDocument"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/1.0#collection_has_child"/>
+        <Class IRI="/1.0#Collection"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/1.0#collection_has_parent"/>
+        <Class IRI="/1.0#Collection"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/1.0#comment_contains_attachment"/>
+        <Class IRI="/1.0#Attachment"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/1.0#comment_has_child"/>
+        <Class IRI="/1.0#Comment"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/1.0#comment_has_parent"/>
+        <Class IRI="/1.0#Comment"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/1.0#comment_of_attachment"/>
+        <Class IRI="/1.0#Attachment"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/1.0#component_of_intellectualEntity"/>
+        <Class IRI="/1.0#IntellectualEntity"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/1.0#container_contained_in_space"/>
+        <Class IRI="/1.0#Space"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/1.0#container_contains_socialDocument"/>
+        <Class IRI="/1.0#SocialDocument"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/1.0#container_has_child"/>
+        <Class IRI="/1.0#Container"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/1.0#container_has_parent"/>
+        <Class IRI="/1.0#Container"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/1.0#file_contained_in_folder"/>
+        <Class IRI="/1.0#FileLibrary"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/1.0#folder_contains_file"/>
+        <Class IRI="/1.0#File"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/1.0#intellectualComponent_has_previousVersion"/>
+        <Class IRI="/1.0#IntellectualComponent"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/1.0#intellectualComponent_has_recentVersion"/>
+        <Class IRI="/1.0#IntellectualComponent"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/1.0#intellectualComponent_has_simpleComponent"/>
+        <Class IRI="/1.0#SimpleComponent"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/1.0#intellectualEntity_has_component"/>
+        <Class IRI="/1.0#Component"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/1.0#intellectualEntity_has_previousVersion"/>
+        <Class IRI="/1.0#IntellectualEntity"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/1.0#intellectualEntity_has_recentVersion"/>
+        <Class IRI="/1.0#IntellectualEntity"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/1.0#item_contained_in_socialDocument"/>
+        <Class IRI="/1.0#SocialDocument"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/1.0#messageBoard_contains_boardPost"/>
+        <Class IRI="/1.0#BoardPost"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/1.0#microblogPost_contained_in_microblog"/>
+        <Class IRI="/1.0#MicroBlog"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/1.0#microblog_contains_microblogPost"/>
+        <Class IRI="/1.0#MicroblogPost"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/1.0#simpleComponent_of_intellectualComponent"/>
+        <Class IRI="/1.0#IntellectualComponent"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/1.0#socialDocument_contained_in_collection"/>
+        <Class IRI="/1.0#Collection"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/1.0#socialDocument_contained_in_container"/>
+        <Class IRI="/1.0#Container"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/1.0#socialDocument_contains_item"/>
+        <Class IRI="/1.0#Item"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/1.0#space_contains_container"/>
+        <Class IRI="/1.0#Container"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/1.0#taskContainer_contains_task"/>
+        <Class IRI="/1.0#Task"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/1.0#task_contained_in_taskContainer"/>
+        <Class IRI="/1.0#TaskContainer"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/1.0#task_has_child"/>
+        <Class IRI="/1.0#Task"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/1.0#task_has_parent"/>
+        <Class IRI="/1.0#Task"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/1.0#weblog_contains_blogPost"/>
+        <Class IRI="/1.0#BlogPost"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/1.0#wikiArticle_contained_in_wiki"/>
+        <Class IRI="/1.0#Wiki"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/1.0#wikiArticle_has_child"/>
+        <Class IRI="/1.0#WikiArticle"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/1.0#wikiArticle_has_parent"/>
+        <Class IRI="/1.0#WikiArticle"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/1.0#wiki_contains_wikiArticle"/>
+        <Class IRI="/1.0#WikiArticle"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/1.0/attachment_contained_in_comment"/>
+        <Class IRI="/1.0#Comment"/>
+    </ObjectPropertyRange>
+    <FunctionalDataProperty>
+        <DataProperty IRI="/1.0#content"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="/1.0#created"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="/1.0#id"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="/1.0#label"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="/1.0#last_update"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="/1.0#title"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="/1.0#views"/>
+    </FunctionalDataProperty>
+    <DataPropertyDomain>
+        <DataProperty IRI="/1.0#content"/>
+        <Class IRI="/1.0#IntellectualComponent"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/1.0#content"/>
+        <Class IRI="/1.0#IntellectualEntity"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/1.0#contributors"/>
+        <Class IRI="/1.0#IntellectualComponent"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/1.0#contributors"/>
+        <Class IRI="/1.0#IntellectualEntity"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/1.0#created"/>
+        <Class IRI="/1.0#Item"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/1.0#creator"/>
+        <Class IRI="/1.0#Item"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/1.0#id"/>
+        <Class IRI="/1.0#Item"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/1.0#label"/>
+        <Class IRI="/1.0#Tag"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/1.0#last_update"/>
+        <Class IRI="/1.0#IntellectualComponent"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/1.0#last_update"/>
+        <Class IRI="/1.0#IntellectualEntity"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/1.0#mentionees"/>
+        <Class IRI="/1.0#IntellectualComponent"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/1.0#mentionees"/>
+        <Class IRI="/1.0#IntellectualEntity"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/1.0#title"/>
+        <Class IRI="/1.0#IntellectualComponent"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/1.0#title"/>
+        <Class IRI="/1.0#IntellectualEntity"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/1.0#views"/>
+        <Class IRI="/1.0#IntellectualComponent"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/1.0#views"/>
+        <Class IRI="/1.0#IntellectualEntity"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="/1.0#content"/>
+        <Datatype abbreviatedIRI="xsd:object"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="/1.0#contributors"/>
+        <Datatype abbreviatedIRI="xsd:object"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="/1.0#created"/>
+        <Datatype abbreviatedIRI="xsd:dateTime"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="/1.0#creator"/>
+        <Datatype abbreviatedIRI="xsd:object"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="/1.0#id"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="/1.0#label"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="/1.0#last_update"/>
+        <Datatype abbreviatedIRI="xsd:dateTime"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="/1.0#mentionees"/>
+        <Datatype abbreviatedIRI="xsd:object"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="/1.0#title"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="/1.0#views"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/1.0#Attachment</IRI>
+        <Literal xml:lang="en">The Attachment is one of the IntellectualComponents and describes an appendage of intellectual content to an IntellectualEntity or to a Comment.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/1.0#Attachment</IRI>
+        <Literal xml:lang="en">Attachment</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/1.0#BlogPost</IRI>
+        <Literal xml:lang="en">BlogPosts belong to the IntellectualEntities and thus describe entries that are posted in blogs.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/1.0#BlogPost</IRI>
+        <Literal xml:lang="en">BlogPost</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/1.0#BoardPost</IRI>
+        <Literal xml:lang="en">BoardPosts belong to the IntellectualEntities and thus describe entries that are made in message boards, also called forums. Responses to BoardPosts are called Comments, since they, as an IntellectualComponents, extend SocialDocuments.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/1.0#BoardPost</IRI>
+        <Literal xml:lang="en">BoardPost</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/1.0#Collection</IRI>
+        <Literal xml:lang="en">A Collection is a set of at least two SocialDocuments, which is used to group SocialDocuments. Collections can be used to represent hierarchical structures through the child and parent relations.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/1.0#Collection</IRI>
+        <Literal xml:lang="en">Collection</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/1.0#Comment</IRI>
+        <Literal xml:lang="en">The Comment entity is an IntellectualComponent that contains intellectual content about Attachments or IntellectualEntities.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/1.0#Comment</IRI>
+        <Literal xml:lang="en">Comment</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/1.0#Component</IRI>
+        <Literal xml:lang="en">The Component entity is an abstract class that is used to assign an IntellectualEntity to each of the subclasses IntellectualComponent and SimpleComponent. Accordingly, this class only supports the &quot;bundling&quot; of the sub-classes.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/1.0#Component</IRI>
+        <Literal xml:lang="en">Component</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/1.0#Container</IRI>
+        <Literal xml:lang="en">The container entity serves as a superclass for the various subordinate classes, which in turn can contain the various forms of IntellectualEntities. With the containers, just as with the Collections, nested structures can be created through the child-parent relations. The concept is always assigned to a Space and contains SocialDocuments whose IntellectualEntities correspond to the same type. Containers can be created automatically by the application or manually by the user.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/1.0#Container</IRI>
+        <Literal xml:lang="en">Container</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/1.0#File</IRI>
+        <Literal xml:lang="en">A file is used to represent files that have been created within or uploaded to a collaboration system. Files that are to be assigned to other IntellectualEntities are excluded.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/1.0#File</IRI>
+        <Literal xml:lang="en">File</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/1.0#FileLibrary</IRI>
+        <Literal xml:lang="en">Folders serve as a parent structure for files.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/1.0#FileLibrary</IRI>
+        <Literal xml:lang="en">Folder</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/1.0#GroupWorkspace</IRI>
+        <Literal xml:lang="en">GroupWorkspaces describe spaces that are accessible to several people. Thus, they are positioned between UserWorkspace and OrganisationalPlatform and enable collaborative work, since they include the respective containers.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/1.0#GroupWorkspace</IRI>
+        <Literal xml:lang="en">GroupWorkspace</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/1.0#IntellectualComponent</IRI>
+        <Literal xml:lang="en">Attachments and Comments are subordinated to the IntellectualComponent entity. These differ from SimpleComponents by their &quot;intellectual content&quot;.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/1.0#IntellectualComponent</IRI>
+        <Literal xml:lang="en">IntellectualComponent</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/1.0#IntellectualEntity</IRI>
+        <Literal xml:lang="en">IntellectualEntities describe the core of a SocialDocument, for example a file or a BlogPost, which can be enriched by Components.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/1.0#IntellectualEntity</IRI>
+        <Literal xml:lang="en">IntellectualEntity</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/1.0#Item</IRI>
+        <Literal xml:lang="en">Through the item entity, all properties that are consistent for the components of a social document are bundled. For this reason, the object properties are of a general nature and yet each represent a single piece of social content. The Item also serves to provide the link to the actual SocialDocument, which consists of at least one IntellectualEntity.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/1.0#Item</IRI>
+        <Literal xml:lang="en">Item</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/1.0#Like</IRI>
+        <Literal xml:lang="en">The entity Like, which is also called &quot;recommendation&quot;, is a SimpleComponent, which can be related to an IntellectualComponent or an IntellectualEntity. Since they have no inherent intellectual content, they, as all SimpleComponents, are not mutually related. Since a like within SocDOnt can only refer to IntellectualEntities, it is not possible to represent the &quot;liking&quot; of a container.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/1.0#Like</IRI>
+        <Literal xml:lang="en">Like</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/1.0#MessageBoard</IRI>
+        <Literal xml:lang="en">MessageBoards are often called &quot;forums&quot; within ECS and contain any number of BoardPosts. This Container type can therefore contain several IntellectualEntities. The contained answers to the original message in the MessageBoard are represented accordingly by Comments.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/1.0#MessageBoard</IRI>
+        <Literal xml:lang="en">MessageBoard</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/1.0#MicroBlog</IRI>
+        <Literal xml:lang="en">The Microblog, like the MessageBoard, is a container. The entity can contain MicroblogPosts, whose responses within the SocDOnt are called Comments.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/1.0#MicroBlog</IRI>
+        <Literal xml:lang="en">MicroBlog</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/1.0#MicroblogPost</IRI>
+        <Literal xml:lang="en">MicroblogPosts are among the IntellectualEntities and are contained in microblogs. As with the other IntellectualEntities, replies are represented in the form of Comments.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/1.0#MicroblogPost</IRI>
+        <Literal xml:lang="en">MicroblogPost</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/1.0#OrganisationalPlatform</IRI>
+        <Literal xml:lang="en">The OrganisationalPlatform entity describes a space that is accessible to all participants of the system.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/1.0#OrganisationalPlatform</IRI>
+        <Literal xml:lang="en">OrganisationalPlatform</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/1.0#SimpleComponent</IRI>
+        <Literal xml:lang="en">SimpleComponents add further data (Likes and Tags) to IntellectualComponents or IntellectualEntities. With the exception of the Tag, these types of Components do not carry any other data properties and thus no intellectual content. Because of their lack of intellectual content, Tags and Likes can never be associated with each other or with any other instance of themselves. This is because tagging a tag, liking a like, or tagging a like makes no sense. While liking a tag would be conceivable, it is a very atypical use case. In some ECS, it is possible to also liken a space or container, but in the context of SocDOnt, the focus is on applying these components to SocialDocuments.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/1.0#SimpleComponent</IRI>
+        <Literal xml:lang="en">SimpleComponent</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/1.0#SocialDocument</IRI>
+        <Literal xml:lang="en">The SocialDocument represents, as the name of the ontology already indicates, a central element of SocDOnt. This &quot;compound document&quot; (Williams, Mosen and Schubert, 2020, p. 3) is composed of IntellectualEntity, IntellectualComponents and SimpleComponents. Only the IntellectualEntity is mandatory. The SocialDocument is assigned to the same container as the corresponding IntellectualEntity. For the SocialDocument, no distinction is made within the SocDOnt as to whether this already originally has &quot;social content&quot; (collaboratively created content) (for example, a WikiArticle edited by two authors) or only becomes such through Components (for example, in the case of a PDF or Word file). Hausmann (2018, p. 210) calls these different forms &quot;born social&quot; and &quot;become social&quot; and refers to Hodge (2000), who first described documents that are created and distributed in electronic form in this way.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/1.0#SocialDocument</IRI>
+        <Literal xml:lang="en">SocialDocument</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/1.0#Space</IRI>
+        <Literal xml:lang="en">The types of Spaces describe the different areas in which social content is created (Williams, Mosen, and Schubert, 2020). The different container types are assigned to the Spaces.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/1.0#Space</IRI>
+        <Literal xml:lang="en">Space</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/1.0#Tag</IRI>
+        <Literal xml:lang="en">Tags belong to SimpleComponents and include a label that identifies the tag. Tags are used to describe IntellectualComponents or IntellectualEntities more detailed.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/1.0#Tag</IRI>
+        <Literal xml:lang="en">Tag</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/1.0#Task</IRI>
+        <Literal xml:lang="en">The Task entity belongs to the IntellectualEntities and describes a task. These tasks can be organized in hierarchical structures, since parent-child relations are given. Subordinate tasks can also be called subtasks, but they follow the same structure as parent tasks.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/1.0#Task</IRI>
+        <Literal xml:lang="en">Task</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/1.0#TaskContainer</IRI>
+        <Literal xml:lang="en">The container type TaskContainer can hold any number of tasks. TaskContainers are unambiguously assigned to a Space.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/1.0#TaskContainer</IRI>
+        <Literal xml:lang="en">TaskContainer</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/1.0#UserWorkspace</IRI>
+        <Literal xml:lang="en">The UserWorkspace serves as a space that is only accessible to a specific user. Thus, this type of space represents the counterpart to an organizational platform, which is accessible to all users.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/1.0#UserWorkspace</IRI>
+        <Literal xml:lang="en">UserWorkspace</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/1.0#Weblog</IRI>
+        <Literal xml:lang="en">Weblogs are regularly referred to as &quot;blogs&quot; within ECS and contain any number of BlogPosts. This container can therefore contain several IntellectualEntities. The contained replies to the original message in the weblog are Comments.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/1.0#Weblog</IRI>
+        <Literal xml:lang="en">Weblog</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/1.0#Wiki</IRI>
+        <Literal xml:lang="en">Wikis serve as containers for WikiArticles and are subordinate to the concept of Spaces. Containers of this type can also hold multiple IntellectualEntities.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/1.0#Wiki</IRI>
+        <Literal xml:lang="en">Wiki</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/1.0#WikiArticle</IRI>
+        <Literal xml:lang="en">WikiArticles correspond to the entries in a wiki. Within a wiki, they are usually represented as a separate &quot;page&quot;. Replies to a WikiArticle are mapped to the Comment entity. Attachments, which are not part of the actual content, are called Attachment.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/1.0#WikiArticle</IRI>
+        <Literal xml:lang="en">WikiArticle</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+

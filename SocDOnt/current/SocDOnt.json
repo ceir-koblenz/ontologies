@@ -1,0 +1,1423 @@
+[ {
+  "@id" : "_:genid1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "https://w3id.org/SocDOnt/1.0#Comment"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/SocDOnt/1.0/attachment_contained_in_comment"
+  } ]
+}, {
+  "@id" : "_:genid10",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "https://w3id.org/SocDOnt/1.0#Container"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/SocDOnt/1.0#container_has_parent"
+  } ]
+}, {
+  "@id" : "_:genid11",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "https://w3id.org/SocDOnt/1.0#FileLibrary"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/SocDOnt/1.0#file_contained_in_folder"
+  } ],
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "_:genid12",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "https://w3id.org/SocDOnt/1.0#IntellectualComponent"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/SocDOnt/1.0#intellectualComponent_has_recentVersion"
+  } ],
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "_:genid13",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "https://w3id.org/SocDOnt/1.0#IntellectualEntity"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/SocDOnt/1.0#intellectualEntity_has_recentVersion"
+  } ],
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "_:genid14",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "https://w3id.org/SocDOnt/1.0#SocialDocument"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/SocDOnt/1.0#item_contained_in_socialDocument"
+  } ],
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "_:genid15",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "https://w3id.org/SocDOnt/1.0#MicroBlog"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/SocDOnt/1.0#microblogPost_contained_in_microblog"
+  } ],
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "_:genid16",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "https://w3id.org/SocDOnt/1.0#IntellectualComponent"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/SocDOnt/1.0#simpleComponent_of_intellectualComponent"
+  } ]
+}, {
+  "@id" : "_:genid17",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#minQualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "https://w3id.org/SocDOnt/1.0#Item"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/SocDOnt/1.0#socialDocument_contains_item"
+  } ]
+}, {
+  "@id" : "_:genid18",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "https://w3id.org/SocDOnt/1.0#Container"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/SocDOnt/1.0#socialDocument_contained_in_container"
+  } ],
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "_:genid19",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "https://w3id.org/SocDOnt/1.0#TaskContainer"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/SocDOnt/1.0#task_contained_in_taskContainer"
+  } ],
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "_:genid2",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "https://w3id.org/SocDOnt/1.0#Weblog"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/SocDOnt/1.0#blogPost_contained_in_weblog"
+  } ],
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "_:genid20",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "https://w3id.org/SocDOnt/1.0#Task"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/SocDOnt/1.0#task_has_parent"
+  } ]
+}, {
+  "@id" : "_:genid21",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "https://w3id.org/SocDOnt/1.0#Wiki"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/SocDOnt/1.0#wikiArticle_contained_in_wiki"
+  } ],
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "_:genid22",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "https://w3id.org/SocDOnt/1.0#WikiArticle"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/SocDOnt/1.0#wikiArticle_has_parent"
+  } ]
+}, {
+  "@id" : "_:genid3",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "https://w3id.org/SocDOnt/1.0#MessageBoard"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/SocDOnt/1.0#boardPost_contained_in_messageBoard"
+  } ],
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "_:genid4",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#minQualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "2"
+  } ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "https://w3id.org/SocDOnt/1.0#SocialDocument"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/SocDOnt/1.0#collection_contains_socialDocument"
+  } ]
+}, {
+  "@id" : "_:genid5",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "https://w3id.org/SocDOnt/1.0#Collection"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/SocDOnt/1.0#collection_has_parent"
+  } ]
+}, {
+  "@id" : "_:genid6",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "https://w3id.org/SocDOnt/1.0#Comment"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/SocDOnt/1.0#comment_has_parent"
+  } ]
+}, {
+  "@id" : "_:genid7",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "https://w3id.org/SocDOnt/1.0#Attachment"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/SocDOnt/1.0#comment_of_attachment"
+  } ]
+}, {
+  "@id" : "_:genid8",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "https://w3id.org/SocDOnt/1.0#IntellectualEntity"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/SocDOnt/1.0#component_of_intellectualEntity"
+  } ],
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "_:genid9",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "https://w3id.org/SocDOnt/1.0#Space"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/SocDOnt/1.0#container_contained_in_space"
+  } ],
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "http://purl.org/dc/elements/1.1/creator",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/elements/1.1/date",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/elements/1.1/description",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/elements/1.1/publisher",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/elements/1.1/rights",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/elements/1.1/title",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/2001/XMLSchema#object",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ]
+}, {
+  "@id" : "http://www.w3.org/2002/07/owl#imports",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://w3id.org/SocDOnt",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
+  "http://purl.org/dc/elements/1.1/creator" : [ {
+    "@value" : "Susan Williams, Julian Mosen, Petra Schubert"
+  } ],
+  "http://purl.org/dc/elements/1.1/date" : [ {
+    "@value" : "01/2020"
+  } ],
+  "http://purl.org/dc/elements/1.1/description" : [ {
+    "@language" : "en",
+    "@value" : "The Social Document Ontology (SocDOnt) expresses the generic structure of social documents. At the micro-level a social document is defined as a composition of an intellectual entity enhanced by both intellectual and simple components and at the macro-level a collection is defined as an aggregation of social documents."
+  } ],
+  "http://purl.org/dc/elements/1.1/publisher" : [ {
+    "@value" : "https://ceir.de"
+  } ],
+  "http://purl.org/dc/elements/1.1/rights" : [ {
+    "@value" : "https://creativecommons.org/licenses/by/4.0"
+  } ],
+  "http://purl.org/dc/elements/1.1/title" : [ {
+    "@language" : "en",
+    "@value" : "SocDOnt - Social Document Ontology"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionIRI" : [ {
+    "@id" : "https://w3id.org/SocDOnt/1.0"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "1.0"
+  } ]
+}, {
+  "@id" : "https://w3id.org/SocDOnt/1.0#Attachment",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The Attachment is one of the IntellectualComponents and describes an appendage of intellectual content to an IntellectualEntity or to a Comment."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Attachment"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/SocDOnt/1.0#IntellectualComponent"
+  }, {
+    "@id" : "_:genid1"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "https://w3id.org/SocDOnt/1.0#Comment"
+  } ]
+}, {
+  "@id" : "https://w3id.org/SocDOnt/1.0#BlogPost",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "BlogPosts belong to the IntellectualEntities and thus describe entries that are posted in blogs."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "BlogPost"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/SocDOnt/1.0#IntellectualEntity"
+  }, {
+    "@id" : "_:genid2"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "https://w3id.org/SocDOnt/1.0#BoardPost"
+  }, {
+    "@id" : "https://w3id.org/SocDOnt/1.0#File"
+  }, {
+    "@id" : "https://w3id.org/SocDOnt/1.0#MicroblogPost"
+  }, {
+    "@id" : "https://w3id.org/SocDOnt/1.0#Task"
+  }, {
+    "@id" : "https://w3id.org/SocDOnt/1.0#WikiArticle"
+  } ]
+}, {
+  "@id" : "https://w3id.org/SocDOnt/1.0#BoardPost",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "BoardPosts belong to the IntellectualEntities and thus describe entries that are made in message boards, also called forums. Responses to BoardPosts are called Comments, since they, as an IntellectualComponents, extend SocialDocuments."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "BoardPost"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/SocDOnt/1.0#IntellectualEntity"
+  }, {
+    "@id" : "_:genid3"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "https://w3id.org/SocDOnt/1.0#File"
+  }, {
+    "@id" : "https://w3id.org/SocDOnt/1.0#MicroblogPost"
+  }, {
+    "@id" : "https://w3id.org/SocDOnt/1.0#Task"
+  }, {
+    "@id" : "https://w3id.org/SocDOnt/1.0#WikiArticle"
+  } ]
+}, {
+  "@id" : "https://w3id.org/SocDOnt/1.0#Collection",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A Collection is a set of at least two SocialDocuments, which is used to group SocialDocuments. Collections can be used to represent hierarchical structures through the child and parent relations."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Collection"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "_:genid4"
+  }, {
+    "@id" : "_:genid5"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "https://w3id.org/SocDOnt/1.0#Container"
+  }, {
+    "@id" : "https://w3id.org/SocDOnt/1.0#Item"
+  }, {
+    "@id" : "https://w3id.org/SocDOnt/1.0#SocialDocument"
+  }, {
+    "@id" : "https://w3id.org/SocDOnt/1.0#Space"
+  } ]
+}, {
+  "@id" : "https://w3id.org/SocDOnt/1.0#Comment",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The Comment entity is an IntellectualComponent that contains intellectual content about Attachments or IntellectualEntities."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Comment"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/SocDOnt/1.0#IntellectualComponent"
+  }, {
+    "@id" : "_:genid6"
+  }, {
+    "@id" : "_:genid7"
+  } ]
+}, {
+  "@id" : "https://w3id.org/SocDOnt/1.0#Component",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The Component entity is an abstract class that is used to assign an IntellectualEntity to each of the subclasses IntellectualComponent and SimpleComponent. Accordingly, this class only supports the \"bundling\" of the sub-classes."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Component"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/SocDOnt/1.0#Item"
+  }, {
+    "@id" : "_:genid8"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "https://w3id.org/SocDOnt/1.0#IntellectualEntity"
+  } ]
+}, {
+  "@id" : "https://w3id.org/SocDOnt/1.0#Container",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The container entity serves as a superclass for the various subordinate classes, which in turn can contain the various forms of IntellectualEntities. With the containers, just as with the Collections, nested structures can be created through the child-parent relations. The concept is always assigned to a Space and contains SocialDocuments whose IntellectualEntities correspond to the same type. Containers can be created automatically by the application or manually by the user."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Container"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "_:genid9"
+  }, {
+    "@id" : "_:genid10"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "https://w3id.org/SocDOnt/1.0#Item"
+  }, {
+    "@id" : "https://w3id.org/SocDOnt/1.0#SocialDocument"
+  }, {
+    "@id" : "https://w3id.org/SocDOnt/1.0#Space"
+  } ]
+}, {
+  "@id" : "https://w3id.org/SocDOnt/1.0#File",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A file is used to represent files that have been created within or uploaded to a collaboration system. Files that are to be assigned to other IntellectualEntities are excluded."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "File"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/SocDOnt/1.0#IntellectualEntity"
+  }, {
+    "@id" : "_:genid11"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "https://w3id.org/SocDOnt/1.0#MicroblogPost"
+  }, {
+    "@id" : "https://w3id.org/SocDOnt/1.0#Task"
+  }, {
+    "@id" : "https://w3id.org/SocDOnt/1.0#WikiArticle"
+  } ]
+}, {
+  "@id" : "https://w3id.org/SocDOnt/1.0#FileLibrary",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Folders serve as a parent structure for files."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Folder"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/SocDOnt/1.0#Container"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "https://w3id.org/SocDOnt/1.0#MessageBoard"
+  }, {
+    "@id" : "https://w3id.org/SocDOnt/1.0#MicroBlog"
+  }, {
+    "@id" : "https://w3id.org/SocDOnt/1.0#TaskContainer"
+  }, {
+    "@id" : "https://w3id.org/SocDOnt/1.0#Weblog"
+  }, {
+    "@id" : "https://w3id.org/SocDOnt/1.0#Wiki"
+  } ]
+}, {
+  "@id" : "https://w3id.org/SocDOnt/1.0#GroupWorkspace",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "GroupWorkspaces describe spaces that are accessible to several people. Thus, they are positioned between UserWorkspace and OrganisationalPlatform and enable collaborative work, since they include the respective containers."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "GroupWorkspace"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/SocDOnt/1.0#Space"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "https://w3id.org/SocDOnt/1.0#OrganisationalPlatform"
+  }, {
+    "@id" : "https://w3id.org/SocDOnt/1.0#UserWorkspace"
+  } ]
+}, {
+  "@id" : "https://w3id.org/SocDOnt/1.0#IntellectualComponent",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Attachments and Comments are subordinated to the IntellectualComponent entity. These differ from SimpleComponents by their \"intellectual content\"."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "IntellectualComponent"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/SocDOnt/1.0#Component"
+  }, {
+    "@id" : "_:genid12"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "https://w3id.org/SocDOnt/1.0#SimpleComponent"
+  } ]
+}, {
+  "@id" : "https://w3id.org/SocDOnt/1.0#IntellectualEntity",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "IntellectualEntities describe the core of a SocialDocument, for example a file or a BlogPost, which can be enriched by Components."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "IntellectualEntity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/SocDOnt/1.0#Item"
+  }, {
+    "@id" : "_:genid13"
+  } ]
+}, {
+  "@id" : "https://w3id.org/SocDOnt/1.0#Item",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Through the item entity, all properties that are consistent for the components of a social document are bundled. For this reason, the object properties are of a general nature and yet each represent a single piece of social content. The Item also serves to provide the link to the actual SocialDocument, which consists of at least one IntellectualEntity."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Item"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "_:genid14"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "https://w3id.org/SocDOnt/1.0#SocialDocument"
+  }, {
+    "@id" : "https://w3id.org/SocDOnt/1.0#Space"
+  } ]
+}, {
+  "@id" : "https://w3id.org/SocDOnt/1.0#Like",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The entity Like, which is also called \"recommendation\", is a SimpleComponent, which can be related to an IntellectualComponent or an IntellectualEntity. Since they have no inherent intellectual content, they, as all SimpleComponents, are not mutually related. Since a like within SocDOnt can only refer to IntellectualEntities, it is not possible to represent the \"liking\" of a container."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Like"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/SocDOnt/1.0#SimpleComponent"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "https://w3id.org/SocDOnt/1.0#Tag"
+  } ]
+}, {
+  "@id" : "https://w3id.org/SocDOnt/1.0#MessageBoard",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "MessageBoards are often called \"forums\" within ECS and contain any number of BoardPosts. This Container type can therefore contain several IntellectualEntities. The contained answers to the original message in the MessageBoard are represented accordingly by Comments."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "MessageBoard"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/SocDOnt/1.0#Container"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "https://w3id.org/SocDOnt/1.0#MicroBlog"
+  }, {
+    "@id" : "https://w3id.org/SocDOnt/1.0#TaskContainer"
+  }, {
+    "@id" : "https://w3id.org/SocDOnt/1.0#Weblog"
+  }, {
+    "@id" : "https://w3id.org/SocDOnt/1.0#Wiki"
+  } ]
+}, {
+  "@id" : "https://w3id.org/SocDOnt/1.0#MicroBlog",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The Microblog, like the MessageBoard, is a container. The entity can contain MicroblogPosts, whose responses within the SocDOnt are called Comments."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "MicroBlog"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/SocDOnt/1.0#Container"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "https://w3id.org/SocDOnt/1.0#TaskContainer"
+  }, {
+    "@id" : "https://w3id.org/SocDOnt/1.0#Weblog"
+  }, {
+    "@id" : "https://w3id.org/SocDOnt/1.0#Wiki"
+  } ]
+}, {
+  "@id" : "https://w3id.org/SocDOnt/1.0#MicroblogPost",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "MicroblogPosts are among the IntellectualEntities and are contained in microblogs. As with the other IntellectualEntities, replies are represented in the form of Comments."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "MicroblogPost"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/SocDOnt/1.0#IntellectualEntity"
+  }, {
+    "@id" : "_:genid15"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "https://w3id.org/SocDOnt/1.0#Task"
+  }, {
+    "@id" : "https://w3id.org/SocDOnt/1.0#WikiArticle"
+  } ]
+}, {
+  "@id" : "https://w3id.org/SocDOnt/1.0#OrganisationalPlatform",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The OrganisationalPlatform entity describes a space that is accessible to all participants of the system."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "OrganisationalPlatform"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/SocDOnt/1.0#Space"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "https://w3id.org/SocDOnt/1.0#UserWorkspace"
+  } ]
+}, {
+  "@id" : "https://w3id.org/SocDOnt/1.0#SimpleComponent",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "SimpleComponents add further data (Likes and Tags) to IntellectualComponents or IntellectualEntities. With the exception of the Tag, these types of Components do not carry any other data properties and thus no intellectual content. Because of their lack of intellectual content, Tags and Likes can never be associated with each other or with any other instance of themselves. This is because tagging a tag, liking a like, or tagging a like makes no sense. While liking a tag would be conceivable, it is a very atypical use case. In some ECS, it is possible to also liken a space or container, but in the context of SocDOnt, the focus is on applying these components to SocialDocuments."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "SimpleComponent"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/SocDOnt/1.0#Component"
+  }, {
+    "@id" : "_:genid16"
+  } ]
+}, {
+  "@id" : "https://w3id.org/SocDOnt/1.0#SocialDocument",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The SocialDocument represents, as the name of the ontology already indicates, a central element of SocDOnt. This \"compound document\" (Williams, Mosen and Schubert, 2020, p. 3) is composed of IntellectualEntity, IntellectualComponents and SimpleComponents. Only the IntellectualEntity is mandatory. The SocialDocument is assigned to the same container as the corresponding IntellectualEntity. For the SocialDocument, no distinction is made within the SocDOnt as to whether this already originally has \"social content\" (collaboratively created content) (for example, a WikiArticle edited by two authors) or only becomes such through Components (for example, in the case of a PDF or Word file). Hausmann (2018, p. 210) calls these different forms \"born social\" and \"become social\" and refers to Hodge (2000), who first described documents that are created and distributed in electronic form in this way."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "SocialDocument"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "_:genid17"
+  }, {
+    "@id" : "_:genid18"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "https://w3id.org/SocDOnt/1.0#Space"
+  } ]
+}, {
+  "@id" : "https://w3id.org/SocDOnt/1.0#Space",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The types of Spaces describe the different areas in which social content is created (Williams, Mosen, and Schubert, 2020). The different container types are assigned to the Spaces."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Space"
+  } ]
+}, {
+  "@id" : "https://w3id.org/SocDOnt/1.0#Tag",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Tags belong to SimpleComponents and include a label that identifies the tag. Tags are used to describe IntellectualComponents or IntellectualEntities more detailed."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Tag"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/SocDOnt/1.0#SimpleComponent"
+  } ]
+}, {
+  "@id" : "https://w3id.org/SocDOnt/1.0#Task",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The Task entity belongs to the IntellectualEntities and describes a task. These tasks can be organized in hierarchical structures, since parent-child relations are given. Subordinate tasks can also be called subtasks, but they follow the same structure as parent tasks."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Task"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/SocDOnt/1.0#IntellectualEntity"
+  }, {
+    "@id" : "_:genid19"
+  }, {
+    "@id" : "_:genid20"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "https://w3id.org/SocDOnt/1.0#WikiArticle"
+  } ]
+}, {
+  "@id" : "https://w3id.org/SocDOnt/1.0#TaskContainer",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The container type TaskContainer can hold any number of tasks. TaskContainers are unambiguously assigned to a Space."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "TaskContainer"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/SocDOnt/1.0#Container"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "https://w3id.org/SocDOnt/1.0#Weblog"
+  }, {
+    "@id" : "https://w3id.org/SocDOnt/1.0#Wiki"
+  } ]
+}, {
+  "@id" : "https://w3id.org/SocDOnt/1.0#UserWorkspace",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The UserWorkspace serves as a space that is only accessible to a specific user. Thus, this type of space represents the counterpart to an organizational platform, which is accessible to all users."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "UserWorkspace"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/SocDOnt/1.0#Space"
+  } ]
+}, {
+  "@id" : "https://w3id.org/SocDOnt/1.0#Weblog",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Weblogs are regularly referred to as \"blogs\" within ECS and contain any number of BlogPosts. This container can therefore contain several IntellectualEntities. The contained replies to the original message in the weblog are Comments."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Weblog"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/SocDOnt/1.0#Container"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "https://w3id.org/SocDOnt/1.0#Wiki"
+  } ]
+}, {
+  "@id" : "https://w3id.org/SocDOnt/1.0#Wiki",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Wikis serve as containers for WikiArticles and are subordinate to the concept of Spaces. Containers of this type can also hold multiple IntellectualEntities."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Wiki"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/SocDOnt/1.0#Container"
+  } ]
+}, {
+  "@id" : "https://w3id.org/SocDOnt/1.0#WikiArticle",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "WikiArticles correspond to the entries in a wiki. Within a wiki, they are usually represented as a separate \"page\". Replies to a WikiArticle are mapped to the Comment entity. Attachments, which are not part of the actual content, are called Attachment."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "WikiArticle"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/SocDOnt/1.0#IntellectualEntity"
+  }, {
+    "@id" : "_:genid21"
+  }, {
+    "@id" : "_:genid22"
+  } ]
+}, {
+  "@id" : "https://w3id.org/SocDOnt/1.0#attachment_has_comment",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/SocDOnt/1.0#Attachment"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/SocDOnt/1.0#Comment"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://w3id.org/SocDOnt/1.0#comment_of_attachment"
+  } ]
+}, {
+  "@id" : "https://w3id.org/SocDOnt/1.0#blogPost_contained_in_weblog",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/SocDOnt/1.0#BlogPost"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/SocDOnt/1.0#Weblog"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://w3id.org/SocDOnt/1.0#weblog_contains_blogPost"
+  } ]
+}, {
+  "@id" : "https://w3id.org/SocDOnt/1.0#boardPost_contained_in_messageBoard",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/SocDOnt/1.0#BoardPost"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/SocDOnt/1.0#MessageBoard"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://w3id.org/SocDOnt/1.0#messageBoard_contains_boardPost"
+  } ]
+}, {
+  "@id" : "https://w3id.org/SocDOnt/1.0#collection_contains_socialDocument",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/SocDOnt/1.0#Collection"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/SocDOnt/1.0#SocialDocument"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://w3id.org/SocDOnt/1.0#socialDocument_contained_in_collection"
+  } ]
+}, {
+  "@id" : "https://w3id.org/SocDOnt/1.0#collection_has_child",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/SocDOnt/1.0#Collection"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/SocDOnt/1.0#Collection"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://w3id.org/SocDOnt/1.0#collection_has_parent"
+  } ]
+}, {
+  "@id" : "https://w3id.org/SocDOnt/1.0#collection_has_parent",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/SocDOnt/1.0#Collection"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/SocDOnt/1.0#Collection"
+  } ]
+}, {
+  "@id" : "https://w3id.org/SocDOnt/1.0#comment_contains_attachment",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/SocDOnt/1.0#Comment"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/SocDOnt/1.0#Attachment"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://w3id.org/SocDOnt/1.0/attachment_contained_in_comment"
+  } ]
+}, {
+  "@id" : "https://w3id.org/SocDOnt/1.0#comment_has_child",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/SocDOnt/1.0#Comment"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/SocDOnt/1.0#Comment"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://w3id.org/SocDOnt/1.0#comment_has_parent"
+  } ]
+}, {
+  "@id" : "https://w3id.org/SocDOnt/1.0#comment_has_parent",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/SocDOnt/1.0#Comment"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/SocDOnt/1.0#Comment"
+  } ]
+}, {
+  "@id" : "https://w3id.org/SocDOnt/1.0#comment_of_attachment",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/SocDOnt/1.0#Comment"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/SocDOnt/1.0#Attachment"
+  } ]
+}, {
+  "@id" : "https://w3id.org/SocDOnt/1.0#component_of_intellectualEntity",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/SocDOnt/1.0#Component"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/SocDOnt/1.0#IntellectualEntity"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://w3id.org/SocDOnt/1.0#intellectualEntity_has_component"
+  } ]
+}, {
+  "@id" : "https://w3id.org/SocDOnt/1.0#container_contained_in_space",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/SocDOnt/1.0#Container"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/SocDOnt/1.0#Space"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://w3id.org/SocDOnt/1.0#space_contains_container"
+  } ]
+}, {
+  "@id" : "https://w3id.org/SocDOnt/1.0#container_contains_socialDocument",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/SocDOnt/1.0#Container"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/SocDOnt/1.0#SocialDocument"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://w3id.org/SocDOnt/1.0#socialDocument_contained_in_container"
+  } ]
+}, {
+  "@id" : "https://w3id.org/SocDOnt/1.0#container_has_child",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/SocDOnt/1.0#Container"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/SocDOnt/1.0#Container"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://w3id.org/SocDOnt/1.0#container_has_parent"
+  } ]
+}, {
+  "@id" : "https://w3id.org/SocDOnt/1.0#container_has_parent",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/SocDOnt/1.0#Container"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/SocDOnt/1.0#Container"
+  } ]
+}, {
+  "@id" : "https://w3id.org/SocDOnt/1.0#content",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/SocDOnt/1.0#IntellectualComponent"
+  }, {
+    "@id" : "https://w3id.org/SocDOnt/1.0#IntellectualEntity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#object"
+  } ]
+}, {
+  "@id" : "https://w3id.org/SocDOnt/1.0#contributors",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/SocDOnt/1.0#IntellectualComponent"
+  }, {
+    "@id" : "https://w3id.org/SocDOnt/1.0#IntellectualEntity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#object"
+  } ]
+}, {
+  "@id" : "https://w3id.org/SocDOnt/1.0#created",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/SocDOnt/1.0#Item"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#dateTime"
+  } ]
+}, {
+  "@id" : "https://w3id.org/SocDOnt/1.0#creator",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/SocDOnt/1.0#Item"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#object"
+  } ]
+}, {
+  "@id" : "https://w3id.org/SocDOnt/1.0#file_contained_in_folder",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/SocDOnt/1.0#File"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/SocDOnt/1.0#FileLibrary"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://w3id.org/SocDOnt/1.0#folder_contains_file"
+  } ]
+}, {
+  "@id" : "https://w3id.org/SocDOnt/1.0#folder_contains_file",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/SocDOnt/1.0#FileLibrary"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/SocDOnt/1.0#File"
+  } ]
+}, {
+  "@id" : "https://w3id.org/SocDOnt/1.0#id",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/SocDOnt/1.0#Item"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "https://w3id.org/SocDOnt/1.0#intellectualComponent_has_previousVersion",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/SocDOnt/1.0#IntellectualComponent"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/SocDOnt/1.0#IntellectualComponent"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://w3id.org/SocDOnt/1.0#intellectualComponent_has_recentVersion"
+  } ]
+}, {
+  "@id" : "https://w3id.org/SocDOnt/1.0#intellectualComponent_has_recentVersion",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/SocDOnt/1.0#IntellectualComponent"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/SocDOnt/1.0#IntellectualComponent"
+  } ]
+}, {
+  "@id" : "https://w3id.org/SocDOnt/1.0#intellectualComponent_has_simpleComponent",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/SocDOnt/1.0#IntellectualComponent"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/SocDOnt/1.0#SimpleComponent"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://w3id.org/SocDOnt/1.0#simpleComponent_of_intellectualComponent"
+  } ]
+}, {
+  "@id" : "https://w3id.org/SocDOnt/1.0#intellectualEntity_has_component",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/SocDOnt/1.0#IntellectualEntity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/SocDOnt/1.0#Component"
+  } ]
+}, {
+  "@id" : "https://w3id.org/SocDOnt/1.0#intellectualEntity_has_previousVersion",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/SocDOnt/1.0#IntellectualEntity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/SocDOnt/1.0#IntellectualEntity"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://w3id.org/SocDOnt/1.0#intellectualEntity_has_recentVersion"
+  } ]
+}, {
+  "@id" : "https://w3id.org/SocDOnt/1.0#intellectualEntity_has_recentVersion",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/SocDOnt/1.0#IntellectualEntity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/SocDOnt/1.0#IntellectualEntity"
+  } ]
+}, {
+  "@id" : "https://w3id.org/SocDOnt/1.0#item_contained_in_socialDocument",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/SocDOnt/1.0#Item"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/SocDOnt/1.0#SocialDocument"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://w3id.org/SocDOnt/1.0#socialDocument_contains_item"
+  } ]
+}, {
+  "@id" : "https://w3id.org/SocDOnt/1.0#label",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/SocDOnt/1.0#Tag"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "https://w3id.org/SocDOnt/1.0#last_update",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/SocDOnt/1.0#IntellectualComponent"
+  }, {
+    "@id" : "https://w3id.org/SocDOnt/1.0#IntellectualEntity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#dateTime"
+  } ]
+}, {
+  "@id" : "https://w3id.org/SocDOnt/1.0#mentionees",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/SocDOnt/1.0#IntellectualComponent"
+  }, {
+    "@id" : "https://w3id.org/SocDOnt/1.0#IntellectualEntity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#object"
+  } ]
+}, {
+  "@id" : "https://w3id.org/SocDOnt/1.0#messageBoard_contains_boardPost",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/SocDOnt/1.0#MessageBoard"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/SocDOnt/1.0#BoardPost"
+  } ]
+}, {
+  "@id" : "https://w3id.org/SocDOnt/1.0#microblogPost_contained_in_microblog",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/SocDOnt/1.0#MicroblogPost"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/SocDOnt/1.0#MicroBlog"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://w3id.org/SocDOnt/1.0#microblog_contains_microblogPost"
+  } ]
+}, {
+  "@id" : "https://w3id.org/SocDOnt/1.0#microblog_contains_microblogPost",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/SocDOnt/1.0#MicroBlog"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/SocDOnt/1.0#MicroblogPost"
+  } ]
+}, {
+  "@id" : "https://w3id.org/SocDOnt/1.0#simpleComponent_of_intellectualComponent",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/SocDOnt/1.0#SimpleComponent"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/SocDOnt/1.0#IntellectualComponent"
+  } ]
+}, {
+  "@id" : "https://w3id.org/SocDOnt/1.0#socialDocument_contained_in_collection",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/SocDOnt/1.0#SocialDocument"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/SocDOnt/1.0#Collection"
+  } ]
+}, {
+  "@id" : "https://w3id.org/SocDOnt/1.0#socialDocument_contained_in_container",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/SocDOnt/1.0#SocialDocument"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/SocDOnt/1.0#Container"
+  } ]
+}, {
+  "@id" : "https://w3id.org/SocDOnt/1.0#socialDocument_contains_item",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/SocDOnt/1.0#SocialDocument"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/SocDOnt/1.0#Item"
+  } ]
+}, {
+  "@id" : "https://w3id.org/SocDOnt/1.0#space_contains_container",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/SocDOnt/1.0#Space"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/SocDOnt/1.0#Container"
+  } ]
+}, {
+  "@id" : "https://w3id.org/SocDOnt/1.0#taskContainer_contains_task",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/SocDOnt/1.0#TaskContainer"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/SocDOnt/1.0#Task"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://w3id.org/SocDOnt/1.0#task_contained_in_taskContainer"
+  } ]
+}, {
+  "@id" : "https://w3id.org/SocDOnt/1.0#task_contained_in_taskContainer",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/SocDOnt/1.0#Task"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/SocDOnt/1.0#TaskContainer"
+  } ]
+}, {
+  "@id" : "https://w3id.org/SocDOnt/1.0#task_has_child",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/SocDOnt/1.0#Task"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/SocDOnt/1.0#Task"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://w3id.org/SocDOnt/1.0#task_has_parent"
+  } ]
+}, {
+  "@id" : "https://w3id.org/SocDOnt/1.0#task_has_parent",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/SocDOnt/1.0#Task"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/SocDOnt/1.0#Task"
+  } ]
+}, {
+  "@id" : "https://w3id.org/SocDOnt/1.0#title",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/SocDOnt/1.0#IntellectualComponent"
+  }, {
+    "@id" : "https://w3id.org/SocDOnt/1.0#IntellectualEntity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "https://w3id.org/SocDOnt/1.0#views",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/SocDOnt/1.0#IntellectualComponent"
+  }, {
+    "@id" : "https://w3id.org/SocDOnt/1.0#IntellectualEntity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#integer"
+  } ]
+}, {
+  "@id" : "https://w3id.org/SocDOnt/1.0#weblog_contains_blogPost",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/SocDOnt/1.0#Weblog"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/SocDOnt/1.0#BlogPost"
+  } ]
+}, {
+  "@id" : "https://w3id.org/SocDOnt/1.0#wikiArticle_contained_in_wiki",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/SocDOnt/1.0#WikiArticle"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/SocDOnt/1.0#Wiki"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://w3id.org/SocDOnt/1.0#wiki_contains_wikiArticle"
+  } ]
+}, {
+  "@id" : "https://w3id.org/SocDOnt/1.0#wikiArticle_has_child",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/SocDOnt/1.0#WikiArticle"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/SocDOnt/1.0#WikiArticle"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://w3id.org/SocDOnt/1.0#wikiArticle_has_parent"
+  } ]
+}, {
+  "@id" : "https://w3id.org/SocDOnt/1.0#wikiArticle_has_parent",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/SocDOnt/1.0#WikiArticle"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/SocDOnt/1.0#WikiArticle"
+  } ]
+}, {
+  "@id" : "https://w3id.org/SocDOnt/1.0#wiki_contains_wikiArticle",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/SocDOnt/1.0#Wiki"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/SocDOnt/1.0#WikiArticle"
+  } ]
+}, {
+  "@id" : "https://w3id.org/SocDOnt/1.0/attachment_contained_in_comment",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/SocDOnt/1.0#Attachment"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/SocDOnt/1.0#Comment"
+  } ]
+} ]
