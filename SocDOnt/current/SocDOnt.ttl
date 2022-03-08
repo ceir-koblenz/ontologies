@@ -1,4 +1,3 @@
-@prefix : <https://w3id.org/SocDOnt/1.0#> .
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -6,6 +5,7 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix obda: <https://w3id.org/obda/vocabulary#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix socdont: <https://w3id.org/SocDOnt/1.0#> .
 @base <https://w3id.org/SocDOnt> .
 
 <https://w3id.org/SocDOnt> rdf:type owl:Ontology ;
@@ -67,281 +67,281 @@ xsd:object rdf:type rdfs:Datatype .
 #################################################################
 
 ###  https://w3id.org/SocDOnt/1.0#attachment_has_comment
-:attachment_has_comment rdf:type owl:ObjectProperty ;
-                        owl:inverseOf :comment_of_attachment ;
-                        rdfs:domain :Attachment ;
-                        rdfs:range :Comment .
+socdont:attachment_has_comment rdf:type owl:ObjectProperty ;
+                               owl:inverseOf socdont:comment_of_attachment ;
+                               rdfs:domain socdont:Attachment ;
+                               rdfs:range socdont:Comment .
 
 
 ###  https://w3id.org/SocDOnt/1.0#blogPost_contained_in_weblog
-:blogPost_contained_in_weblog rdf:type owl:ObjectProperty ;
-                              owl:inverseOf :weblog_contains_blogPost ;
-                              rdfs:domain :BlogPost ;
-                              rdfs:range :Weblog .
+socdont:blogPost_contained_in_weblog rdf:type owl:ObjectProperty ;
+                                     owl:inverseOf socdont:weblog_contains_blogPost ;
+                                     rdfs:domain socdont:BlogPost ;
+                                     rdfs:range socdont:Weblog .
 
 
 ###  https://w3id.org/SocDOnt/1.0#boardPost_contained_in_messageBoard
-:boardPost_contained_in_messageBoard rdf:type owl:ObjectProperty ;
-                                     owl:inverseOf :messageBoard_contains_boardPost ;
-                                     rdfs:domain :BoardPost ;
-                                     rdfs:range :MessageBoard .
+socdont:boardPost_contained_in_messageBoard rdf:type owl:ObjectProperty ;
+                                            owl:inverseOf socdont:messageBoard_contains_boardPost ;
+                                            rdfs:domain socdont:BoardPost ;
+                                            rdfs:range socdont:MessageBoard .
 
 
 ###  https://w3id.org/SocDOnt/1.0#collection_contains_socialDocument
-:collection_contains_socialDocument rdf:type owl:ObjectProperty ;
-                                    owl:inverseOf :socialDocument_contained_in_collection ;
-                                    rdfs:domain :Collection ;
-                                    rdfs:range :SocialDocument .
+socdont:collection_contains_socialDocument rdf:type owl:ObjectProperty ;
+                                           owl:inverseOf socdont:socialDocument_contained_in_collection ;
+                                           rdfs:domain socdont:Collection ;
+                                           rdfs:range socdont:SocialDocument .
 
 
 ###  https://w3id.org/SocDOnt/1.0#collection_has_child
-:collection_has_child rdf:type owl:ObjectProperty ;
-                      owl:inverseOf :collection_has_parent ;
-                      rdfs:domain :Collection ;
-                      rdfs:range :Collection .
+socdont:collection_has_child rdf:type owl:ObjectProperty ;
+                             owl:inverseOf socdont:collection_has_parent ;
+                             rdfs:domain socdont:Collection ;
+                             rdfs:range socdont:Collection .
 
 
 ###  https://w3id.org/SocDOnt/1.0#collection_has_parent
-:collection_has_parent rdf:type owl:ObjectProperty ,
-                                owl:FunctionalProperty ;
-                       rdfs:domain :Collection ;
-                       rdfs:range :Collection .
+socdont:collection_has_parent rdf:type owl:ObjectProperty ,
+                                       owl:FunctionalProperty ;
+                              rdfs:domain socdont:Collection ;
+                              rdfs:range socdont:Collection .
 
 
 ###  https://w3id.org/SocDOnt/1.0#comment_contains_attachment
-:comment_contains_attachment rdf:type owl:ObjectProperty ;
-                             owl:inverseOf <https://w3id.org/SocDOnt/1.0/attachment_contained_in_comment> ;
-                             rdfs:domain :Comment ;
-                             rdfs:range :Attachment .
+socdont:comment_contains_attachment rdf:type owl:ObjectProperty ;
+                                    owl:inverseOf <https://w3id.org/SocDOnt/1.0/attachment_contained_in_comment> ;
+                                    rdfs:domain socdont:Comment ;
+                                    rdfs:range socdont:Attachment .
 
 
 ###  https://w3id.org/SocDOnt/1.0#comment_has_child
-:comment_has_child rdf:type owl:ObjectProperty ;
-                   owl:inverseOf :comment_has_parent ;
-                   rdfs:domain :Comment ;
-                   rdfs:range :Comment .
+socdont:comment_has_child rdf:type owl:ObjectProperty ;
+                          owl:inverseOf socdont:comment_has_parent ;
+                          rdfs:domain socdont:Comment ;
+                          rdfs:range socdont:Comment .
 
 
 ###  https://w3id.org/SocDOnt/1.0#comment_has_parent
-:comment_has_parent rdf:type owl:ObjectProperty ,
-                             owl:FunctionalProperty ;
-                    rdfs:domain :Comment ;
-                    rdfs:range :Comment .
+socdont:comment_has_parent rdf:type owl:ObjectProperty ,
+                                    owl:FunctionalProperty ;
+                           rdfs:domain socdont:Comment ;
+                           rdfs:range socdont:Comment .
 
 
 ###  https://w3id.org/SocDOnt/1.0#comment_of_attachment
-:comment_of_attachment rdf:type owl:ObjectProperty ;
-                       rdfs:domain :Comment ;
-                       rdfs:range :Attachment .
+socdont:comment_of_attachment rdf:type owl:ObjectProperty ;
+                              rdfs:domain socdont:Comment ;
+                              rdfs:range socdont:Attachment .
 
 
 ###  https://w3id.org/SocDOnt/1.0#component_of_intellectualEntity
-:component_of_intellectualEntity rdf:type owl:ObjectProperty ;
-                                 owl:inverseOf :intellectualEntity_has_component ;
-                                 rdfs:domain :Component ;
-                                 rdfs:range :IntellectualEntity .
+socdont:component_of_intellectualEntity rdf:type owl:ObjectProperty ;
+                                        owl:inverseOf socdont:intellectualEntity_has_component ;
+                                        rdfs:domain socdont:Component ;
+                                        rdfs:range socdont:IntellectualEntity .
 
 
 ###  https://w3id.org/SocDOnt/1.0#container_contained_in_space
-:container_contained_in_space rdf:type owl:ObjectProperty ;
-                              owl:inverseOf :space_contains_container ;
-                              rdfs:domain :Container ;
-                              rdfs:range :Space .
+socdont:container_contained_in_space rdf:type owl:ObjectProperty ;
+                                     owl:inverseOf socdont:space_contains_container ;
+                                     rdfs:domain socdont:Container ;
+                                     rdfs:range socdont:Space .
 
 
 ###  https://w3id.org/SocDOnt/1.0#container_contains_socialDocument
-:container_contains_socialDocument rdf:type owl:ObjectProperty ;
-                                   owl:inverseOf :socialDocument_contained_in_container ;
-                                   rdfs:domain :Container ;
-                                   rdfs:range :SocialDocument .
+socdont:container_contains_socialDocument rdf:type owl:ObjectProperty ;
+                                          owl:inverseOf socdont:socialDocument_contained_in_container ;
+                                          rdfs:domain socdont:Container ;
+                                          rdfs:range socdont:SocialDocument .
 
 
 ###  https://w3id.org/SocDOnt/1.0#container_has_child
-:container_has_child rdf:type owl:ObjectProperty ;
-                     owl:inverseOf :container_has_parent ;
-                     rdfs:domain :Container ;
-                     rdfs:range :Container .
+socdont:container_has_child rdf:type owl:ObjectProperty ;
+                            owl:inverseOf socdont:container_has_parent ;
+                            rdfs:domain socdont:Container ;
+                            rdfs:range socdont:Container .
 
 
 ###  https://w3id.org/SocDOnt/1.0#container_has_parent
-:container_has_parent rdf:type owl:ObjectProperty ,
-                               owl:FunctionalProperty ;
-                      rdfs:domain :Container ;
-                      rdfs:range :Container .
+socdont:container_has_parent rdf:type owl:ObjectProperty ,
+                                      owl:FunctionalProperty ;
+                             rdfs:domain socdont:Container ;
+                             rdfs:range socdont:Container .
 
 
 ###  https://w3id.org/SocDOnt/1.0#file_contained_in_folder
-:file_contained_in_folder rdf:type owl:ObjectProperty ;
-                          owl:inverseOf :folder_contains_file ;
-                          rdfs:domain :File ;
-                          rdfs:range :FileLibrary .
+socdont:file_contained_in_folder rdf:type owl:ObjectProperty ;
+                                 owl:inverseOf socdont:folder_contains_file ;
+                                 rdfs:domain socdont:File ;
+                                 rdfs:range socdont:FileLibrary .
 
 
 ###  https://w3id.org/SocDOnt/1.0#folder_contains_file
-:folder_contains_file rdf:type owl:ObjectProperty ;
-                      rdfs:domain :FileLibrary ;
-                      rdfs:range :File .
+socdont:folder_contains_file rdf:type owl:ObjectProperty ;
+                             rdfs:domain socdont:FileLibrary ;
+                             rdfs:range socdont:File .
 
 
 ###  https://w3id.org/SocDOnt/1.0#intellectualComponent_has_previousVersion
-:intellectualComponent_has_previousVersion rdf:type owl:ObjectProperty ;
-                                           owl:inverseOf :intellectualComponent_has_recentVersion ;
-                                           rdfs:domain :IntellectualComponent ;
-                                           rdfs:range :IntellectualComponent .
+socdont:intellectualComponent_has_previousVersion rdf:type owl:ObjectProperty ;
+                                                  owl:inverseOf socdont:intellectualComponent_has_recentVersion ;
+                                                  rdfs:domain socdont:IntellectualComponent ;
+                                                  rdfs:range socdont:IntellectualComponent .
 
 
 ###  https://w3id.org/SocDOnt/1.0#intellectualComponent_has_recentVersion
-:intellectualComponent_has_recentVersion rdf:type owl:ObjectProperty ;
-                                         rdfs:domain :IntellectualComponent ;
-                                         rdfs:range :IntellectualComponent .
+socdont:intellectualComponent_has_recentVersion rdf:type owl:ObjectProperty ;
+                                                rdfs:domain socdont:IntellectualComponent ;
+                                                rdfs:range socdont:IntellectualComponent .
 
 
 ###  https://w3id.org/SocDOnt/1.0#intellectualComponent_has_simpleComponent
-:intellectualComponent_has_simpleComponent rdf:type owl:ObjectProperty ;
-                                           owl:inverseOf :simpleComponent_of_intellectualComponent ;
-                                           rdfs:domain :IntellectualComponent ;
-                                           rdfs:range :SimpleComponent .
+socdont:intellectualComponent_has_simpleComponent rdf:type owl:ObjectProperty ;
+                                                  owl:inverseOf socdont:simpleComponent_of_intellectualComponent ;
+                                                  rdfs:domain socdont:IntellectualComponent ;
+                                                  rdfs:range socdont:SimpleComponent .
 
 
 ###  https://w3id.org/SocDOnt/1.0#intellectualEntity_has_component
-:intellectualEntity_has_component rdf:type owl:ObjectProperty ;
-                                  rdfs:domain :IntellectualEntity ;
-                                  rdfs:range :Component .
+socdont:intellectualEntity_has_component rdf:type owl:ObjectProperty ;
+                                         rdfs:domain socdont:IntellectualEntity ;
+                                         rdfs:range socdont:Component .
 
 
 ###  https://w3id.org/SocDOnt/1.0#intellectualEntity_has_previousVersion
-:intellectualEntity_has_previousVersion rdf:type owl:ObjectProperty ;
-                                        owl:inverseOf :intellectualEntity_has_recentVersion ;
-                                        rdfs:domain :IntellectualEntity ;
-                                        rdfs:range :IntellectualEntity .
+socdont:intellectualEntity_has_previousVersion rdf:type owl:ObjectProperty ;
+                                               owl:inverseOf socdont:intellectualEntity_has_recentVersion ;
+                                               rdfs:domain socdont:IntellectualEntity ;
+                                               rdfs:range socdont:IntellectualEntity .
 
 
 ###  https://w3id.org/SocDOnt/1.0#intellectualEntity_has_recentVersion
-:intellectualEntity_has_recentVersion rdf:type owl:ObjectProperty ;
-                                      rdfs:domain :IntellectualEntity ;
-                                      rdfs:range :IntellectualEntity .
+socdont:intellectualEntity_has_recentVersion rdf:type owl:ObjectProperty ;
+                                             rdfs:domain socdont:IntellectualEntity ;
+                                             rdfs:range socdont:IntellectualEntity .
 
 
 ###  https://w3id.org/SocDOnt/1.0#item_contained_in_socialDocument
-:item_contained_in_socialDocument rdf:type owl:ObjectProperty ;
-                                  owl:inverseOf :socialDocument_contains_item ;
-                                  rdfs:domain :Item ;
-                                  rdfs:range :SocialDocument .
+socdont:item_contained_in_socialDocument rdf:type owl:ObjectProperty ;
+                                         owl:inverseOf socdont:socialDocument_contains_item ;
+                                         rdfs:domain socdont:Item ;
+                                         rdfs:range socdont:SocialDocument .
 
 
 ###  https://w3id.org/SocDOnt/1.0#messageBoard_contains_boardPost
-:messageBoard_contains_boardPost rdf:type owl:ObjectProperty ;
-                                 rdfs:domain :MessageBoard ;
-                                 rdfs:range :BoardPost .
+socdont:messageBoard_contains_boardPost rdf:type owl:ObjectProperty ;
+                                        rdfs:domain socdont:MessageBoard ;
+                                        rdfs:range socdont:BoardPost .
 
 
 ###  https://w3id.org/SocDOnt/1.0#microblogPost_contained_in_microblog
-:microblogPost_contained_in_microblog rdf:type owl:ObjectProperty ;
-                                      owl:inverseOf :microblog_contains_microblogPost ;
-                                      rdfs:domain :MicroblogPost ;
-                                      rdfs:range :MicroBlog .
+socdont:microblogPost_contained_in_microblog rdf:type owl:ObjectProperty ;
+                                             owl:inverseOf socdont:microblog_contains_microblogPost ;
+                                             rdfs:domain socdont:MicroblogPost ;
+                                             rdfs:range socdont:MicroBlog .
 
 
 ###  https://w3id.org/SocDOnt/1.0#microblog_contains_microblogPost
-:microblog_contains_microblogPost rdf:type owl:ObjectProperty ;
-                                  rdfs:domain :MicroBlog ;
-                                  rdfs:range :MicroblogPost .
+socdont:microblog_contains_microblogPost rdf:type owl:ObjectProperty ;
+                                         rdfs:domain socdont:MicroBlog ;
+                                         rdfs:range socdont:MicroblogPost .
 
 
 ###  https://w3id.org/SocDOnt/1.0#simpleComponent_of_intellectualComponent
-:simpleComponent_of_intellectualComponent rdf:type owl:ObjectProperty ;
-                                          rdfs:domain :SimpleComponent ;
-                                          rdfs:range :IntellectualComponent .
+socdont:simpleComponent_of_intellectualComponent rdf:type owl:ObjectProperty ;
+                                                 rdfs:domain socdont:SimpleComponent ;
+                                                 rdfs:range socdont:IntellectualComponent .
 
 
 ###  https://w3id.org/SocDOnt/1.0#socialDocument_contained_in_collection
-:socialDocument_contained_in_collection rdf:type owl:ObjectProperty ;
-                                        rdfs:domain :SocialDocument ;
-                                        rdfs:range :Collection .
+socdont:socialDocument_contained_in_collection rdf:type owl:ObjectProperty ;
+                                               rdfs:domain socdont:SocialDocument ;
+                                               rdfs:range socdont:Collection .
 
 
 ###  https://w3id.org/SocDOnt/1.0#socialDocument_contained_in_container
-:socialDocument_contained_in_container rdf:type owl:ObjectProperty ;
-                                       rdfs:domain :SocialDocument ;
-                                       rdfs:range :Container .
+socdont:socialDocument_contained_in_container rdf:type owl:ObjectProperty ;
+                                              rdfs:domain socdont:SocialDocument ;
+                                              rdfs:range socdont:Container .
 
 
 ###  https://w3id.org/SocDOnt/1.0#socialDocument_contains_item
-:socialDocument_contains_item rdf:type owl:ObjectProperty ;
-                              rdfs:domain :SocialDocument ;
-                              rdfs:range :Item .
+socdont:socialDocument_contains_item rdf:type owl:ObjectProperty ;
+                                     rdfs:domain socdont:SocialDocument ;
+                                     rdfs:range socdont:Item .
 
 
 ###  https://w3id.org/SocDOnt/1.0#space_contains_container
-:space_contains_container rdf:type owl:ObjectProperty ;
-                          rdfs:domain :Space ;
-                          rdfs:range :Container .
+socdont:space_contains_container rdf:type owl:ObjectProperty ;
+                                 rdfs:domain socdont:Space ;
+                                 rdfs:range socdont:Container .
 
 
 ###  https://w3id.org/SocDOnt/1.0#taskContainer_contains_task
-:taskContainer_contains_task rdf:type owl:ObjectProperty ;
-                             owl:inverseOf :task_contained_in_taskContainer ;
-                             rdfs:domain :TaskContainer ;
-                             rdfs:range :Task .
+socdont:taskContainer_contains_task rdf:type owl:ObjectProperty ;
+                                    owl:inverseOf socdont:task_contained_in_taskContainer ;
+                                    rdfs:domain socdont:TaskContainer ;
+                                    rdfs:range socdont:Task .
 
 
 ###  https://w3id.org/SocDOnt/1.0#task_contained_in_taskContainer
-:task_contained_in_taskContainer rdf:type owl:ObjectProperty ;
-                                 rdfs:domain :Task ;
-                                 rdfs:range :TaskContainer .
+socdont:task_contained_in_taskContainer rdf:type owl:ObjectProperty ;
+                                        rdfs:domain socdont:Task ;
+                                        rdfs:range socdont:TaskContainer .
 
 
 ###  https://w3id.org/SocDOnt/1.0#task_has_child
-:task_has_child rdf:type owl:ObjectProperty ;
-                owl:inverseOf :task_has_parent ;
-                rdfs:domain :Task ;
-                rdfs:range :Task .
+socdont:task_has_child rdf:type owl:ObjectProperty ;
+                       owl:inverseOf socdont:task_has_parent ;
+                       rdfs:domain socdont:Task ;
+                       rdfs:range socdont:Task .
 
 
 ###  https://w3id.org/SocDOnt/1.0#task_has_parent
-:task_has_parent rdf:type owl:ObjectProperty ,
-                          owl:FunctionalProperty ;
-                 rdfs:domain :Task ;
-                 rdfs:range :Task .
+socdont:task_has_parent rdf:type owl:ObjectProperty ,
+                                 owl:FunctionalProperty ;
+                        rdfs:domain socdont:Task ;
+                        rdfs:range socdont:Task .
 
 
 ###  https://w3id.org/SocDOnt/1.0#weblog_contains_blogPost
-:weblog_contains_blogPost rdf:type owl:ObjectProperty ;
-                          rdfs:domain :Weblog ;
-                          rdfs:range :BlogPost .
+socdont:weblog_contains_blogPost rdf:type owl:ObjectProperty ;
+                                 rdfs:domain socdont:Weblog ;
+                                 rdfs:range socdont:BlogPost .
 
 
 ###  https://w3id.org/SocDOnt/1.0#wikiArticle_contained_in_wiki
-:wikiArticle_contained_in_wiki rdf:type owl:ObjectProperty ;
-                               owl:inverseOf :wiki_contains_wikiArticle ;
-                               rdfs:domain :WikiArticle ;
-                               rdfs:range :Wiki .
+socdont:wikiArticle_contained_in_wiki rdf:type owl:ObjectProperty ;
+                                      owl:inverseOf socdont:wiki_contains_wikiArticle ;
+                                      rdfs:domain socdont:WikiArticle ;
+                                      rdfs:range socdont:Wiki .
 
 
 ###  https://w3id.org/SocDOnt/1.0#wikiArticle_has_child
-:wikiArticle_has_child rdf:type owl:ObjectProperty ;
-                       owl:inverseOf :wikiArticle_has_parent ;
-                       rdfs:domain :WikiArticle ;
-                       rdfs:range :WikiArticle .
+socdont:wikiArticle_has_child rdf:type owl:ObjectProperty ;
+                              owl:inverseOf socdont:wikiArticle_has_parent ;
+                              rdfs:domain socdont:WikiArticle ;
+                              rdfs:range socdont:WikiArticle .
 
 
 ###  https://w3id.org/SocDOnt/1.0#wikiArticle_has_parent
-:wikiArticle_has_parent rdf:type owl:ObjectProperty ,
-                                 owl:FunctionalProperty ;
-                        rdfs:domain :WikiArticle ;
-                        rdfs:range :WikiArticle .
+socdont:wikiArticle_has_parent rdf:type owl:ObjectProperty ,
+                                        owl:FunctionalProperty ;
+                               rdfs:domain socdont:WikiArticle ;
+                               rdfs:range socdont:WikiArticle .
 
 
 ###  https://w3id.org/SocDOnt/1.0#wiki_contains_wikiArticle
-:wiki_contains_wikiArticle rdf:type owl:ObjectProperty ;
-                           rdfs:domain :Wiki ;
-                           rdfs:range :WikiArticle .
+socdont:wiki_contains_wikiArticle rdf:type owl:ObjectProperty ;
+                                  rdfs:domain socdont:Wiki ;
+                                  rdfs:range socdont:WikiArticle .
 
 
 ###  https://w3id.org/SocDOnt/1.0/attachment_contained_in_comment
 <https://w3id.org/SocDOnt/1.0/attachment_contained_in_comment> rdf:type owl:ObjectProperty ;
-                                                               rdfs:domain :Attachment ;
-                                                               rdfs:range :Comment .
+                                                               rdfs:domain socdont:Attachment ;
+                                                               rdfs:range socdont:Comment .
 
 
 #################################################################
@@ -349,76 +349,76 @@ xsd:object rdf:type rdfs:Datatype .
 #################################################################
 
 ###  https://w3id.org/SocDOnt/1.0#content
-:content rdf:type owl:DatatypeProperty ,
-                  owl:FunctionalProperty ;
-         rdfs:domain :IntellectualComponent ,
-                     :IntellectualEntity ;
-         rdfs:range xsd:object .
+socdont:content rdf:type owl:DatatypeProperty ,
+                         owl:FunctionalProperty ;
+                rdfs:domain socdont:IntellectualComponent ,
+                            socdont:IntellectualEntity ;
+                rdfs:range xsd:object .
 
 
 ###  https://w3id.org/SocDOnt/1.0#contributors
-:contributors rdf:type owl:DatatypeProperty ;
-              rdfs:domain :IntellectualComponent ,
-                          :IntellectualEntity ;
-              rdfs:range xsd:object .
+socdont:contributors rdf:type owl:DatatypeProperty ;
+                     rdfs:domain socdont:IntellectualComponent ,
+                                 socdont:IntellectualEntity ;
+                     rdfs:range xsd:object .
 
 
 ###  https://w3id.org/SocDOnt/1.0#created
-:created rdf:type owl:DatatypeProperty ,
-                  owl:FunctionalProperty ;
-         rdfs:domain :Item ;
-         rdfs:range xsd:dateTime .
+socdont:created rdf:type owl:DatatypeProperty ,
+                         owl:FunctionalProperty ;
+                rdfs:domain socdont:Item ;
+                rdfs:range xsd:dateTime .
 
 
 ###  https://w3id.org/SocDOnt/1.0#creator
-:creator rdf:type owl:DatatypeProperty ;
-         rdfs:domain :Item ;
-         rdfs:range xsd:object .
+socdont:creator rdf:type owl:DatatypeProperty ;
+                rdfs:domain socdont:Item ;
+                rdfs:range xsd:object .
 
 
 ###  https://w3id.org/SocDOnt/1.0#id
-:id rdf:type owl:DatatypeProperty ,
-             owl:FunctionalProperty ;
-    rdfs:domain :Item ;
-    rdfs:range xsd:string .
+socdont:id rdf:type owl:DatatypeProperty ,
+                    owl:FunctionalProperty ;
+           rdfs:domain socdont:Item ;
+           rdfs:range xsd:string .
 
 
 ###  https://w3id.org/SocDOnt/1.0#label
-:label rdf:type owl:DatatypeProperty ,
-                owl:FunctionalProperty ;
-       rdfs:domain :Tag ;
-       rdfs:range xsd:string .
+socdont:label rdf:type owl:DatatypeProperty ,
+                       owl:FunctionalProperty ;
+              rdfs:domain socdont:Tag ;
+              rdfs:range xsd:string .
 
 
 ###  https://w3id.org/SocDOnt/1.0#last_update
-:last_update rdf:type owl:DatatypeProperty ,
-                      owl:FunctionalProperty ;
-             rdfs:domain :IntellectualComponent ,
-                         :IntellectualEntity ;
-             rdfs:range xsd:dateTime .
+socdont:last_update rdf:type owl:DatatypeProperty ,
+                             owl:FunctionalProperty ;
+                    rdfs:domain socdont:IntellectualComponent ,
+                                socdont:IntellectualEntity ;
+                    rdfs:range xsd:dateTime .
 
 
 ###  https://w3id.org/SocDOnt/1.0#mentionees
-:mentionees rdf:type owl:DatatypeProperty ;
-            rdfs:domain :IntellectualComponent ,
-                        :IntellectualEntity ;
-            rdfs:range xsd:object .
+socdont:mentionees rdf:type owl:DatatypeProperty ;
+                   rdfs:domain socdont:IntellectualComponent ,
+                               socdont:IntellectualEntity ;
+                   rdfs:range xsd:object .
 
 
 ###  https://w3id.org/SocDOnt/1.0#title
-:title rdf:type owl:DatatypeProperty ,
-                owl:FunctionalProperty ;
-       rdfs:domain :IntellectualComponent ,
-                   :IntellectualEntity ;
-       rdfs:range xsd:string .
+socdont:title rdf:type owl:DatatypeProperty ,
+                       owl:FunctionalProperty ;
+              rdfs:domain socdont:IntellectualComponent ,
+                          socdont:IntellectualEntity ;
+              rdfs:range xsd:string .
 
 
 ###  https://w3id.org/SocDOnt/1.0#views
-:views rdf:type owl:DatatypeProperty ,
-                owl:FunctionalProperty ;
-       rdfs:domain :IntellectualComponent ,
-                   :IntellectualEntity ;
-       rdfs:range xsd:integer .
+socdont:views rdf:type owl:DatatypeProperty ,
+                       owl:FunctionalProperty ;
+              rdfs:domain socdont:IntellectualComponent ,
+                          socdont:IntellectualEntity ;
+              rdfs:range xsd:integer .
 
 
 #################################################################
@@ -426,351 +426,351 @@ xsd:object rdf:type rdfs:Datatype .
 #################################################################
 
 ###  https://w3id.org/SocDOnt/1.0#Attachment
-:Attachment rdf:type owl:Class ;
-            rdfs:subClassOf :IntellectualComponent ,
-                            [ rdf:type owl:Restriction ;
-                              owl:onProperty <https://w3id.org/SocDOnt/1.0/attachment_contained_in_comment> ;
-                              owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                              owl:onClass :Comment
-                            ] ;
-            owl:disjointWith :Comment ;
-            rdfs:comment "The Attachment is one of the IntellectualComponents and describes an appendage of intellectual content to an IntellectualEntity or to a Comment."@en ;
-            rdfs:label "Attachment"@en .
+socdont:Attachment rdf:type owl:Class ;
+                   rdfs:subClassOf socdont:IntellectualComponent ,
+                                   [ rdf:type owl:Restriction ;
+                                     owl:onProperty <https://w3id.org/SocDOnt/1.0/attachment_contained_in_comment> ;
+                                     owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                     owl:onClass socdont:Comment
+                                   ] ;
+                   owl:disjointWith socdont:Comment ;
+                   rdfs:comment "The Attachment is one of the IntellectualComponents and describes an appendage of intellectual content to an IntellectualEntity or to a Comment."@en ;
+                   rdfs:label "Attachment"@en .
 
 
 ###  https://w3id.org/SocDOnt/1.0#BlogPost
-:BlogPost rdf:type owl:Class ;
-          rdfs:subClassOf :IntellectualEntity ,
-                          [ rdf:type owl:Restriction ;
-                            owl:onProperty :blogPost_contained_in_weblog ;
-                            owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                            owl:onClass :Weblog
-                          ] ;
-          owl:disjointWith :BoardPost ,
-                           :File ,
-                           :MicroblogPost ,
-                           :Task ,
-                           :WikiArticle ;
-          rdfs:comment "BlogPosts belong to the IntellectualEntities and thus describe entries that are posted in blogs."@en ;
-          rdfs:label "BlogPost"@en .
+socdont:BlogPost rdf:type owl:Class ;
+                 rdfs:subClassOf socdont:IntellectualEntity ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty socdont:blogPost_contained_in_weblog ;
+                                   owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                   owl:onClass socdont:Weblog
+                                 ] ;
+                 owl:disjointWith socdont:BoardPost ,
+                                  socdont:File ,
+                                  socdont:MicroblogPost ,
+                                  socdont:Task ,
+                                  socdont:WikiArticle ;
+                 rdfs:comment "BlogPosts belong to the IntellectualEntities and thus describe entries that are posted in blogs."@en ;
+                 rdfs:label "BlogPost"@en .
 
 
 ###  https://w3id.org/SocDOnt/1.0#BoardPost
-:BoardPost rdf:type owl:Class ;
-           rdfs:subClassOf :IntellectualEntity ,
-                           [ rdf:type owl:Restriction ;
-                             owl:onProperty :boardPost_contained_in_messageBoard ;
-                             owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                             owl:onClass :MessageBoard
-                           ] ;
-           owl:disjointWith :File ,
-                            :MicroblogPost ,
-                            :Task ,
-                            :WikiArticle ;
-           rdfs:comment "BoardPosts belong to the IntellectualEntities and thus describe entries that are made in message boards, also called forums. Responses to BoardPosts are called Comments, since they, as an IntellectualComponents, extend SocialDocuments."@en ;
-           rdfs:label "BoardPost"@en .
+socdont:BoardPost rdf:type owl:Class ;
+                  rdfs:subClassOf socdont:IntellectualEntity ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty socdont:boardPost_contained_in_messageBoard ;
+                                    owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                    owl:onClass socdont:MessageBoard
+                                  ] ;
+                  owl:disjointWith socdont:File ,
+                                   socdont:MicroblogPost ,
+                                   socdont:Task ,
+                                   socdont:WikiArticle ;
+                  rdfs:comment "BoardPosts belong to the IntellectualEntities and thus describe entries that are made in message boards, also called forums. Responses to BoardPosts are called Comments, since they, as an IntellectualComponents, extend SocialDocuments."@en ;
+                  rdfs:label "BoardPost"@en .
 
 
 ###  https://w3id.org/SocDOnt/1.0#Collection
-:Collection rdf:type owl:Class ;
-            rdfs:subClassOf [ rdf:type owl:Restriction ;
-                              owl:onProperty :collection_contains_socialDocument ;
-                              owl:minQualifiedCardinality "2"^^xsd:nonNegativeInteger ;
-                              owl:onClass :SocialDocument
-                            ] ,
-                            [ rdf:type owl:Restriction ;
-                              owl:onProperty :collection_has_parent ;
-                              owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                              owl:onClass :Collection
-                            ] ;
-            owl:disjointWith :Container ,
-                             :Item ,
-                             :SocialDocument ,
-                             :Space ;
-            rdfs:comment "A Collection is a set of at least two SocialDocuments, which is used to group SocialDocuments. Collections can be used to represent hierarchical structures through the child and parent relations."@en ;
-            rdfs:label "Collection"@en .
+socdont:Collection rdf:type owl:Class ;
+                   rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                     owl:onProperty socdont:collection_contains_socialDocument ;
+                                     owl:minQualifiedCardinality "2"^^xsd:nonNegativeInteger ;
+                                     owl:onClass socdont:SocialDocument
+                                   ] ,
+                                   [ rdf:type owl:Restriction ;
+                                     owl:onProperty socdont:collection_has_parent ;
+                                     owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                     owl:onClass socdont:Collection
+                                   ] ;
+                   owl:disjointWith socdont:Container ,
+                                    socdont:Item ,
+                                    socdont:SocialDocument ,
+                                    socdont:Space ;
+                   rdfs:comment "A Collection is a set of at least two SocialDocuments, which is used to group SocialDocuments. Collections can be used to represent hierarchical structures through the child and parent relations."@en ;
+                   rdfs:label "Collection"@en .
 
 
 ###  https://w3id.org/SocDOnt/1.0#Comment
-:Comment rdf:type owl:Class ;
-         rdfs:subClassOf :IntellectualComponent ,
-                         [ rdf:type owl:Restriction ;
-                           owl:onProperty :comment_has_parent ;
-                           owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                           owl:onClass :Comment
-                         ] ,
-                         [ rdf:type owl:Restriction ;
-                           owl:onProperty :comment_of_attachment ;
-                           owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                           owl:onClass :Attachment
-                         ] ;
-         rdfs:comment "The Comment entity is an IntellectualComponent that contains intellectual content about Attachments or IntellectualEntities."@en ;
-         rdfs:label "Comment"@en .
+socdont:Comment rdf:type owl:Class ;
+                rdfs:subClassOf socdont:IntellectualComponent ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty socdont:comment_has_parent ;
+                                  owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                  owl:onClass socdont:Comment
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty socdont:comment_of_attachment ;
+                                  owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                  owl:onClass socdont:Attachment
+                                ] ;
+                rdfs:comment "The Comment entity is an IntellectualComponent that contains intellectual content about Attachments or IntellectualEntities."@en ;
+                rdfs:label "Comment"@en .
 
 
 ###  https://w3id.org/SocDOnt/1.0#Component
-:Component rdf:type owl:Class ;
-           rdfs:subClassOf :Item ,
-                           [ rdf:type owl:Restriction ;
-                             owl:onProperty :component_of_intellectualEntity ;
-                             owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                             owl:onClass :IntellectualEntity
-                           ] ;
-           owl:disjointWith :IntellectualEntity ;
-           rdfs:comment "The Component entity is an abstract class that is used to assign an IntellectualEntity to each of the subclasses IntellectualComponent and SimpleComponent. Accordingly, this class only supports the \"bundling\" of the sub-classes."@en ;
-           rdfs:label "Component"@en .
+socdont:Component rdf:type owl:Class ;
+                  rdfs:subClassOf socdont:Item ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty socdont:component_of_intellectualEntity ;
+                                    owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                    owl:onClass socdont:IntellectualEntity
+                                  ] ;
+                  owl:disjointWith socdont:IntellectualEntity ;
+                  rdfs:comment "The Component entity is an abstract class that is used to assign an IntellectualEntity to each of the subclasses IntellectualComponent and SimpleComponent. Accordingly, this class only supports the \"bundling\" of the sub-classes."@en ;
+                  rdfs:label "Component"@en .
 
 
 ###  https://w3id.org/SocDOnt/1.0#Container
-:Container rdf:type owl:Class ;
-           rdfs:subClassOf [ rdf:type owl:Restriction ;
-                             owl:onProperty :container_contained_in_space ;
-                             owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                             owl:onClass :Space
-                           ] ,
-                           [ rdf:type owl:Restriction ;
-                             owl:onProperty :container_has_parent ;
-                             owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                             owl:onClass :Container
-                           ] ;
-           owl:disjointWith :Item ,
-                            :SocialDocument ,
-                            :Space ;
-           rdfs:comment "The container entity serves as a superclass for the various subordinate classes, which in turn can contain the various forms of IntellectualEntities. With the containers, just as with the Collections, nested structures can be created through the child-parent relations. The concept is always assigned to a Space and contains SocialDocuments whose IntellectualEntities correspond to the same type. Containers can be created automatically by the application or manually by the user."@en ;
-           rdfs:label "Container"@en .
+socdont:Container rdf:type owl:Class ;
+                  rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                    owl:onProperty socdont:container_contained_in_space ;
+                                    owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                    owl:onClass socdont:Space
+                                  ] ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty socdont:container_has_parent ;
+                                    owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                    owl:onClass socdont:Container
+                                  ] ;
+                  owl:disjointWith socdont:Item ,
+                                   socdont:SocialDocument ,
+                                   socdont:Space ;
+                  rdfs:comment "The container entity serves as a superclass for the various subordinate classes, which in turn can contain the various forms of IntellectualEntities. With the containers, just as with the Collections, nested structures can be created through the child-parent relations. The concept is always assigned to a Space and contains SocialDocuments whose IntellectualEntities correspond to the same type. Containers can be created automatically by the application or manually by the user."@en ;
+                  rdfs:label "Container"@en .
 
 
 ###  https://w3id.org/SocDOnt/1.0#File
-:File rdf:type owl:Class ;
-      rdfs:subClassOf :IntellectualEntity ,
-                      [ rdf:type owl:Restriction ;
-                        owl:onProperty :file_contained_in_folder ;
-                        owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                        owl:onClass :FileLibrary
-                      ] ;
-      owl:disjointWith :MicroblogPost ,
-                       :Task ,
-                       :WikiArticle ;
-      rdfs:comment "A file is used to represent files that have been created within or uploaded to a collaboration system. Files that are to be assigned to other IntellectualEntities are excluded."@en ;
-      rdfs:label "File"@en .
+socdont:File rdf:type owl:Class ;
+             rdfs:subClassOf socdont:IntellectualEntity ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty socdont:file_contained_in_folder ;
+                               owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                               owl:onClass socdont:FileLibrary
+                             ] ;
+             owl:disjointWith socdont:MicroblogPost ,
+                              socdont:Task ,
+                              socdont:WikiArticle ;
+             rdfs:comment "A file is used to represent files that have been created within or uploaded to a collaboration system. Files that are to be assigned to other IntellectualEntities are excluded."@en ;
+             rdfs:label "File"@en .
 
 
 ###  https://w3id.org/SocDOnt/1.0#FileLibrary
-:FileLibrary rdf:type owl:Class ;
-             rdfs:subClassOf :Container ;
-             owl:disjointWith :MessageBoard ,
-                              :MicroBlog ,
-                              :TaskContainer ,
-                              :Weblog ,
-                              :Wiki ;
-             rdfs:comment "Folders serve as a parent structure for files."@en ;
-             rdfs:label "Folder"@en .
+socdont:FileLibrary rdf:type owl:Class ;
+                    rdfs:subClassOf socdont:Container ;
+                    owl:disjointWith socdont:MessageBoard ,
+                                     socdont:MicroBlog ,
+                                     socdont:TaskContainer ,
+                                     socdont:Weblog ,
+                                     socdont:Wiki ;
+                    rdfs:comment "Folders serve as a parent structure for files."@en ;
+                    rdfs:label "Folder"@en .
 
 
 ###  https://w3id.org/SocDOnt/1.0#GroupWorkspace
-:GroupWorkspace rdf:type owl:Class ;
-                rdfs:subClassOf :Space ;
-                owl:disjointWith :OrganisationalPlatform ,
-                                 :UserWorkspace ;
-                rdfs:comment "GroupWorkspaces describe spaces that are accessible to several people. Thus, they are positioned between UserWorkspace and OrganisationalPlatform and enable collaborative work, since they include the respective containers."@en ;
-                rdfs:label "GroupWorkspace"@en .
+socdont:GroupWorkspace rdf:type owl:Class ;
+                       rdfs:subClassOf socdont:Space ;
+                       owl:disjointWith socdont:OrganisationalPlatform ,
+                                        socdont:UserWorkspace ;
+                       rdfs:comment "GroupWorkspaces describe spaces that are accessible to several people. Thus, they are positioned between UserWorkspace and OrganisationalPlatform and enable collaborative work, since they include the respective containers."@en ;
+                       rdfs:label "GroupWorkspace"@en .
 
 
 ###  https://w3id.org/SocDOnt/1.0#IntellectualComponent
-:IntellectualComponent rdf:type owl:Class ;
-                       rdfs:subClassOf :Component ,
-                                       [ rdf:type owl:Restriction ;
-                                         owl:onProperty :intellectualComponent_has_recentVersion ;
-                                         owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                         owl:onClass :IntellectualComponent
-                                       ] ;
-                       owl:disjointWith :SimpleComponent ;
-                       rdfs:comment "Attachments and Comments are subordinated to the IntellectualComponent entity. These differ from SimpleComponents by their \"intellectual content\"."@en ;
-                       rdfs:label "IntellectualComponent"@en .
+socdont:IntellectualComponent rdf:type owl:Class ;
+                              rdfs:subClassOf socdont:Component ,
+                                              [ rdf:type owl:Restriction ;
+                                                owl:onProperty socdont:intellectualComponent_has_recentVersion ;
+                                                owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                owl:onClass socdont:IntellectualComponent
+                                              ] ;
+                              owl:disjointWith socdont:SimpleComponent ;
+                              rdfs:comment "Attachments and Comments are subordinated to the IntellectualComponent entity. These differ from SimpleComponents by their \"intellectual content\"."@en ;
+                              rdfs:label "IntellectualComponent"@en .
 
 
 ###  https://w3id.org/SocDOnt/1.0#IntellectualEntity
-:IntellectualEntity rdf:type owl:Class ;
-                    rdfs:subClassOf :Item ,
-                                    [ rdf:type owl:Restriction ;
-                                      owl:onProperty :intellectualEntity_has_recentVersion ;
-                                      owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                      owl:onClass :IntellectualEntity
-                                    ] ;
-                    rdfs:comment "IntellectualEntities describe the core of a SocialDocument, for example a file or a BlogPost, which can be enriched by Components."@en ;
-                    rdfs:label "IntellectualEntity"@en .
+socdont:IntellectualEntity rdf:type owl:Class ;
+                           rdfs:subClassOf socdont:Item ,
+                                           [ rdf:type owl:Restriction ;
+                                             owl:onProperty socdont:intellectualEntity_has_recentVersion ;
+                                             owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                             owl:onClass socdont:IntellectualEntity
+                                           ] ;
+                           rdfs:comment "IntellectualEntities describe the core of a SocialDocument, for example a file or a BlogPost, which can be enriched by Components."@en ;
+                           rdfs:label "IntellectualEntity"@en .
 
 
 ###  https://w3id.org/SocDOnt/1.0#Item
-:Item rdf:type owl:Class ;
-      rdfs:subClassOf [ rdf:type owl:Restriction ;
-                        owl:onProperty :item_contained_in_socialDocument ;
-                        owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                        owl:onClass :SocialDocument
-                      ] ;
-      owl:disjointWith :SocialDocument ,
-                       :Space ;
-      rdfs:comment "Through the item entity, all properties that are consistent for the components of a social document are bundled. For this reason, the object properties are of a general nature and yet each represent a single piece of social content. The Item also serves to provide the link to the actual SocialDocument, which consists of at least one IntellectualEntity."@en ;
-      rdfs:label "Item"@en .
+socdont:Item rdf:type owl:Class ;
+             rdfs:subClassOf [ rdf:type owl:Restriction ;
+                               owl:onProperty socdont:item_contained_in_socialDocument ;
+                               owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                               owl:onClass socdont:SocialDocument
+                             ] ;
+             owl:disjointWith socdont:SocialDocument ,
+                              socdont:Space ;
+             rdfs:comment "Through the item entity, all properties that are consistent for the components of a social document are bundled. For this reason, the object properties are of a general nature and yet each represent a single piece of social content. The Item also serves to provide the link to the actual SocialDocument, which consists of at least one IntellectualEntity."@en ;
+             rdfs:label "Item"@en .
 
 
 ###  https://w3id.org/SocDOnt/1.0#Like
-:Like rdf:type owl:Class ;
-      rdfs:subClassOf :SimpleComponent ;
-      owl:disjointWith :Tag ;
-      rdfs:comment "The entity Like, which is also called \"recommendation\", is a SimpleComponent, which can be related to an IntellectualComponent or an IntellectualEntity. Since they have no inherent intellectual content, they, as all SimpleComponents, are not mutually related. Since a like within SocDOnt can only refer to IntellectualEntities, it is not possible to represent the \"liking\" of a container."@en ;
-      rdfs:label "Like"@en .
+socdont:Like rdf:type owl:Class ;
+             rdfs:subClassOf socdont:SimpleComponent ;
+             owl:disjointWith socdont:Tag ;
+             rdfs:comment "The entity Like, which is also called \"recommendation\", is a SimpleComponent, which can be related to an IntellectualComponent or an IntellectualEntity. Since they have no inherent intellectual content, they, as all SimpleComponents, are not mutually related. Since a like within SocDOnt can only refer to IntellectualEntities, it is not possible to represent the \"liking\" of a container."@en ;
+             rdfs:label "Like"@en .
 
 
 ###  https://w3id.org/SocDOnt/1.0#MessageBoard
-:MessageBoard rdf:type owl:Class ;
-              rdfs:subClassOf :Container ;
-              owl:disjointWith :MicroBlog ,
-                               :TaskContainer ,
-                               :Weblog ,
-                               :Wiki ;
-              rdfs:comment "MessageBoards are often called \"forums\" within ECS and contain any number of BoardPosts. This Container type can therefore contain several IntellectualEntities. The contained answers to the original message in the MessageBoard are represented accordingly by Comments."@en ;
-              rdfs:label "MessageBoard"@en .
+socdont:MessageBoard rdf:type owl:Class ;
+                     rdfs:subClassOf socdont:Container ;
+                     owl:disjointWith socdont:MicroBlog ,
+                                      socdont:TaskContainer ,
+                                      socdont:Weblog ,
+                                      socdont:Wiki ;
+                     rdfs:comment "MessageBoards are often called \"forums\" within ECS and contain any number of BoardPosts. This Container type can therefore contain several IntellectualEntities. The contained answers to the original message in the MessageBoard are represented accordingly by Comments."@en ;
+                     rdfs:label "MessageBoard"@en .
 
 
 ###  https://w3id.org/SocDOnt/1.0#MicroBlog
-:MicroBlog rdf:type owl:Class ;
-           rdfs:subClassOf :Container ;
-           owl:disjointWith :TaskContainer ,
-                            :Weblog ,
-                            :Wiki ;
-           rdfs:comment "The Microblog, like the MessageBoard, is a container. The entity can contain MicroblogPosts, whose responses within the SocDOnt are called Comments."@en ;
-           rdfs:label "MicroBlog"@en .
+socdont:MicroBlog rdf:type owl:Class ;
+                  rdfs:subClassOf socdont:Container ;
+                  owl:disjointWith socdont:TaskContainer ,
+                                   socdont:Weblog ,
+                                   socdont:Wiki ;
+                  rdfs:comment "The Microblog, like the MessageBoard, is a container. The entity can contain MicroblogPosts, whose responses within the SocDOnt are called Comments."@en ;
+                  rdfs:label "MicroBlog"@en .
 
 
 ###  https://w3id.org/SocDOnt/1.0#MicroblogPost
-:MicroblogPost rdf:type owl:Class ;
-               rdfs:subClassOf :IntellectualEntity ,
-                               [ rdf:type owl:Restriction ;
-                                 owl:onProperty :microblogPost_contained_in_microblog ;
-                                 owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                 owl:onClass :MicroBlog
-                               ] ;
-               owl:disjointWith :Task ,
-                                :WikiArticle ;
-               rdfs:comment "MicroblogPosts are among the IntellectualEntities and are contained in microblogs. As with the other IntellectualEntities, replies are represented in the form of Comments."@en ;
-               rdfs:label "MicroblogPost"@en .
+socdont:MicroblogPost rdf:type owl:Class ;
+                      rdfs:subClassOf socdont:IntellectualEntity ,
+                                      [ rdf:type owl:Restriction ;
+                                        owl:onProperty socdont:microblogPost_contained_in_microblog ;
+                                        owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                        owl:onClass socdont:MicroBlog
+                                      ] ;
+                      owl:disjointWith socdont:Task ,
+                                       socdont:WikiArticle ;
+                      rdfs:comment "MicroblogPosts are among the IntellectualEntities and are contained in microblogs. As with the other IntellectualEntities, replies are represented in the form of Comments."@en ;
+                      rdfs:label "MicroblogPost"@en .
 
 
 ###  https://w3id.org/SocDOnt/1.0#OrganisationalPlatform
-:OrganisationalPlatform rdf:type owl:Class ;
-                        rdfs:subClassOf :Space ;
-                        owl:disjointWith :UserWorkspace ;
-                        rdfs:comment "The OrganisationalPlatform entity describes a space that is accessible to all participants of the system."@en ;
-                        rdfs:label "OrganisationalPlatform"@en .
+socdont:OrganisationalPlatform rdf:type owl:Class ;
+                               rdfs:subClassOf socdont:Space ;
+                               owl:disjointWith socdont:UserWorkspace ;
+                               rdfs:comment "The OrganisationalPlatform entity describes a space that is accessible to all participants of the system."@en ;
+                               rdfs:label "OrganisationalPlatform"@en .
 
 
 ###  https://w3id.org/SocDOnt/1.0#SimpleComponent
-:SimpleComponent rdf:type owl:Class ;
-                 rdfs:subClassOf :Component ,
-                                 [ rdf:type owl:Restriction ;
-                                   owl:onProperty :simpleComponent_of_intellectualComponent ;
-                                   owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                   owl:onClass :IntellectualComponent
-                                 ] ;
-                 rdfs:comment "SimpleComponents add further data (Likes and Tags) to IntellectualComponents or IntellectualEntities. With the exception of the Tag, these types of Components do not carry any other data properties and thus no intellectual content. Because of their lack of intellectual content, Tags and Likes can never be associated with each other or with any other instance of themselves. This is because tagging a tag, liking a like, or tagging a like makes no sense. While liking a tag would be conceivable, it is a very atypical use case. In some ECS, it is possible to also liken a space or container, but in the context of SocDOnt, the focus is on applying these components to SocialDocuments."@en ;
-                 rdfs:label "SimpleComponent"@en .
+socdont:SimpleComponent rdf:type owl:Class ;
+                        rdfs:subClassOf socdont:Component ,
+                                        [ rdf:type owl:Restriction ;
+                                          owl:onProperty socdont:simpleComponent_of_intellectualComponent ;
+                                          owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                          owl:onClass socdont:IntellectualComponent
+                                        ] ;
+                        rdfs:comment "SimpleComponents add further data (Likes and Tags) to IntellectualComponents or IntellectualEntities. With the exception of the Tag, these types of Components do not carry any other data properties and thus no intellectual content. Because of their lack of intellectual content, Tags and Likes can never be associated with each other or with any other instance of themselves. This is because tagging a tag, liking a like, or tagging a like makes no sense. While liking a tag would be conceivable, it is a very atypical use case. In some ECS, it is possible to also liken a space or container, but in the context of SocDOnt, the focus is on applying these components to SocialDocuments."@en ;
+                        rdfs:label "SimpleComponent"@en .
 
 
 ###  https://w3id.org/SocDOnt/1.0#SocialDocument
-:SocialDocument rdf:type owl:Class ;
-                rdfs:subClassOf [ rdf:type owl:Restriction ;
-                                  owl:onProperty :socialDocument_contains_item ;
-                                  owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                  owl:onClass :Item
-                                ] ,
-                                [ rdf:type owl:Restriction ;
-                                  owl:onProperty :socialDocument_contained_in_container ;
-                                  owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                  owl:onClass :Container
-                                ] ;
-                owl:disjointWith :Space ;
-                rdfs:comment "The SocialDocument represents, as the name of the ontology already indicates, a central element of SocDOnt. This \"compound document\" (Williams, Mosen and Schubert, 2020, p. 3) is composed of IntellectualEntity, IntellectualComponents and SimpleComponents. Only the IntellectualEntity is mandatory. The SocialDocument is assigned to the same container as the corresponding IntellectualEntity. For the SocialDocument, no distinction is made within the SocDOnt as to whether this already originally has \"social content\" (collaboratively created content) (for example, a WikiArticle edited by two authors) or only becomes such through Components (for example, in the case of a PDF or Word file). Hausmann (2018, p. 210) calls these different forms \"born social\" and \"become social\" and refers to Hodge (2000), who first described documents that are created and distributed in electronic form in this way."@en ;
-                rdfs:label "SocialDocument"@en .
+socdont:SocialDocument rdf:type owl:Class ;
+                       rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                         owl:onProperty socdont:socialDocument_contains_item ;
+                                         owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                         owl:onClass socdont:Item
+                                       ] ,
+                                       [ rdf:type owl:Restriction ;
+                                         owl:onProperty socdont:socialDocument_contained_in_container ;
+                                         owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                         owl:onClass socdont:Container
+                                       ] ;
+                       owl:disjointWith socdont:Space ;
+                       rdfs:comment "The SocialDocument represents, as the name of the ontology already indicates, a central element of SocDOnt. This \"compound document\" (Williams, Mosen and Schubert, 2020, p. 3) is composed of IntellectualEntity, IntellectualComponents and SimpleComponents. Only the IntellectualEntity is mandatory. The SocialDocument is assigned to the same container as the corresponding IntellectualEntity. For the SocialDocument, no distinction is made within the SocDOnt as to whether this already originally has \"social content\" (collaboratively created content) (for example, a WikiArticle edited by two authors) or only becomes such through Components (for example, in the case of a PDF or Word file). Hausmann (2018, p. 210) calls these different forms \"born social\" and \"become social\" and refers to Hodge (2000), who first described documents that are created and distributed in electronic form in this way."@en ;
+                       rdfs:label "SocialDocument"@en .
 
 
 ###  https://w3id.org/SocDOnt/1.0#Space
-:Space rdf:type owl:Class ;
-       rdfs:comment "The types of Spaces describe the different areas in which social content is created (Williams, Mosen, and Schubert, 2020). The different container types are assigned to the Spaces."@en ;
-       rdfs:label "Space"@en .
+socdont:Space rdf:type owl:Class ;
+              rdfs:comment "The types of Spaces describe the different areas in which social content is created (Williams, Mosen, and Schubert, 2020). The different container types are assigned to the Spaces."@en ;
+              rdfs:label "Space"@en .
 
 
 ###  https://w3id.org/SocDOnt/1.0#Tag
-:Tag rdf:type owl:Class ;
-     rdfs:subClassOf :SimpleComponent ;
-     rdfs:comment "Tags belong to SimpleComponents and include a label that identifies the tag. Tags are used to describe IntellectualComponents or IntellectualEntities more detailed."@en ;
-     rdfs:label "Tag"@en .
+socdont:Tag rdf:type owl:Class ;
+            rdfs:subClassOf socdont:SimpleComponent ;
+            rdfs:comment "Tags belong to SimpleComponents and include a label that identifies the tag. Tags are used to describe IntellectualComponents or IntellectualEntities more detailed."@en ;
+            rdfs:label "Tag"@en .
 
 
 ###  https://w3id.org/SocDOnt/1.0#Task
-:Task rdf:type owl:Class ;
-      rdfs:subClassOf :IntellectualEntity ,
-                      [ rdf:type owl:Restriction ;
-                        owl:onProperty :task_contained_in_taskContainer ;
-                        owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                        owl:onClass :TaskContainer
-                      ] ,
-                      [ rdf:type owl:Restriction ;
-                        owl:onProperty :task_has_parent ;
-                        owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                        owl:onClass :Task
-                      ] ;
-      owl:disjointWith :WikiArticle ;
-      rdfs:comment "The Task entity belongs to the IntellectualEntities and describes a task. These tasks can be organized in hierarchical structures, since parent-child relations are given. Subordinate tasks can also be called subtasks, but they follow the same structure as parent tasks."@en ;
-      rdfs:label "Task"@en .
+socdont:Task rdf:type owl:Class ;
+             rdfs:subClassOf socdont:IntellectualEntity ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty socdont:task_contained_in_taskContainer ;
+                               owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                               owl:onClass socdont:TaskContainer
+                             ] ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty socdont:task_has_parent ;
+                               owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                               owl:onClass socdont:Task
+                             ] ;
+             owl:disjointWith socdont:WikiArticle ;
+             rdfs:comment "The Task entity belongs to the IntellectualEntities and describes a task. These tasks can be organized in hierarchical structures, since parent-child relations are given. Subordinate tasks can also be called subtasks, but they follow the same structure as parent tasks."@en ;
+             rdfs:label "Task"@en .
 
 
 ###  https://w3id.org/SocDOnt/1.0#TaskContainer
-:TaskContainer rdf:type owl:Class ;
-               rdfs:subClassOf :Container ;
-               owl:disjointWith :Weblog ,
-                                :Wiki ;
-               rdfs:comment "The container type TaskContainer can hold any number of tasks. TaskContainers are unambiguously assigned to a Space."@en ;
-               rdfs:label "TaskContainer"@en .
+socdont:TaskContainer rdf:type owl:Class ;
+                      rdfs:subClassOf socdont:Container ;
+                      owl:disjointWith socdont:Weblog ,
+                                       socdont:Wiki ;
+                      rdfs:comment "The container type TaskContainer can hold any number of tasks. TaskContainers are unambiguously assigned to a Space."@en ;
+                      rdfs:label "TaskContainer"@en .
 
 
 ###  https://w3id.org/SocDOnt/1.0#UserWorkspace
-:UserWorkspace rdf:type owl:Class ;
-               rdfs:subClassOf :Space ;
-               rdfs:comment "The UserWorkspace serves as a space that is only accessible to a specific user. Thus, this type of space represents the counterpart to an organizational platform, which is accessible to all users."@en ;
-               rdfs:label "UserWorkspace"@en .
+socdont:UserWorkspace rdf:type owl:Class ;
+                      rdfs:subClassOf socdont:Space ;
+                      rdfs:comment "The UserWorkspace serves as a space that is only accessible to a specific user. Thus, this type of space represents the counterpart to an organizational platform, which is accessible to all users."@en ;
+                      rdfs:label "UserWorkspace"@en .
 
 
 ###  https://w3id.org/SocDOnt/1.0#Weblog
-:Weblog rdf:type owl:Class ;
-        rdfs:subClassOf :Container ;
-        owl:disjointWith :Wiki ;
-        rdfs:comment "Weblogs are regularly referred to as \"blogs\" within ECS and contain any number of BlogPosts. This container can therefore contain several IntellectualEntities. The contained replies to the original message in the weblog are Comments."@en ;
-        rdfs:label "Weblog"@en .
+socdont:Weblog rdf:type owl:Class ;
+               rdfs:subClassOf socdont:Container ;
+               owl:disjointWith socdont:Wiki ;
+               rdfs:comment "Weblogs are regularly referred to as \"blogs\" within ECS and contain any number of BlogPosts. This container can therefore contain several IntellectualEntities. The contained replies to the original message in the weblog are Comments."@en ;
+               rdfs:label "Weblog"@en .
 
 
 ###  https://w3id.org/SocDOnt/1.0#Wiki
-:Wiki rdf:type owl:Class ;
-      rdfs:subClassOf :Container ;
-      rdfs:comment "Wikis serve as containers for WikiArticles and are subordinate to the concept of Spaces. Containers of this type can also hold multiple IntellectualEntities."@en ;
-      rdfs:label "Wiki"@en .
+socdont:Wiki rdf:type owl:Class ;
+             rdfs:subClassOf socdont:Container ;
+             rdfs:comment "Wikis serve as containers for WikiArticles and are subordinate to the concept of Spaces. Containers of this type can also hold multiple IntellectualEntities."@en ;
+             rdfs:label "Wiki"@en .
 
 
 ###  https://w3id.org/SocDOnt/1.0#WikiArticle
-:WikiArticle rdf:type owl:Class ;
-             rdfs:subClassOf :IntellectualEntity ,
-                             [ rdf:type owl:Restriction ;
-                               owl:onProperty :wikiArticle_contained_in_wiki ;
-                               owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                               owl:onClass :Wiki
-                             ] ,
-                             [ rdf:type owl:Restriction ;
-                               owl:onProperty :wikiArticle_has_parent ;
-                               owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                               owl:onClass :WikiArticle
-                             ] ;
-             rdfs:comment "WikiArticles correspond to the entries in a wiki. Within a wiki, they are usually represented as a separate \"page\". Replies to a WikiArticle are mapped to the Comment entity. Attachments, which are not part of the actual content, are called Attachment."@en ;
-             rdfs:label "WikiArticle"@en .
+socdont:WikiArticle rdf:type owl:Class ;
+                    rdfs:subClassOf socdont:IntellectualEntity ,
+                                    [ rdf:type owl:Restriction ;
+                                      owl:onProperty socdont:wikiArticle_contained_in_wiki ;
+                                      owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                      owl:onClass socdont:Wiki
+                                    ] ,
+                                    [ rdf:type owl:Restriction ;
+                                      owl:onProperty socdont:wikiArticle_has_parent ;
+                                      owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                      owl:onClass socdont:WikiArticle
+                                    ] ;
+                    rdfs:comment "WikiArticles correspond to the entries in a wiki. Within a wiki, they are usually represented as a separate \"page\". Replies to a WikiArticle are mapped to the Comment entity. Attachments, which are not part of the actual content, are called Attachment."@en ;
+                    rdfs:label "WikiArticle"@en .
 
 
 ###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
