@@ -12,7 +12,11 @@
                             owl:versionIRI <https://w3id.org/SocDOnt/1.0> ;
                             dc:creator "Susan Williams, Julian Mosen, Petra Schubert" ;
                             dc:date "01/2020" ;
-                            dc:description "The Social Document Ontology (SocDOnt) expresses the generic structure of social documents. At the micro-level a social document is defined as a composition of an intellectual entity enhanced by both intellectual and simple components and at the macro-level a collection is defined as an aggregation of social documents."@en ;
+                            dc:description """The Social Document Ontology (SocDOnt) expresses the generic structure of social documents. 
+
+Social documents are user-generated digital artefacts, created for collaboration and communication among employees. Typical examples are wiki articles or blog posts including comments, attachments, tags or recommendations. 
+
+SocDOnt makes use of concepts from existing ontologies, such as the SIOC ontology, its extension SIOCT and the Task Management Ontology and introduces new concepts, necessary for a more detailed description of social documents within enterprise collaboration systems."""@en ;
                             dc:publisher "https://ceir.de" ;
                             dc:rights "https://creativecommons.org/licenses/by/4.0" ;
                             dc:title "SocDOnt - Social Document Ontology"@en ;

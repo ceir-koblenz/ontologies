@@ -7,33 +7,40 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      ontologyIRI="https://w3id.org/SocDOnt"
      versionIRI="https://w3id.org/SocDOnt/1.0">
+    <Prefix name="" IRI="https://w3id.org/SocDOnt/1.0#"/>
+    <Prefix name="dc" IRI="http://purl.org/dc/elements/1.1/"/>
     <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
     <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
     <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
     <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="obda" IRI="https://w3id.org/obda/vocabulary#"/>
     <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
     <Annotation>
-        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
+        <AnnotationProperty abbreviatedIRI="dc:creator"/>
         <Literal>Susan Williams, Julian Mosen, Petra Schubert</Literal>
     </Annotation>
     <Annotation>
-        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/date"/>
+        <AnnotationProperty abbreviatedIRI="dc:date"/>
         <Literal>01/2020</Literal>
     </Annotation>
     <Annotation>
-        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/description"/>
-        <Literal xml:lang="en">The Social Document Ontology (SocDOnt) expresses the generic structure of social documents. At the micro-level a social document is defined as a composition of an intellectual entity enhanced by both intellectual and simple components and at the macro-level a collection is defined as an aggregation of social documents.</Literal>
+        <AnnotationProperty abbreviatedIRI="dc:description"/>
+        <Literal xml:lang="en">The Social Document Ontology (SocDOnt) expresses the generic structure of social documents. 
+
+Social documents are user-generated digital artefacts, created for collaboration and communication among employees. Typical examples are wiki articles or blog posts including comments, attachments, tags or recommendations. 
+
+SocDOnt makes use of concepts from existing ontologies, such as the SIOC ontology, its extension SIOCT and the Task Management Ontology and introduces new concepts, necessary for a more detailed description of social documents within enterprise collaboration systems.</Literal>
     </Annotation>
     <Annotation>
-        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/publisher"/>
+        <AnnotationProperty abbreviatedIRI="dc:publisher"/>
         <Literal>https://ceir.de</Literal>
     </Annotation>
     <Annotation>
-        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/rights"/>
+        <AnnotationProperty abbreviatedIRI="dc:rights"/>
         <Literal>https://creativecommons.org/licenses/by/4.0</Literal>
     </Annotation>
     <Annotation>
-        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/title"/>
+        <AnnotationProperty abbreviatedIRI="dc:title"/>
         <Literal xml:lang="en">SocDOnt - Social Document Ontology</Literal>
     </Annotation>
     <Annotation>
@@ -281,22 +288,22 @@
         <DataProperty IRI="/1.0#views"/>
     </Declaration>
     <Declaration>
-        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
+        <AnnotationProperty abbreviatedIRI="dc:creator"/>
     </Declaration>
     <Declaration>
-        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/date"/>
+        <AnnotationProperty abbreviatedIRI="dc:date"/>
     </Declaration>
     <Declaration>
-        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/description"/>
+        <AnnotationProperty abbreviatedIRI="dc:description"/>
     </Declaration>
     <Declaration>
-        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/publisher"/>
+        <AnnotationProperty abbreviatedIRI="dc:publisher"/>
     </Declaration>
     <Declaration>
-        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/rights"/>
+        <AnnotationProperty abbreviatedIRI="dc:rights"/>
     </Declaration>
     <Declaration>
-        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/title"/>
+        <AnnotationProperty abbreviatedIRI="dc:title"/>
     </Declaration>
     <Declaration>
         <AnnotationProperty abbreviatedIRI="owl:imports"/>
