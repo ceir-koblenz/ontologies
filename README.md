@@ -3,8 +3,8 @@
 This repo contains the ontologies developed by the [CEIR - Center for Enterprise Information Research](https://ceir.de/).
 
 ## Ontologies
-- [ColActDOnt - Collaborative Actions on Documents Ontology](ColActDOnt/current/ColActDOnt.html)
-- [SocDOnt - Social Document Ontology](SocDOnt/current/SocDOnt.html) 
+- [ColActDOnt - Collaborative Actions on Documents Ontology](https://ceir-koblenz.github.io/ontologies/ColActDOnt/current/ColActDOnt.html)
+- [SocDOnt - Social Document Ontology](https://ceir-koblenz.github.io/ontologies/SocDOnt/current/SocDOnt.html) 
 
 \
 Shield: [![CC BY 4.0][cc-by-shield]][cc-by]
