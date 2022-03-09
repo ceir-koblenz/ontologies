@@ -17,7 +17,15 @@
     <Prefix name="socdont" IRI="https://w3id.org/SocDOnt/1.0#"/>
     <Annotation>
         <AnnotationProperty abbreviatedIRI="dc:creator"/>
-        <Literal>Susan Williams, Julian Mosen, Petra Schubert</Literal>
+        <Literal>Julian Mosen</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="dc:creator"/>
+        <Literal>Petra Schubert</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="dc:creator"/>
+        <Literal>Susan Williams</Literal>
     </Annotation>
     <Annotation>
         <AnnotationProperty abbreviatedIRI="dc:date"/>
@@ -130,6 +138,9 @@ SocDOnt makes use of concepts from existing ontologies, such as the SIOC ontolog
     </Declaration>
     <Declaration>
         <Class IRI="/1.0#WikiArticle"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/1.0#attachment_contained_in_comment"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="/1.0#attachment_has_comment"/>
@@ -255,9 +266,6 @@ SocDOnt makes use of concepts from existing ontologies, such as the SIOC ontolog
         <ObjectProperty IRI="/1.0#wiki_contains_wikiArticle"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="/1.0/attachment_contained_in_comment"/>
-    </Declaration>
-    <Declaration>
         <DataProperty IRI="/1.0#content"/>
     </Declaration>
     <Declaration>
@@ -318,7 +326,7 @@ SocDOnt makes use of concepts from existing ontologies, such as the SIOC ontolog
     <SubClassOf>
         <Class IRI="/1.0#Attachment"/>
         <ObjectMaxCardinality cardinality="1">
-            <ObjectProperty IRI="/1.0/attachment_contained_in_comment"/>
+            <ObjectProperty IRI="/1.0#attachment_contained_in_comment"/>
             <Class IRI="/1.0#Comment"/>
         </ObjectMaxCardinality>
     </SubClassOf>
@@ -746,6 +754,10 @@ SocDOnt makes use of concepts from existing ontologies, such as the SIOC ontolog
         <Class IRI="/1.0#Wiki"/>
     </DisjointClasses>
     <InverseObjectProperties>
+        <ObjectProperty IRI="/1.0#attachment_contained_in_comment"/>
+        <ObjectProperty IRI="/1.0#comment_contains_attachment"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
         <ObjectProperty IRI="/1.0#attachment_has_comment"/>
         <ObjectProperty IRI="/1.0#comment_of_attachment"/>
     </InverseObjectProperties>
@@ -764,10 +776,6 @@ SocDOnt makes use of concepts from existing ontologies, such as the SIOC ontolog
     <InverseObjectProperties>
         <ObjectProperty IRI="/1.0#collection_has_child"/>
         <ObjectProperty IRI="/1.0#collection_has_parent"/>
-    </InverseObjectProperties>
-    <InverseObjectProperties>
-        <ObjectProperty IRI="/1.0#comment_contains_attachment"/>
-        <ObjectProperty IRI="/1.0/attachment_contained_in_comment"/>
     </InverseObjectProperties>
     <InverseObjectProperties>
         <ObjectProperty IRI="/1.0#comment_has_child"/>
@@ -844,6 +852,10 @@ SocDOnt makes use of concepts from existing ontologies, such as the SIOC ontolog
     <FunctionalObjectProperty>
         <ObjectProperty IRI="/1.0#wikiArticle_has_parent"/>
     </FunctionalObjectProperty>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/1.0#attachment_contained_in_comment"/>
+        <Class IRI="/1.0#Attachment"/>
+    </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="/1.0#attachment_has_comment"/>
         <Class IRI="/1.0#Attachment"/>
@@ -1008,10 +1020,10 @@ SocDOnt makes use of concepts from existing ontologies, such as the SIOC ontolog
         <ObjectProperty IRI="/1.0#wiki_contains_wikiArticle"/>
         <Class IRI="/1.0#Wiki"/>
     </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="/1.0/attachment_contained_in_comment"/>
-        <Class IRI="/1.0#Attachment"/>
-    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/1.0#attachment_contained_in_comment"/>
+        <Class IRI="/1.0#Comment"/>
+    </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="/1.0#attachment_has_comment"/>
         <Class IRI="/1.0#Comment"/>
@@ -1175,10 +1187,6 @@ SocDOnt makes use of concepts from existing ontologies, such as the SIOC ontolog
     <ObjectPropertyRange>
         <ObjectProperty IRI="/1.0#wiki_contains_wikiArticle"/>
         <Class IRI="/1.0#WikiArticle"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="/1.0/attachment_contained_in_comment"/>
-        <Class IRI="/1.0#Comment"/>
     </ObjectPropertyRange>
     <FunctionalDataProperty>
         <DataProperty IRI="/1.0#content"/>

@@ -9,7 +9,7 @@
     "@id" : "https://w3id.org/SocDOnt/1.0#Comment"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/SocDOnt/1.0/attachment_contained_in_comment"
+    "@id" : "https://w3id.org/SocDOnt/1.0#attachment_contained_in_comment"
   } ]
 }, {
   "@id" : "_:genid10",
@@ -312,7 +312,11 @@
   "@id" : "https://w3id.org/SocDOnt",
   "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
   "http://purl.org/dc/elements/1.1/creator" : [ {
-    "@value" : "Susan Williams, Julian Mosen, Petra Schubert"
+    "@value" : "Julian Mosen"
+  }, {
+    "@value" : "Petra Schubert"
+  }, {
+    "@value" : "Susan Williams"
   } ],
   "http://purl.org/dc/elements/1.1/date" : [ {
     "@value" : "01/2020"
@@ -878,6 +882,18 @@
     "@id" : "_:genid22"
   } ]
 }, {
+  "@id" : "https://w3id.org/SocDOnt/1.0#attachment_contained_in_comment",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/SocDOnt/1.0#Attachment"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/SocDOnt/1.0#Comment"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://w3id.org/SocDOnt/1.0#comment_contains_attachment"
+  } ]
+}, {
   "@id" : "https://w3id.org/SocDOnt/1.0#attachment_has_comment",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
@@ -954,9 +970,6 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "https://w3id.org/SocDOnt/1.0#Attachment"
-  } ],
-  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
-    "@id" : "https://w3id.org/SocDOnt/1.0/attachment_contained_in_comment"
   } ]
 }, {
   "@id" : "https://w3id.org/SocDOnt/1.0#comment_has_child",
@@ -1410,14 +1423,5 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "https://w3id.org/SocDOnt/1.0#WikiArticle"
-  } ]
-}, {
-  "@id" : "https://w3id.org/SocDOnt/1.0/attachment_contained_in_comment",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/SocDOnt/1.0#Attachment"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://w3id.org/SocDOnt/1.0#Comment"
   } ]
 } ]

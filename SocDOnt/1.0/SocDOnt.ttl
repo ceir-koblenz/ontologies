@@ -1,3 +1,4 @@
+@prefix : <https://w3id.org/SocDOnt> .
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -10,7 +11,9 @@
 
 <https://w3id.org/SocDOnt> rdf:type owl:Ontology ;
                             owl:versionIRI <https://w3id.org/SocDOnt/1.0> ;
-                            dc:creator "Susan Williams, Julian Mosen, Petra Schubert" ;
+                            dc:creator "Julian Mosen" ,
+                                       "Petra Schubert" ,
+                                       "Susan Williams" ;
                             dc:date "01/2020" ;
                             dc:description """The Social Document Ontology (SocDOnt) expresses the generic structure of social documents. 
 
@@ -66,6 +69,13 @@ xsd:object rdf:type rdfs:Datatype .
 #    Object Properties
 #################################################################
 
+###  https://w3id.org/SocDOnt/1.0#attachment_contained_in_comment
+socdont:attachment_contained_in_comment rdf:type owl:ObjectProperty ;
+                                        owl:inverseOf socdont:comment_contains_attachment ;
+                                        rdfs:domain socdont:Attachment ;
+                                        rdfs:range socdont:Comment .
+
+
 ###  https://w3id.org/SocDOnt/1.0#attachment_has_comment
 socdont:attachment_has_comment rdf:type owl:ObjectProperty ;
                                owl:inverseOf socdont:comment_of_attachment ;
@@ -110,7 +120,6 @@ socdont:collection_has_parent rdf:type owl:ObjectProperty ,
 
 ###  https://w3id.org/SocDOnt/1.0#comment_contains_attachment
 socdont:comment_contains_attachment rdf:type owl:ObjectProperty ;
-                                    owl:inverseOf <https://w3id.org/SocDOnt/1.0/attachment_contained_in_comment> ;
                                     rdfs:domain socdont:Comment ;
                                     rdfs:range socdont:Attachment .
 
@@ -338,12 +347,6 @@ socdont:wiki_contains_wikiArticle rdf:type owl:ObjectProperty ;
                                   rdfs:range socdont:WikiArticle .
 
 
-###  https://w3id.org/SocDOnt/1.0/attachment_contained_in_comment
-<https://w3id.org/SocDOnt/1.0/attachment_contained_in_comment> rdf:type owl:ObjectProperty ;
-                                                               rdfs:domain socdont:Attachment ;
-                                                               rdfs:range socdont:Comment .
-
-
 #################################################################
 #    Data properties
 #################################################################
@@ -429,7 +432,7 @@ socdont:views rdf:type owl:DatatypeProperty ,
 socdont:Attachment rdf:type owl:Class ;
                    rdfs:subClassOf socdont:IntellectualComponent ,
                                    [ rdf:type owl:Restriction ;
-                                     owl:onProperty <https://w3id.org/SocDOnt/1.0/attachment_contained_in_comment> ;
+                                     owl:onProperty socdont:attachment_contained_in_comment ;
                                      owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
                                      owl:onClass socdont:Comment
                                    ] ;
