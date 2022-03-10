@@ -183,12 +183,12 @@ socdont:container_has_parent rdf:type owl:ObjectProperty ,
 socdont:file_contained_in_folder rdf:type owl:ObjectProperty ;
                                  owl:inverseOf socdont:folder_contains_file ;
                                  rdfs:domain socdont:File ;
-                                 rdfs:range socdont:FileLibrary .
+                                 rdfs:range socdont:Folder .
 
 
 ###  https://w3id.org/SocDOnt/1.0#folder_contains_file
 socdont:folder_contains_file rdf:type owl:ObjectProperty ;
-                             rdfs:domain socdont:FileLibrary ;
+                             rdfs:domain socdont:Folder ;
                              rdfs:range socdont:File .
 
 
@@ -549,7 +549,7 @@ socdont:File rdf:type owl:Class ;
                              [ rdf:type owl:Restriction ;
                                owl:onProperty socdont:file_contained_in_folder ;
                                owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                               owl:onClass socdont:FileLibrary
+                               owl:onClass socdont:Folder
                              ] ;
              owl:disjointWith socdont:MicroblogPost ,
                               socdont:Task ,
@@ -558,8 +558,8 @@ socdont:File rdf:type owl:Class ;
              rdfs:label "File"@en .
 
 
-###  https://w3id.org/SocDOnt/1.0#FileLibrary
-socdont:FileLibrary rdf:type owl:Class ;
+###  https://w3id.org/SocDOnt/1.0#Folder
+socdont:Folder rdf:type owl:Class ;
                     rdfs:subClassOf socdont:Container ;
                     owl:disjointWith socdont:MessageBoard ,
                                      socdont:MicroBlog ,
