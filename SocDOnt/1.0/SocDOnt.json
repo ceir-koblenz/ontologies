@@ -28,7 +28,7 @@
   "@id" : "_:genid11",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onClass" : [ {
-    "@id" : "https://w3id.org/SocDOnt/1.0#FileLibrary"
+    "@id" : "https://w3id.org/SocDOnt/1.0#Folder"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "https://w3id.org/SocDOnt/1.0#file_contained_in_folder"
@@ -522,7 +522,7 @@
     "@id" : "https://w3id.org/SocDOnt/1.0#WikiArticle"
   } ]
 }, {
-  "@id" : "https://w3id.org/SocDOnt/1.0#FileLibrary",
+  "@id" : "https://w3id.org/SocDOnt/1.0#Folder",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -1105,7 +1105,7 @@
     "@id" : "https://w3id.org/SocDOnt/1.0#File"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://w3id.org/SocDOnt/1.0#FileLibrary"
+    "@id" : "https://w3id.org/SocDOnt/1.0#Folder"
   } ],
   "http://www.w3.org/2002/07/owl#inverseOf" : [ {
     "@id" : "https://w3id.org/SocDOnt/1.0#folder_contains_file"
@@ -1114,7 +1114,7 @@
   "@id" : "https://w3id.org/SocDOnt/1.0#folder_contains_file",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/SocDOnt/1.0#FileLibrary"
+    "@id" : "https://w3id.org/SocDOnt/1.0#Folder"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "https://w3id.org/SocDOnt/1.0#File"

@@ -80,7 +80,7 @@ SocDOnt makes use of concepts from existing ontologies, such as the SIOC ontolog
         <Class IRI="/1.0#File"/>
     </Declaration>
     <Declaration>
-        <Class IRI="/1.0#FileLibrary"/>
+        <Class IRI="/1.0#Folder"/>
     </Declaration>
     <Declaration>
         <Class IRI="/1.0#GroupWorkspace"/>
@@ -417,11 +417,11 @@ SocDOnt makes use of concepts from existing ontologies, such as the SIOC ontolog
         <Class IRI="/1.0#File"/>
         <ObjectExactCardinality cardinality="1">
             <ObjectProperty IRI="/1.0#file_contained_in_folder"/>
-            <Class IRI="/1.0#FileLibrary"/>
+            <Class IRI="/1.0#Folder"/>
         </ObjectExactCardinality>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/1.0#FileLibrary"/>
+        <Class IRI="/1.0#Folder"/>
         <Class IRI="/1.0#Container"/>
     </SubClassOf>
     <SubClassOf>
@@ -650,23 +650,23 @@ SocDOnt makes use of concepts from existing ontologies, such as the SIOC ontolog
         <Class IRI="/1.0#WikiArticle"/>
     </DisjointClasses>
     <DisjointClasses>
-        <Class IRI="/1.0#FileLibrary"/>
+        <Class IRI="/1.0#Folder"/>
         <Class IRI="/1.0#MessageBoard"/>
     </DisjointClasses>
     <DisjointClasses>
-        <Class IRI="/1.0#FileLibrary"/>
+        <Class IRI="/1.0#Folder"/>
         <Class IRI="/1.0#MicroBlog"/>
     </DisjointClasses>
     <DisjointClasses>
-        <Class IRI="/1.0#FileLibrary"/>
+        <Class IRI="/1.0#Folder"/>
         <Class IRI="/1.0#TaskContainer"/>
     </DisjointClasses>
     <DisjointClasses>
-        <Class IRI="/1.0#FileLibrary"/>
+        <Class IRI="/1.0#Folder"/>
         <Class IRI="/1.0#Weblog"/>
     </DisjointClasses>
     <DisjointClasses>
-        <Class IRI="/1.0#FileLibrary"/>
+        <Class IRI="/1.0#Folder"/>
         <Class IRI="/1.0#Wiki"/>
     </DisjointClasses>
     <DisjointClasses>
@@ -922,7 +922,7 @@ SocDOnt makes use of concepts from existing ontologies, such as the SIOC ontolog
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="/1.0#folder_contains_file"/>
-        <Class IRI="/1.0#FileLibrary"/>
+        <Class IRI="/1.0#Folder"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="/1.0#intellectualComponent_has_previousVersion"/>
@@ -1086,7 +1086,7 @@ SocDOnt makes use of concepts from existing ontologies, such as the SIOC ontolog
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="/1.0#file_contained_in_folder"/>
-        <Class IRI="/1.0#FileLibrary"/>
+        <Class IRI="/1.0#Folder"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="/1.0#folder_contains_file"/>
@@ -1395,12 +1395,12 @@ SocDOnt makes use of concepts from existing ontologies, such as the SIOC ontolog
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>/1.0#FileLibrary</IRI>
+        <IRI>/1.0#Folder</IRI>
         <Literal xml:lang="en">Folders serve as a parent structure for files.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>/1.0#FileLibrary</IRI>
+        <IRI>/1.0#Folder</IRI>
         <Literal xml:lang="en">Folder</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
