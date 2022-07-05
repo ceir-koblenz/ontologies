@@ -1,0 +1,4157 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="https://w3id.org/ColActDOnt"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="https://w3id.org/ColActDOnt"
+     versionIRI="https://w3id.org/ColActDOnt/1.0">
+    <Prefix name="" IRI="https://w3id.org/ColActDOnt"/>
+    <Prefix name="dc" IRI="http://purl.org/dc/elements/1.1/"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="obda" IRI="https://w3id.org/obda/vocabulary#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Prefix name="socdont" IRI="https://w3id.org/SocDOnt/1.0#"/>
+    <Prefix name="colactdont" IRI="https://w3id.org/ColActDOnt/1.0#"/>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="dc:creator"/>
+        <Literal>Martin Just</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="dc:creator"/>
+        <Literal>Petra Schubert</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="dc:date"/>
+        <Literal>06/2022</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="dc:description"/>
+        <Literal xml:lang="en">The Collaborative Actions on Documents Ontology (ColActDOnt) expresses the structure of actions on documents within collaborative systems.</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="dc:publisher"/>
+        <Literal>https://ceir.de</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="dc:rights"/>
+        <Literal>https://creativecommons.org/licenses/by/4.0</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="dc:title"/>
+        <Literal xml:lang="en">ColActDOnt - Collaborative Actions on Documents Ontology</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="owl:versionInfo"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">1.0</Literal>
+    </Annotation>
+    <Declaration>
+        <Class IRI="/1.0#Account"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/1.0#Agent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/1.0#ArtificialAgent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/1.0#Calendar"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/1.0#CalendarEntry"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/1.0#ChatChannel"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/1.0#ChatMessage"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/1.0#DigitalWorkspace"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/1.0#Event"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/1.0#FileLibrary"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/1.0#Folder"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/1.0#Follow"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/1.0#Group"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/1.0#MailContainer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/1.0#MailMessage"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/1.0#Meeting"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/1.0#MeetingContainer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/1.0#Organisation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/1.0#OrganisationalGroup"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/1.0#Person"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/1.0#Reaction"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/1.0#Role"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/1.0#SocialProfile"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/1.0#SocialProfileContainer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/1.0#Subscription"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/1.0#System"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/1.0#Vote"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/1.0#WikiPage"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="socdont:Attachment"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="socdont:BlogPost"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="socdont:BoardPost"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="socdont:Collection"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="socdont:Comment"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="socdont:Component"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="socdont:Container"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="socdont:File"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="socdont:GroupWorkspace"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="socdont:IntellectualComponent"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="socdont:IntellectualEntity"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="socdont:Item"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="socdont:Like"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="socdont:MessageBoard"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="socdont:MicroBlog"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="socdont:MicroblogPost"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="socdont:OrganisationalPlatform"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="socdont:SimpleComponent"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="socdont:SocialDocument"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="socdont:Space"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="socdont:Tag"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="socdont:Task"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="socdont:TaskContainer"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="socdont:UserWorkspace"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="socdont:Weblog"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="socdont:Wiki"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/1.0#account_contained_in_group"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/1.0#account_contained_in_system"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/1.0#account_contributed_to_intellectualComponent"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/1.0#account_contributed_to_intellectualEntity"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/1.0#account_created_item"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/1.0#account_has_role"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/1.0#account_has_socialProfile"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/1.0#account_known_by_account"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/1.0#account_knows_account"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/1.0#account_mentioned_intellectualComponent"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/1.0#account_mentioned_intellectualEntity"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/1.0#account_of_agent"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/1.0#account_performed_event"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/1.0#agent_has_account"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/1.0#agent_of_digitalWorkspace"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/1.0#agent_of_organisationalGroup"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/1.0#agent_related_to_organisation"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/1.0#calendarEntry_contained_in_calendar"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/1.0#calendar_contains_calendarEntry"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/1.0#chatChannel_contains_chatMessage"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/1.0#chatMessage_contained_in_chatChannel"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/1.0#container_contains_intellectualEntity"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/1.0#digitalWorkspace_contains_system"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/1.0#digitalWorkspace_has_agent"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/1.0#digitalWorkspace_has_organisationalGroup"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/1.0#event_affects_item"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/1.0#event_performed_by_account"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/1.0#fileLibrary_contains_folder"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/1.0#file_contained_in_fileLibrary"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/1.0#file_contained_in_folder"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/1.0#folder_contained_in_fileLibrary"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/1.0#folder_contains_file"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/1.0#folder_has_child"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/1.0#folder_has_parent"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/1.0#group_contains_account"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/1.0#group_has_role"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/1.0#group_of_space"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/1.0#intellectualComponent_contributed_by_account"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/1.0#intellectualComponent_has_nextVersion"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/1.0#intellectualComponent_has_oldVersion"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/1.0#intellectualComponent_has_recentVersion"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/1.0#intellectualComponent_mentioned_by_account"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/1.0#intellectualComponent_references_item"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/1.0#intellectualEntity_contained_in_container"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/1.0#intellectualEntity_contributed_by_account"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/1.0#intellectualEntity_has_nextVersion"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/1.0#intellectualEntity_has_oldVersion"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/1.0#intellectualEntity_mentioned_by_account"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/1.0#intellectualEntity_references_item"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/1.0#item_affected_by_event"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/1.0#item_created_by_account"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/1.0#item_referenced_by_intellectualComponent"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/1.0#item_referenced_by_intellectualEntity"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/1.0#mailContainer_contains_mailMessage"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/1.0#mailMessage_contained_in_mailContainer"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/1.0#meetingContainer_contains_meeting"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/1.0#meeting_contained_in_meetingContainer"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/1.0#organisation_related_to_agent"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/1.0#organisationalGroup_has_agent"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/1.0#organisationalGroup_of_digitalWorkspace"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/1.0#role_of_account"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/1.0#role_of_group"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/1.0#socialProfileContainer_contains_socialProfile"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/1.0#socialProfile_contained_in_socialProfileContainer"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/1.0#socialProfile_of_account"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/1.0#space_contained_in_system"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/1.0#space_has_group"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/1.0#system_contained_in_digitalWorkspace"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/1.0#system_contains_account"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/1.0#system_contains_space"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/1.0#wikiPage_contained_in_wiki"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/1.0#wikiPage_has_child"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/1.0#wikiPage_has_parent"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/1.0#wiki_contains_wikiPage"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="socdont:attachment_contained_in_comment"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="socdont:attachment_has_comment"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="socdont:blogPost_contained_in_weblog"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="socdont:boardPost_contained_in_messageBoard"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="socdont:collection_contains_socialDocument"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="socdont:collection_has_child"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="socdont:collection_has_parent"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="socdont:comment_contains_attachment"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="socdont:comment_has_child"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="socdont:comment_has_parent"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="socdont:comment_of_attachment"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="socdont:component_of_intellectualEntity"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="socdont:container_contained_in_space"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="socdont:container_contains_socialDocument"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="socdont:fileLibrary_contains_file"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="socdont:intellectualComponent_has_previousVersion"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="socdont:intellectualComponent_has_recentVersion"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="socdont:intellectualComponent_has_simpleComponent"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="socdont:intellectualEntity_has_component"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="socdont:intellectualEntity_has_previousVersion"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="socdont:intellectualEntity_has_recentVersion"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="socdont:item_contained_in_socialDocument"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="socdont:messageBoard_contains_boardPost"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="socdont:microblogPost_contained_in_microblog"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="socdont:microblog_contains_microblogPost"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="socdont:simpleComponent_of_intellectualComponent"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="socdont:socialDocument_contained_in_collection"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="socdont:socialDocument_contained_in_container"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="socdont:socialDocument_contains_item"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="socdont:space_contains_container"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="socdont:taskContainer_contains_task"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="socdont:task_contained_in_taskContainer"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="socdont:task_has_child"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="socdont:task_has_parent"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="socdont:weblog_contains_blogPost"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/1.0#action"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/1.0#birthday"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/1.0#email"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/1.0#family_name"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/1.0#gender"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/1.0#given_name"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/1.0#instance_title"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/1.0#last_updated"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/1.0#location"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/1.0#phone"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/1.0#private_name"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/1.0#public_name"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/1.0#software_product"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/1.0#software_type"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/1.0#software_vendor"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/1.0#software_version"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty abbreviatedIRI="socdont:content"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty abbreviatedIRI="socdont:created"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty abbreviatedIRI="socdont:id"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty abbreviatedIRI="socdont:label"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty abbreviatedIRI="socdont:title"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty abbreviatedIRI="socdont:views"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="dc:creator"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="dc:date"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="dc:description"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="dc:publisher"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="dc:rights"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="dc:title"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="owl:imports"/>
+    </Declaration>
+    <Declaration>
+        <Datatype abbreviatedIRI="xsd:object"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="/1.0#Account"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="/1.0#account_contained_in_system"/>
+            <Class IRI="/1.0#System"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/1.0#Account"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="/1.0#account_of_agent"/>
+            <Class IRI="/1.0#Agent"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/1.0#Account"/>
+        <ObjectMaxCardinality cardinality="1">
+            <ObjectProperty IRI="/1.0#account_has_socialProfile"/>
+            <Class IRI="/1.0#SocialProfile"/>
+        </ObjectMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/1.0#ArtificialAgent"/>
+        <Class IRI="/1.0#Agent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/1.0#Calendar"/>
+        <Class abbreviatedIRI="socdont:Container"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/1.0#CalendarEntry"/>
+        <Class abbreviatedIRI="socdont:IntellectualEntity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/1.0#CalendarEntry"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="/1.0#calendarEntry_contained_in_calendar"/>
+            <Class IRI="/1.0#Calendar"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/1.0#ChatChannel"/>
+        <Class abbreviatedIRI="socdont:Container"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/1.0#ChatMessage"/>
+        <Class abbreviatedIRI="socdont:IntellectualEntity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/1.0#ChatMessage"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="/1.0#chatMessage_contained_in_chatChannel"/>
+            <Class IRI="/1.0#ChatChannel"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/1.0#DigitalWorkspace"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty IRI="/1.0#digitalWorkspace_contains_system"/>
+            <Class IRI="/1.0#System"/>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/1.0#DigitalWorkspace"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty IRI="/1.0#digitalWorkspace_has_agent"/>
+            <Class IRI="/1.0#Agent"/>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/1.0#Event"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="/1.0#event_affects_item"/>
+            <Class IRI="/1.0#SocialProfileContainer"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/1.0#Event"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="/1.0#event_performed_by_account"/>
+            <Class IRI="/1.0#SocialProfileContainer"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/1.0#FileLibrary"/>
+        <Class abbreviatedIRI="socdont:Container"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/1.0#Folder"/>
+        <Class abbreviatedIRI="socdont:IntellectualEntity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/1.0#Folder"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="/1.0#folder_contained_in_fileLibrary"/>
+            <Class IRI="/1.0#FileLibrary"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/1.0#Folder"/>
+        <ObjectMaxCardinality cardinality="1">
+            <ObjectProperty IRI="/1.0#folder_has_parent"/>
+            <Class IRI="/1.0#Folder"/>
+        </ObjectMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/1.0#Follow"/>
+        <Class abbreviatedIRI="socdont:SimpleComponent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/1.0#MailContainer"/>
+        <Class abbreviatedIRI="socdont:Container"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/1.0#MailMessage"/>
+        <Class abbreviatedIRI="socdont:IntellectualEntity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/1.0#MailMessage"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="/1.0#mailMessage_contained_in_mailContainer"/>
+            <Class IRI="/1.0#MailContainer"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/1.0#Meeting"/>
+        <Class abbreviatedIRI="socdont:IntellectualEntity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/1.0#Meeting"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="/1.0#meeting_contained_in_meetingContainer"/>
+            <Class IRI="/1.0#MeetingContainer"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/1.0#MeetingContainer"/>
+        <Class abbreviatedIRI="socdont:Container"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/1.0#Organisation"/>
+        <Class IRI="/1.0#Agent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/1.0#Person"/>
+        <Class IRI="/1.0#Agent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/1.0#Reaction"/>
+        <Class abbreviatedIRI="socdont:SimpleComponent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/1.0#SocialProfile"/>
+        <Class abbreviatedIRI="socdont:IntellectualEntity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/1.0#SocialProfile"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="/1.0#socialProfile_contained_in_socialProfileContainer"/>
+            <Class IRI="/1.0#SocialProfileContainer"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/1.0#SocialProfileContainer"/>
+        <Class abbreviatedIRI="socdont:Container"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/1.0#Subscription"/>
+        <Class abbreviatedIRI="socdont:SimpleComponent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/1.0#System"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty IRI="/1.0#system_contains_account"/>
+            <Class IRI="/1.0#Account"/>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/1.0#Vote"/>
+        <Class abbreviatedIRI="socdont:SimpleComponent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/1.0#WikiPage"/>
+        <Class abbreviatedIRI="socdont:IntellectualEntity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/1.0#WikiPage"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="/1.0#wikiPage_contained_in_wiki"/>
+            <Class abbreviatedIRI="socdont:Wiki"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/1.0#WikiPage"/>
+        <ObjectMaxCardinality cardinality="1">
+            <ObjectProperty IRI="/1.0#wikiPage_has_parent"/>
+            <Class IRI="/1.0#WikiPage"/>
+        </ObjectMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="socdont:Attachment"/>
+        <Class abbreviatedIRI="socdont:IntellectualComponent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="socdont:Attachment"/>
+        <ObjectMaxCardinality cardinality="1">
+            <ObjectProperty abbreviatedIRI="socdont:attachment_contained_in_comment"/>
+            <Class abbreviatedIRI="socdont:Comment"/>
+        </ObjectMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="socdont:BlogPost"/>
+        <Class abbreviatedIRI="socdont:IntellectualEntity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="socdont:BlogPost"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty abbreviatedIRI="socdont:blogPost_contained_in_weblog"/>
+            <Class abbreviatedIRI="socdont:Weblog"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="socdont:BoardPost"/>
+        <Class abbreviatedIRI="socdont:IntellectualEntity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="socdont:BoardPost"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty abbreviatedIRI="socdont:boardPost_contained_in_messageBoard"/>
+            <Class abbreviatedIRI="socdont:MessageBoard"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="socdont:Collection"/>
+        <ObjectMinCardinality cardinality="2">
+            <ObjectProperty abbreviatedIRI="socdont:collection_contains_socialDocument"/>
+            <Class abbreviatedIRI="socdont:SocialDocument"/>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="socdont:Collection"/>
+        <ObjectMaxCardinality cardinality="1">
+            <ObjectProperty abbreviatedIRI="socdont:collection_has_parent"/>
+            <Class abbreviatedIRI="socdont:Collection"/>
+        </ObjectMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="socdont:Comment"/>
+        <Class abbreviatedIRI="socdont:IntellectualComponent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="socdont:Comment"/>
+        <ObjectMaxCardinality cardinality="1">
+            <ObjectProperty abbreviatedIRI="socdont:comment_has_parent"/>
+            <Class abbreviatedIRI="socdont:Comment"/>
+        </ObjectMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="socdont:Comment"/>
+        <ObjectMaxCardinality cardinality="1">
+            <ObjectProperty abbreviatedIRI="socdont:comment_of_attachment"/>
+            <Class abbreviatedIRI="socdont:Attachment"/>
+        </ObjectMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="socdont:Component"/>
+        <Class abbreviatedIRI="socdont:Item"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="socdont:Component"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty abbreviatedIRI="socdont:component_of_intellectualEntity"/>
+            <Class abbreviatedIRI="socdont:IntellectualEntity"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="socdont:Container"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty abbreviatedIRI="socdont:container_contained_in_space"/>
+            <Class abbreviatedIRI="socdont:Space"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="socdont:File"/>
+        <Class abbreviatedIRI="socdont:IntellectualEntity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="socdont:File"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="/1.0#file_contained_in_fileLibrary"/>
+            <Class IRI="/1.0#FileLibrary"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="socdont:GroupWorkspace"/>
+        <Class abbreviatedIRI="socdont:Space"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="socdont:IntellectualComponent"/>
+        <Class abbreviatedIRI="socdont:Component"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="socdont:IntellectualComponent"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty abbreviatedIRI="socdont:intellectualComponent_has_recentVersion"/>
+            <Class abbreviatedIRI="socdont:IntellectualComponent"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="socdont:IntellectualEntity"/>
+        <Class abbreviatedIRI="socdont:Item"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="socdont:IntellectualEntity"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="/1.0#intellectualEntity_contained_in_container"/>
+            <Class abbreviatedIRI="socdont:Container"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="socdont:IntellectualEntity"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty abbreviatedIRI="socdont:intellectualEntity_has_recentVersion"/>
+            <Class abbreviatedIRI="socdont:IntellectualEntity"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="socdont:IntellectualEntity"/>
+        <ObjectMaxCardinality cardinality="1">
+            <ObjectProperty IRI="/1.0#intellectualEntity_has_nextVersion"/>
+            <Class abbreviatedIRI="socdont:IntellectualEntity"/>
+        </ObjectMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="socdont:IntellectualEntity"/>
+        <ObjectMaxCardinality cardinality="1">
+            <ObjectProperty abbreviatedIRI="socdont:intellectualEntity_has_previousVersion"/>
+            <Class abbreviatedIRI="socdont:IntellectualEntity"/>
+        </ObjectMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="socdont:Item"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="/1.0#item_created_by_account"/>
+            <Class IRI="/1.0#Account"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="socdont:Item"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty abbreviatedIRI="socdont:item_contained_in_socialDocument"/>
+            <Class abbreviatedIRI="socdont:SocialDocument"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="socdont:Like"/>
+        <Class abbreviatedIRI="socdont:SimpleComponent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="socdont:MessageBoard"/>
+        <Class abbreviatedIRI="socdont:Container"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="socdont:MicroBlog"/>
+        <Class abbreviatedIRI="socdont:Container"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="socdont:MicroblogPost"/>
+        <Class abbreviatedIRI="socdont:IntellectualEntity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="socdont:MicroblogPost"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty abbreviatedIRI="socdont:microblogPost_contained_in_microblog"/>
+            <Class abbreviatedIRI="socdont:MicroBlog"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="socdont:OrganisationalPlatform"/>
+        <Class abbreviatedIRI="socdont:Space"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="socdont:SimpleComponent"/>
+        <Class abbreviatedIRI="socdont:Component"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="socdont:SimpleComponent"/>
+        <ObjectMaxCardinality cardinality="1">
+            <ObjectProperty abbreviatedIRI="socdont:simpleComponent_of_intellectualComponent"/>
+            <Class abbreviatedIRI="socdont:IntellectualComponent"/>
+        </ObjectMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="socdont:SocialDocument"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty abbreviatedIRI="socdont:socialDocument_contains_item"/>
+            <Class abbreviatedIRI="socdont:Item"/>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="socdont:SocialDocument"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty abbreviatedIRI="socdont:socialDocument_contained_in_container"/>
+            <Class abbreviatedIRI="socdont:Container"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="socdont:Space"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="/1.0#space_contained_in_system"/>
+            <Class IRI="/1.0#System"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="socdont:Tag"/>
+        <Class abbreviatedIRI="socdont:SimpleComponent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="socdont:Task"/>
+        <Class abbreviatedIRI="socdont:IntellectualEntity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="socdont:Task"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty abbreviatedIRI="socdont:task_contained_in_taskContainer"/>
+            <Class abbreviatedIRI="socdont:TaskContainer"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="socdont:Task"/>
+        <ObjectMaxCardinality cardinality="1">
+            <ObjectProperty abbreviatedIRI="socdont:task_has_parent"/>
+            <Class abbreviatedIRI="socdont:Task"/>
+        </ObjectMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="socdont:TaskContainer"/>
+        <Class abbreviatedIRI="socdont:Container"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="socdont:UserWorkspace"/>
+        <Class abbreviatedIRI="socdont:Space"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="socdont:Weblog"/>
+        <Class abbreviatedIRI="socdont:Container"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="socdont:Wiki"/>
+        <Class abbreviatedIRI="socdont:Container"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="/1.0#Account"/>
+        <Class IRI="/1.0#Agent"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/1.0#Account"/>
+        <Class IRI="/1.0#DigitalWorkspace"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/1.0#Account"/>
+        <Class IRI="/1.0#Event"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/1.0#Account"/>
+        <Class IRI="/1.0#Group"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/1.0#Account"/>
+        <Class IRI="/1.0#OrganisationalGroup"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/1.0#Account"/>
+        <Class IRI="/1.0#Role"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/1.0#Account"/>
+        <Class IRI="/1.0#System"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/1.0#Account"/>
+        <Class abbreviatedIRI="socdont:Collection"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/1.0#Account"/>
+        <Class abbreviatedIRI="socdont:Container"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/1.0#Account"/>
+        <Class abbreviatedIRI="socdont:Item"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/1.0#Account"/>
+        <Class abbreviatedIRI="socdont:SocialDocument"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/1.0#Account"/>
+        <Class abbreviatedIRI="socdont:Space"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/1.0#Agent"/>
+        <Class IRI="/1.0#DigitalWorkspace"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/1.0#Agent"/>
+        <Class IRI="/1.0#Event"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/1.0#Agent"/>
+        <Class IRI="/1.0#Group"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/1.0#Agent"/>
+        <Class IRI="/1.0#OrganisationalGroup"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/1.0#Agent"/>
+        <Class IRI="/1.0#Role"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/1.0#Agent"/>
+        <Class IRI="/1.0#System"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/1.0#Agent"/>
+        <Class abbreviatedIRI="socdont:Collection"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/1.0#Agent"/>
+        <Class abbreviatedIRI="socdont:Container"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/1.0#Agent"/>
+        <Class abbreviatedIRI="socdont:Item"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/1.0#Agent"/>
+        <Class abbreviatedIRI="socdont:SocialDocument"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/1.0#Agent"/>
+        <Class abbreviatedIRI="socdont:Space"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/1.0#ArtificialAgent"/>
+        <Class IRI="/1.0#Organisation"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/1.0#ArtificialAgent"/>
+        <Class IRI="/1.0#Person"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/1.0#Calendar"/>
+        <Class IRI="/1.0#ChatChannel"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/1.0#Calendar"/>
+        <Class IRI="/1.0#FileLibrary"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/1.0#Calendar"/>
+        <Class IRI="/1.0#MailContainer"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/1.0#Calendar"/>
+        <Class IRI="/1.0#MeetingContainer"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/1.0#Calendar"/>
+        <Class IRI="/1.0#SocialProfileContainer"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/1.0#Calendar"/>
+        <Class abbreviatedIRI="socdont:MessageBoard"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/1.0#Calendar"/>
+        <Class abbreviatedIRI="socdont:MicroBlog"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/1.0#Calendar"/>
+        <Class abbreviatedIRI="socdont:TaskContainer"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/1.0#Calendar"/>
+        <Class abbreviatedIRI="socdont:Weblog"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/1.0#Calendar"/>
+        <Class abbreviatedIRI="socdont:Wiki"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/1.0#CalendarEntry"/>
+        <Class IRI="/1.0#ChatMessage"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/1.0#CalendarEntry"/>
+        <Class IRI="/1.0#Folder"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/1.0#CalendarEntry"/>
+        <Class IRI="/1.0#MailMessage"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/1.0#CalendarEntry"/>
+        <Class IRI="/1.0#Meeting"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/1.0#CalendarEntry"/>
+        <Class IRI="/1.0#SocialProfile"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/1.0#CalendarEntry"/>
+        <Class IRI="/1.0#WikiPage"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/1.0#CalendarEntry"/>
+        <Class abbreviatedIRI="socdont:BlogPost"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/1.0#CalendarEntry"/>
+        <Class abbreviatedIRI="socdont:BoardPost"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/1.0#CalendarEntry"/>
+        <Class abbreviatedIRI="socdont:File"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/1.0#CalendarEntry"/>
+        <Class abbreviatedIRI="socdont:MicroblogPost"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/1.0#CalendarEntry"/>
+        <Class abbreviatedIRI="socdont:Task"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/1.0#ChatChannel"/>
+        <Class IRI="/1.0#FileLibrary"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/1.0#ChatChannel"/>
+        <Class IRI="/1.0#MailContainer"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/1.0#ChatChannel"/>
+        <Class IRI="/1.0#MeetingContainer"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/1.0#ChatChannel"/>
+        <Class IRI="/1.0#SocialProfileContainer"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/1.0#ChatChannel"/>
+        <Class abbreviatedIRI="socdont:MessageBoard"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/1.0#ChatChannel"/>
+        <Class abbreviatedIRI="socdont:MicroBlog"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/1.0#ChatChannel"/>
+        <Class abbreviatedIRI="socdont:TaskContainer"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/1.0#ChatChannel"/>
+        <Class abbreviatedIRI="socdont:Weblog"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/1.0#ChatChannel"/>
+        <Class abbreviatedIRI="socdont:Wiki"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/1.0#ChatMessage"/>
+        <Class IRI="/1.0#Folder"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/1.0#ChatMessage"/>
+        <Class IRI="/1.0#MailMessage"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/1.0#ChatMessage"/>
+        <Class IRI="/1.0#Meeting"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/1.0#ChatMessage"/>
+        <Class IRI="/1.0#SocialProfile"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/1.0#ChatMessage"/>
+        <Class IRI="/1.0#WikiPage"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/1.0#ChatMessage"/>
+        <Class abbreviatedIRI="socdont:BlogPost"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/1.0#ChatMessage"/>
+        <Class abbreviatedIRI="socdont:BoardPost"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/1.0#ChatMessage"/>
+        <Class abbreviatedIRI="socdont:File"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/1.0#ChatMessage"/>
+        <Class abbreviatedIRI="socdont:MicroblogPost"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/1.0#ChatMessage"/>
+        <Class abbreviatedIRI="socdont:Task"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/1.0#DigitalWorkspace"/>
+        <Class IRI="/1.0#Event"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/1.0#DigitalWorkspace"/>
+        <Class IRI="/1.0#Group"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/1.0#DigitalWorkspace"/>
+        <Class IRI="/1.0#OrganisationalGroup"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/1.0#DigitalWorkspace"/>
+        <Class IRI="/1.0#Role"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/1.0#DigitalWorkspace"/>
+        <Class IRI="/1.0#System"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/1.0#DigitalWorkspace"/>
+        <Class abbreviatedIRI="socdont:Collection"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/1.0#DigitalWorkspace"/>
+        <Class abbreviatedIRI="socdont:Container"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/1.0#DigitalWorkspace"/>
+        <Class abbreviatedIRI="socdont:Item"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/1.0#DigitalWorkspace"/>
+        <Class abbreviatedIRI="socdont:SocialDocument"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/1.0#DigitalWorkspace"/>
+        <Class abbreviatedIRI="socdont:Space"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/1.0#Event"/>
+        <Class IRI="/1.0#Group"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/1.0#Event"/>
+        <Class IRI="/1.0#OrganisationalGroup"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/1.0#Event"/>
+        <Class IRI="/1.0#Role"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/1.0#Event"/>
+        <Class IRI="/1.0#System"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/1.0#Event"/>
+        <Class abbreviatedIRI="socdont:Collection"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/1.0#Event"/>
+        <Class abbreviatedIRI="socdont:Container"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/1.0#Event"/>
+        <Class abbreviatedIRI="socdont:Item"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/1.0#Event"/>
+        <Class abbreviatedIRI="socdont:SocialDocument"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/1.0#Event"/>
+        <Class abbreviatedIRI="socdont:Space"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/1.0#FileLibrary"/>
+        <Class IRI="/1.0#MailContainer"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/1.0#FileLibrary"/>
+        <Class IRI="/1.0#MeetingContainer"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/1.0#FileLibrary"/>
+        <Class IRI="/1.0#SocialProfileContainer"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/1.0#FileLibrary"/>
+        <Class abbreviatedIRI="socdont:MessageBoard"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/1.0#FileLibrary"/>
+        <Class abbreviatedIRI="socdont:MicroBlog"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/1.0#FileLibrary"/>
+        <Class abbreviatedIRI="socdont:TaskContainer"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/1.0#FileLibrary"/>
+        <Class abbreviatedIRI="socdont:Weblog"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/1.0#FileLibrary"/>
+        <Class abbreviatedIRI="socdont:Wiki"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/1.0#Folder"/>
+        <Class IRI="/1.0#MailMessage"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/1.0#Folder"/>
+        <Class IRI="/1.0#Meeting"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/1.0#Folder"/>
+        <Class IRI="/1.0#SocialProfile"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/1.0#Folder"/>
+        <Class IRI="/1.0#WikiPage"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/1.0#Folder"/>
+        <Class abbreviatedIRI="socdont:BlogPost"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/1.0#Folder"/>
+        <Class abbreviatedIRI="socdont:BoardPost"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/1.0#Folder"/>
+        <Class abbreviatedIRI="socdont:File"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/1.0#Folder"/>
+        <Class abbreviatedIRI="socdont:MicroblogPost"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/1.0#Folder"/>
+        <Class abbreviatedIRI="socdont:Task"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/1.0#Follow"/>
+        <Class IRI="/1.0#Reaction"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/1.0#Follow"/>
+        <Class IRI="/1.0#Subscription"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/1.0#Follow"/>
+        <Class IRI="/1.0#Vote"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/1.0#Follow"/>
+        <Class abbreviatedIRI="socdont:Like"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/1.0#Follow"/>
+        <Class abbreviatedIRI="socdont:Tag"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/1.0#Group"/>
+        <Class IRI="/1.0#OrganisationalGroup"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/1.0#Group"/>
+        <Class IRI="/1.0#Role"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/1.0#Group"/>
+        <Class IRI="/1.0#System"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/1.0#Group"/>
+        <Class abbreviatedIRI="socdont:Collection"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/1.0#Group"/>
+        <Class abbreviatedIRI="socdont:Container"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/1.0#Group"/>
+        <Class abbreviatedIRI="socdont:Item"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/1.0#Group"/>
+        <Class abbreviatedIRI="socdont:SocialDocument"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/1.0#Group"/>
+        <Class abbreviatedIRI="socdont:Space"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/1.0#MailContainer"/>
+        <Class IRI="/1.0#MeetingContainer"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/1.0#MailContainer"/>
+        <Class IRI="/1.0#SocialProfileContainer"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/1.0#MailContainer"/>
+        <Class abbreviatedIRI="socdont:MessageBoard"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/1.0#MailContainer"/>
+        <Class abbreviatedIRI="socdont:MicroBlog"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/1.0#MailContainer"/>
+        <Class abbreviatedIRI="socdont:TaskContainer"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/1.0#MailContainer"/>
+        <Class abbreviatedIRI="socdont:Weblog"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/1.0#MailContainer"/>
+        <Class abbreviatedIRI="socdont:Wiki"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/1.0#MailMessage"/>
+        <Class IRI="/1.0#Meeting"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/1.0#MailMessage"/>
+        <Class IRI="/1.0#SocialProfile"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/1.0#MailMessage"/>
+        <Class IRI="/1.0#WikiPage"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/1.0#MailMessage"/>
+        <Class abbreviatedIRI="socdont:BlogPost"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/1.0#MailMessage"/>
+        <Class abbreviatedIRI="socdont:BoardPost"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/1.0#MailMessage"/>
+        <Class abbreviatedIRI="socdont:File"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/1.0#MailMessage"/>
+        <Class abbreviatedIRI="socdont:MicroblogPost"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/1.0#MailMessage"/>
+        <Class abbreviatedIRI="socdont:Task"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/1.0#Meeting"/>
+        <Class IRI="/1.0#SocialProfile"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/1.0#Meeting"/>
+        <Class IRI="/1.0#WikiPage"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/1.0#Meeting"/>
+        <Class abbreviatedIRI="socdont:BlogPost"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/1.0#Meeting"/>
+        <Class abbreviatedIRI="socdont:BoardPost"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/1.0#Meeting"/>
+        <Class abbreviatedIRI="socdont:File"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/1.0#Meeting"/>
+        <Class abbreviatedIRI="socdont:MicroblogPost"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/1.0#Meeting"/>
+        <Class abbreviatedIRI="socdont:Task"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/1.0#MeetingContainer"/>
+        <Class IRI="/1.0#SocialProfileContainer"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/1.0#MeetingContainer"/>
+        <Class abbreviatedIRI="socdont:MessageBoard"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/1.0#MeetingContainer"/>
+        <Class abbreviatedIRI="socdont:MicroBlog"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/1.0#MeetingContainer"/>
+        <Class abbreviatedIRI="socdont:TaskContainer"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/1.0#MeetingContainer"/>
+        <Class abbreviatedIRI="socdont:Weblog"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/1.0#MeetingContainer"/>
+        <Class abbreviatedIRI="socdont:Wiki"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/1.0#Organisation"/>
+        <Class IRI="/1.0#Person"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/1.0#OrganisationalGroup"/>
+        <Class IRI="/1.0#Role"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/1.0#OrganisationalGroup"/>
+        <Class IRI="/1.0#System"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/1.0#OrganisationalGroup"/>
+        <Class abbreviatedIRI="socdont:Collection"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/1.0#OrganisationalGroup"/>
+        <Class abbreviatedIRI="socdont:Container"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/1.0#OrganisationalGroup"/>
+        <Class abbreviatedIRI="socdont:Item"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/1.0#OrganisationalGroup"/>
+        <Class abbreviatedIRI="socdont:SocialDocument"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/1.0#OrganisationalGroup"/>
+        <Class abbreviatedIRI="socdont:Space"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/1.0#Reaction"/>
+        <Class IRI="/1.0#Subscription"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/1.0#Reaction"/>
+        <Class IRI="/1.0#Vote"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/1.0#Reaction"/>
+        <Class abbreviatedIRI="socdont:Like"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/1.0#Reaction"/>
+        <Class abbreviatedIRI="socdont:Tag"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/1.0#Role"/>
+        <Class IRI="/1.0#System"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/1.0#Role"/>
+        <Class abbreviatedIRI="socdont:Collection"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/1.0#Role"/>
+        <Class abbreviatedIRI="socdont:Container"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/1.0#Role"/>
+        <Class abbreviatedIRI="socdont:Item"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/1.0#Role"/>
+        <Class abbreviatedIRI="socdont:SocialDocument"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/1.0#Role"/>
+        <Class abbreviatedIRI="socdont:Space"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/1.0#SocialProfile"/>
+        <Class IRI="/1.0#WikiPage"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/1.0#SocialProfile"/>
+        <Class abbreviatedIRI="socdont:BlogPost"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/1.0#SocialProfile"/>
+        <Class abbreviatedIRI="socdont:BoardPost"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/1.0#SocialProfile"/>
+        <Class abbreviatedIRI="socdont:File"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/1.0#SocialProfile"/>
+        <Class abbreviatedIRI="socdont:MicroblogPost"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/1.0#SocialProfile"/>
+        <Class abbreviatedIRI="socdont:Task"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/1.0#SocialProfileContainer"/>
+        <Class abbreviatedIRI="socdont:MessageBoard"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/1.0#SocialProfileContainer"/>
+        <Class abbreviatedIRI="socdont:MicroBlog"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/1.0#SocialProfileContainer"/>
+        <Class abbreviatedIRI="socdont:TaskContainer"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/1.0#SocialProfileContainer"/>
+        <Class abbreviatedIRI="socdont:Weblog"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/1.0#SocialProfileContainer"/>
+        <Class abbreviatedIRI="socdont:Wiki"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/1.0#Subscription"/>
+        <Class IRI="/1.0#Vote"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/1.0#Subscription"/>
+        <Class abbreviatedIRI="socdont:Like"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/1.0#Subscription"/>
+        <Class abbreviatedIRI="socdont:Tag"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/1.0#System"/>
+        <Class abbreviatedIRI="socdont:Collection"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/1.0#System"/>
+        <Class abbreviatedIRI="socdont:Container"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/1.0#System"/>
+        <Class abbreviatedIRI="socdont:Item"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/1.0#System"/>
+        <Class abbreviatedIRI="socdont:SocialDocument"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/1.0#System"/>
+        <Class abbreviatedIRI="socdont:Space"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/1.0#Vote"/>
+        <Class abbreviatedIRI="socdont:Like"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/1.0#Vote"/>
+        <Class abbreviatedIRI="socdont:Tag"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/1.0#WikiPage"/>
+        <Class abbreviatedIRI="socdont:BlogPost"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/1.0#WikiPage"/>
+        <Class abbreviatedIRI="socdont:BoardPost"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/1.0#WikiPage"/>
+        <Class abbreviatedIRI="socdont:File"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/1.0#WikiPage"/>
+        <Class abbreviatedIRI="socdont:MicroblogPost"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/1.0#WikiPage"/>
+        <Class abbreviatedIRI="socdont:Task"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class abbreviatedIRI="socdont:Attachment"/>
+        <Class abbreviatedIRI="socdont:Comment"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class abbreviatedIRI="socdont:BlogPost"/>
+        <Class abbreviatedIRI="socdont:BoardPost"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class abbreviatedIRI="socdont:BlogPost"/>
+        <Class abbreviatedIRI="socdont:File"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class abbreviatedIRI="socdont:BlogPost"/>
+        <Class abbreviatedIRI="socdont:MicroblogPost"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class abbreviatedIRI="socdont:BlogPost"/>
+        <Class abbreviatedIRI="socdont:Task"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class abbreviatedIRI="socdont:BoardPost"/>
+        <Class abbreviatedIRI="socdont:File"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class abbreviatedIRI="socdont:BoardPost"/>
+        <Class abbreviatedIRI="socdont:MicroblogPost"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class abbreviatedIRI="socdont:BoardPost"/>
+        <Class abbreviatedIRI="socdont:Task"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class abbreviatedIRI="socdont:Collection"/>
+        <Class abbreviatedIRI="socdont:Container"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class abbreviatedIRI="socdont:Collection"/>
+        <Class abbreviatedIRI="socdont:Item"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class abbreviatedIRI="socdont:Collection"/>
+        <Class abbreviatedIRI="socdont:SocialDocument"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class abbreviatedIRI="socdont:Collection"/>
+        <Class abbreviatedIRI="socdont:Space"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class abbreviatedIRI="socdont:Component"/>
+        <Class abbreviatedIRI="socdont:IntellectualEntity"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class abbreviatedIRI="socdont:Container"/>
+        <Class abbreviatedIRI="socdont:Item"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class abbreviatedIRI="socdont:Container"/>
+        <Class abbreviatedIRI="socdont:SocialDocument"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class abbreviatedIRI="socdont:Container"/>
+        <Class abbreviatedIRI="socdont:Space"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class abbreviatedIRI="socdont:File"/>
+        <Class abbreviatedIRI="socdont:MicroblogPost"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class abbreviatedIRI="socdont:File"/>
+        <Class abbreviatedIRI="socdont:Task"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class abbreviatedIRI="socdont:GroupWorkspace"/>
+        <Class abbreviatedIRI="socdont:OrganisationalPlatform"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class abbreviatedIRI="socdont:GroupWorkspace"/>
+        <Class abbreviatedIRI="socdont:UserWorkspace"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class abbreviatedIRI="socdont:IntellectualComponent"/>
+        <Class abbreviatedIRI="socdont:SimpleComponent"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class abbreviatedIRI="socdont:Item"/>
+        <Class abbreviatedIRI="socdont:SocialDocument"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class abbreviatedIRI="socdont:Item"/>
+        <Class abbreviatedIRI="socdont:Space"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class abbreviatedIRI="socdont:Like"/>
+        <Class abbreviatedIRI="socdont:Tag"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class abbreviatedIRI="socdont:MessageBoard"/>
+        <Class abbreviatedIRI="socdont:MicroBlog"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class abbreviatedIRI="socdont:MessageBoard"/>
+        <Class abbreviatedIRI="socdont:TaskContainer"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class abbreviatedIRI="socdont:MessageBoard"/>
+        <Class abbreviatedIRI="socdont:Weblog"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class abbreviatedIRI="socdont:MessageBoard"/>
+        <Class abbreviatedIRI="socdont:Wiki"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class abbreviatedIRI="socdont:MicroBlog"/>
+        <Class abbreviatedIRI="socdont:TaskContainer"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class abbreviatedIRI="socdont:MicroBlog"/>
+        <Class abbreviatedIRI="socdont:Weblog"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class abbreviatedIRI="socdont:MicroBlog"/>
+        <Class abbreviatedIRI="socdont:Wiki"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class abbreviatedIRI="socdont:MicroblogPost"/>
+        <Class abbreviatedIRI="socdont:Task"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class abbreviatedIRI="socdont:OrganisationalPlatform"/>
+        <Class abbreviatedIRI="socdont:UserWorkspace"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class abbreviatedIRI="socdont:SocialDocument"/>
+        <Class abbreviatedIRI="socdont:Space"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class abbreviatedIRI="socdont:TaskContainer"/>
+        <Class abbreviatedIRI="socdont:Weblog"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class abbreviatedIRI="socdont:TaskContainer"/>
+        <Class abbreviatedIRI="socdont:Wiki"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class abbreviatedIRI="socdont:Weblog"/>
+        <Class abbreviatedIRI="socdont:Wiki"/>
+    </DisjointClasses>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="/1.0#calendarEntry_contained_in_calendar"/>
+        <ObjectProperty IRI="/1.0#intellectualEntity_contained_in_container"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="/1.0#calendar_contains_calendarEntry"/>
+        <ObjectProperty IRI="/1.0#container_contains_intellectualEntity"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="/1.0#chatChannel_contains_chatMessage"/>
+        <ObjectProperty IRI="/1.0#container_contains_intellectualEntity"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="/1.0#chatMessage_contained_in_chatChannel"/>
+        <ObjectProperty IRI="/1.0#intellectualEntity_contained_in_container"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="/1.0#fileLibrary_contains_folder"/>
+        <ObjectProperty IRI="/1.0#container_contains_intellectualEntity"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="/1.0#file_contained_in_fileLibrary"/>
+        <ObjectProperty IRI="/1.0#intellectualEntity_contained_in_container"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="/1.0#folder_contained_in_fileLibrary"/>
+        <ObjectProperty IRI="/1.0#intellectualEntity_contained_in_container"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="/1.0#mailContainer_contains_mailMessage"/>
+        <ObjectProperty IRI="/1.0#container_contains_intellectualEntity"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="/1.0#mailMessage_contained_in_mailContainer"/>
+        <ObjectProperty IRI="/1.0#intellectualEntity_contained_in_container"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="/1.0#meetingContainer_contains_meeting"/>
+        <ObjectProperty IRI="/1.0#container_contains_intellectualEntity"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="/1.0#meeting_contained_in_meetingContainer"/>
+        <ObjectProperty IRI="/1.0#intellectualEntity_contained_in_container"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="/1.0#socialProfileContainer_contains_socialProfile"/>
+        <ObjectProperty IRI="/1.0#container_contains_intellectualEntity"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="/1.0#socialProfile_contained_in_socialProfileContainer"/>
+        <ObjectProperty IRI="/1.0#intellectualEntity_contained_in_container"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="/1.0#wikiPage_contained_in_wiki"/>
+        <ObjectProperty IRI="/1.0#intellectualEntity_contained_in_container"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="/1.0#wiki_contains_wikiPage"/>
+        <ObjectProperty IRI="/1.0#container_contains_intellectualEntity"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty abbreviatedIRI="socdont:blogPost_contained_in_weblog"/>
+        <ObjectProperty IRI="/1.0#intellectualEntity_contained_in_container"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty abbreviatedIRI="socdont:boardPost_contained_in_messageBoard"/>
+        <ObjectProperty IRI="/1.0#intellectualEntity_contained_in_container"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty abbreviatedIRI="socdont:fileLibrary_contains_file"/>
+        <ObjectProperty IRI="/1.0#container_contains_intellectualEntity"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty abbreviatedIRI="socdont:messageBoard_contains_boardPost"/>
+        <ObjectProperty IRI="/1.0#container_contains_intellectualEntity"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty abbreviatedIRI="socdont:microblogPost_contained_in_microblog"/>
+        <ObjectProperty IRI="/1.0#intellectualEntity_contained_in_container"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty abbreviatedIRI="socdont:microblog_contains_microblogPost"/>
+        <ObjectProperty IRI="/1.0#container_contains_intellectualEntity"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty abbreviatedIRI="socdont:taskContainer_contains_task"/>
+        <ObjectProperty IRI="/1.0#container_contains_intellectualEntity"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty abbreviatedIRI="socdont:task_contained_in_taskContainer"/>
+        <ObjectProperty IRI="/1.0#intellectualEntity_contained_in_container"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty abbreviatedIRI="socdont:weblog_contains_blogPost"/>
+        <ObjectProperty IRI="/1.0#container_contains_intellectualEntity"/>
+    </SubObjectPropertyOf>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="/1.0#account_contained_in_group"/>
+        <ObjectProperty IRI="/1.0#group_contains_account"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="/1.0#account_contained_in_system"/>
+        <ObjectProperty IRI="/1.0#system_contains_account"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="/1.0#account_contributed_to_intellectualComponent"/>
+        <ObjectProperty IRI="/1.0#intellectualComponent_contributed_by_account"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="/1.0#account_contributed_to_intellectualEntity"/>
+        <ObjectProperty IRI="/1.0#intellectualEntity_contributed_by_account"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="/1.0#account_created_item"/>
+        <ObjectProperty IRI="/1.0#item_created_by_account"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="/1.0#account_has_role"/>
+        <ObjectProperty IRI="/1.0#role_of_account"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="/1.0#account_has_socialProfile"/>
+        <ObjectProperty IRI="/1.0#socialProfile_of_account"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="/1.0#account_known_by_account"/>
+        <ObjectProperty IRI="/1.0#account_knows_account"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="/1.0#account_mentioned_intellectualComponent"/>
+        <ObjectProperty IRI="/1.0#intellectualComponent_mentioned_by_account"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="/1.0#account_mentioned_intellectualEntity"/>
+        <ObjectProperty IRI="/1.0#intellectualEntity_mentioned_by_account"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="/1.0#account_of_agent"/>
+        <ObjectProperty IRI="/1.0#agent_has_account"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="/1.0#account_performed_event"/>
+        <ObjectProperty IRI="/1.0#event_performed_by_account"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="/1.0#agent_of_digitalWorkspace"/>
+        <ObjectProperty IRI="/1.0#digitalWorkspace_has_agent"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="/1.0#agent_of_organisationalGroup"/>
+        <ObjectProperty IRI="/1.0#organisationalGroup_has_agent"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="/1.0#agent_related_to_organisation"/>
+        <ObjectProperty IRI="/1.0#organisation_related_to_agent"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="/1.0#calendarEntry_contained_in_calendar"/>
+        <ObjectProperty IRI="/1.0#calendar_contains_calendarEntry"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="/1.0#chatChannel_contains_chatMessage"/>
+        <ObjectProperty IRI="/1.0#chatMessage_contained_in_chatChannel"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="/1.0#container_contains_intellectualEntity"/>
+        <ObjectProperty IRI="/1.0#intellectualEntity_contained_in_container"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="/1.0#digitalWorkspace_contains_system"/>
+        <ObjectProperty IRI="/1.0#system_contained_in_digitalWorkspace"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="/1.0#digitalWorkspace_has_organisationalGroup"/>
+        <ObjectProperty IRI="/1.0#organisationalGroup_of_digitalWorkspace"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="/1.0#event_affects_item"/>
+        <ObjectProperty IRI="/1.0#item_affected_by_event"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="/1.0#fileLibrary_contains_folder"/>
+        <ObjectProperty IRI="/1.0#folder_contained_in_fileLibrary"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="/1.0#file_contained_in_fileLibrary"/>
+        <ObjectProperty abbreviatedIRI="socdont:fileLibrary_contains_file"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="/1.0#file_contained_in_folder"/>
+        <ObjectProperty IRI="/1.0#folder_contains_file"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="/1.0#folder_has_child"/>
+        <ObjectProperty IRI="/1.0#folder_has_parent"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="/1.0#group_has_role"/>
+        <ObjectProperty IRI="/1.0#role_of_group"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="/1.0#group_of_space"/>
+        <ObjectProperty IRI="/1.0#space_has_group"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="/1.0#intellectualComponent_has_nextVersion"/>
+        <ObjectProperty abbreviatedIRI="socdont:intellectualComponent_has_previousVersion"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="/1.0#intellectualComponent_has_oldVersion"/>
+        <ObjectProperty IRI="/1.0#intellectualComponent_has_recentVersion"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="/1.0#intellectualComponent_references_item"/>
+        <ObjectProperty IRI="/1.0#item_referenced_by_intellectualComponent"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="/1.0#intellectualEntity_has_nextVersion"/>
+        <ObjectProperty abbreviatedIRI="socdont:intellectualEntity_has_previousVersion"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="/1.0#intellectualEntity_has_oldVersion"/>
+        <ObjectProperty abbreviatedIRI="socdont:intellectualEntity_has_recentVersion"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="/1.0#intellectualEntity_references_item"/>
+        <ObjectProperty IRI="/1.0#item_referenced_by_intellectualEntity"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="/1.0#mailContainer_contains_mailMessage"/>
+        <ObjectProperty IRI="/1.0#mailMessage_contained_in_mailContainer"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="/1.0#meetingContainer_contains_meeting"/>
+        <ObjectProperty IRI="/1.0#meeting_contained_in_meetingContainer"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="/1.0#socialProfileContainer_contains_socialProfile"/>
+        <ObjectProperty IRI="/1.0#socialProfile_contained_in_socialProfileContainer"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="/1.0#space_contained_in_system"/>
+        <ObjectProperty IRI="/1.0#system_contains_space"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="/1.0#wikiPage_contained_in_wiki"/>
+        <ObjectProperty IRI="/1.0#wiki_contains_wikiPage"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="/1.0#wikiPage_has_child"/>
+        <ObjectProperty IRI="/1.0#wikiPage_has_parent"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty abbreviatedIRI="socdont:attachment_contained_in_comment"/>
+        <ObjectProperty abbreviatedIRI="socdont:comment_contains_attachment"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty abbreviatedIRI="socdont:attachment_has_comment"/>
+        <ObjectProperty abbreviatedIRI="socdont:comment_of_attachment"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty abbreviatedIRI="socdont:blogPost_contained_in_weblog"/>
+        <ObjectProperty abbreviatedIRI="socdont:weblog_contains_blogPost"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty abbreviatedIRI="socdont:boardPost_contained_in_messageBoard"/>
+        <ObjectProperty abbreviatedIRI="socdont:messageBoard_contains_boardPost"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty abbreviatedIRI="socdont:collection_contains_socialDocument"/>
+        <ObjectProperty abbreviatedIRI="socdont:socialDocument_contained_in_collection"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty abbreviatedIRI="socdont:comment_has_child"/>
+        <ObjectProperty abbreviatedIRI="socdont:comment_has_parent"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty abbreviatedIRI="socdont:component_of_intellectualEntity"/>
+        <ObjectProperty abbreviatedIRI="socdont:intellectualEntity_has_component"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty abbreviatedIRI="socdont:container_contained_in_space"/>
+        <ObjectProperty abbreviatedIRI="socdont:space_contains_container"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty abbreviatedIRI="socdont:container_contains_socialDocument"/>
+        <ObjectProperty abbreviatedIRI="socdont:socialDocument_contained_in_container"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty abbreviatedIRI="socdont:intellectualComponent_has_simpleComponent"/>
+        <ObjectProperty abbreviatedIRI="socdont:simpleComponent_of_intellectualComponent"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty abbreviatedIRI="socdont:item_contained_in_socialDocument"/>
+        <ObjectProperty abbreviatedIRI="socdont:socialDocument_contains_item"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty abbreviatedIRI="socdont:microblogPost_contained_in_microblog"/>
+        <ObjectProperty abbreviatedIRI="socdont:microblog_contains_microblogPost"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty abbreviatedIRI="socdont:taskContainer_contains_task"/>
+        <ObjectProperty abbreviatedIRI="socdont:task_contained_in_taskContainer"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty abbreviatedIRI="socdont:task_has_child"/>
+        <ObjectProperty abbreviatedIRI="socdont:task_has_parent"/>
+    </InverseObjectProperties>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="/1.0#account_contained_in_system"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="/1.0#account_of_agent"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="/1.0#event_affects_item"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="/1.0#event_performed_by_account"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="/1.0#file_contained_in_folder"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="/1.0#folder_has_parent"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="/1.0#intellectualComponent_has_nextVersion"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="/1.0#intellectualComponent_has_recentVersion"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="/1.0#intellectualEntity_contained_in_container"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="/1.0#intellectualEntity_has_nextVersion"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="/1.0#space_contained_in_system"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="/1.0#system_contained_in_digitalWorkspace"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="/1.0#wikiPage_has_parent"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty abbreviatedIRI="socdont:attachment_contained_in_comment"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty abbreviatedIRI="socdont:collection_has_parent"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty abbreviatedIRI="socdont:comment_has_parent"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty abbreviatedIRI="socdont:component_of_intellectualEntity"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty abbreviatedIRI="socdont:container_contained_in_space"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty abbreviatedIRI="socdont:intellectualComponent_has_previousVersion"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty abbreviatedIRI="socdont:intellectualEntity_has_previousVersion"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty abbreviatedIRI="socdont:intellectualEntity_has_recentVersion"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty abbreviatedIRI="socdont:item_contained_in_socialDocument"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty abbreviatedIRI="socdont:socialDocument_contained_in_collection"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty abbreviatedIRI="socdont:socialDocument_contained_in_container"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty abbreviatedIRI="socdont:task_has_parent"/>
+    </FunctionalObjectProperty>
+    <InverseFunctionalObjectProperty>
+        <ObjectProperty IRI="/1.0#container_contains_intellectualEntity"/>
+    </InverseFunctionalObjectProperty>
+    <InverseFunctionalObjectProperty>
+        <ObjectProperty IRI="/1.0#digitalWorkspace_contains_system"/>
+    </InverseFunctionalObjectProperty>
+    <InverseFunctionalObjectProperty>
+        <ObjectProperty IRI="/1.0#folder_contains_file"/>
+    </InverseFunctionalObjectProperty>
+    <InverseFunctionalObjectProperty>
+        <ObjectProperty IRI="/1.0#folder_has_child"/>
+    </InverseFunctionalObjectProperty>
+    <InverseFunctionalObjectProperty>
+        <ObjectProperty IRI="/1.0#system_contains_account"/>
+    </InverseFunctionalObjectProperty>
+    <InverseFunctionalObjectProperty>
+        <ObjectProperty IRI="/1.0#system_contains_space"/>
+    </InverseFunctionalObjectProperty>
+    <InverseFunctionalObjectProperty>
+        <ObjectProperty IRI="/1.0#wikiPage_has_child"/>
+    </InverseFunctionalObjectProperty>
+    <InverseFunctionalObjectProperty>
+        <ObjectProperty abbreviatedIRI="socdont:collection_contains_socialDocument"/>
+    </InverseFunctionalObjectProperty>
+    <InverseFunctionalObjectProperty>
+        <ObjectProperty abbreviatedIRI="socdont:collection_has_child"/>
+    </InverseFunctionalObjectProperty>
+    <InverseFunctionalObjectProperty>
+        <ObjectProperty abbreviatedIRI="socdont:comment_contains_attachment"/>
+    </InverseFunctionalObjectProperty>
+    <InverseFunctionalObjectProperty>
+        <ObjectProperty abbreviatedIRI="socdont:comment_has_child"/>
+    </InverseFunctionalObjectProperty>
+    <InverseFunctionalObjectProperty>
+        <ObjectProperty abbreviatedIRI="socdont:container_contains_socialDocument"/>
+    </InverseFunctionalObjectProperty>
+    <InverseFunctionalObjectProperty>
+        <ObjectProperty abbreviatedIRI="socdont:socialDocument_contains_item"/>
+    </InverseFunctionalObjectProperty>
+    <InverseFunctionalObjectProperty>
+        <ObjectProperty abbreviatedIRI="socdont:space_contains_container"/>
+    </InverseFunctionalObjectProperty>
+    <InverseFunctionalObjectProperty>
+        <ObjectProperty abbreviatedIRI="socdont:task_has_child"/>
+    </InverseFunctionalObjectProperty>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/1.0#account_contained_in_group"/>
+        <Class IRI="/1.0#Account"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/1.0#account_contained_in_system"/>
+        <Class IRI="/1.0#Account"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/1.0#account_contributed_to_intellectualComponent"/>
+        <Class IRI="/1.0#Account"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/1.0#account_contributed_to_intellectualEntity"/>
+        <Class IRI="/1.0#Account"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/1.0#account_created_item"/>
+        <Class IRI="/1.0#Account"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/1.0#account_has_role"/>
+        <Class IRI="/1.0#Account"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/1.0#account_has_socialProfile"/>
+        <Class IRI="/1.0#Account"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/1.0#account_known_by_account"/>
+        <Class IRI="/1.0#Account"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/1.0#account_knows_account"/>
+        <Class IRI="/1.0#Account"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/1.0#account_mentioned_intellectualComponent"/>
+        <Class IRI="/1.0#Account"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/1.0#account_mentioned_intellectualEntity"/>
+        <Class IRI="/1.0#Account"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/1.0#account_of_agent"/>
+        <Class IRI="/1.0#Account"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/1.0#account_performed_event"/>
+        <Class IRI="/1.0#Account"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/1.0#agent_has_account"/>
+        <Class IRI="/1.0#Agent"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/1.0#agent_of_digitalWorkspace"/>
+        <Class IRI="/1.0#Agent"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/1.0#agent_of_organisationalGroup"/>
+        <Class IRI="/1.0#Agent"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/1.0#agent_related_to_organisation"/>
+        <Class IRI="/1.0#Agent"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/1.0#calendarEntry_contained_in_calendar"/>
+        <Class IRI="/1.0#CalendarEntry"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/1.0#calendar_contains_calendarEntry"/>
+        <Class IRI="/1.0#Calendar"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/1.0#chatChannel_contains_chatMessage"/>
+        <Class IRI="/1.0#ChatChannel"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/1.0#chatMessage_contained_in_chatChannel"/>
+        <Class IRI="/1.0#ChatMessage"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/1.0#container_contains_intellectualEntity"/>
+        <Class abbreviatedIRI="socdont:Container"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/1.0#digitalWorkspace_contains_system"/>
+        <Class IRI="/1.0#DigitalWorkspace"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/1.0#digitalWorkspace_has_agent"/>
+        <Class IRI="/1.0#DigitalWorkspace"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/1.0#digitalWorkspace_has_organisationalGroup"/>
+        <Class IRI="/1.0#DigitalWorkspace"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/1.0#event_affects_item"/>
+        <Class IRI="/1.0#Event"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/1.0#event_performed_by_account"/>
+        <Class IRI="/1.0#Event"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/1.0#fileLibrary_contains_folder"/>
+        <Class IRI="/1.0#FileLibrary"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/1.0#file_contained_in_fileLibrary"/>
+        <Class abbreviatedIRI="socdont:File"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/1.0#file_contained_in_folder"/>
+        <Class abbreviatedIRI="socdont:File"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/1.0#folder_contained_in_fileLibrary"/>
+        <Class IRI="/1.0#Folder"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/1.0#folder_contains_file"/>
+        <Class IRI="/1.0#Folder"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/1.0#folder_has_child"/>
+        <Class IRI="/1.0#Folder"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/1.0#folder_has_parent"/>
+        <Class IRI="/1.0#Folder"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/1.0#group_contains_account"/>
+        <Class IRI="/1.0#Group"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/1.0#group_has_role"/>
+        <Class IRI="/1.0#Group"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/1.0#group_of_space"/>
+        <Class IRI="/1.0#Group"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/1.0#intellectualComponent_contributed_by_account"/>
+        <Class abbreviatedIRI="socdont:IntellectualComponent"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/1.0#intellectualComponent_has_nextVersion"/>
+        <Class abbreviatedIRI="socdont:IntellectualComponent"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/1.0#intellectualComponent_has_oldVersion"/>
+        <Class abbreviatedIRI="socdont:IntellectualComponent"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/1.0#intellectualComponent_has_recentVersion"/>
+        <Class abbreviatedIRI="socdont:IntellectualComponent"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/1.0#intellectualComponent_mentioned_by_account"/>
+        <Class abbreviatedIRI="socdont:IntellectualComponent"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/1.0#intellectualComponent_references_item"/>
+        <Class abbreviatedIRI="socdont:IntellectualComponent"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/1.0#intellectualEntity_contained_in_container"/>
+        <Class abbreviatedIRI="socdont:IntellectualEntity"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/1.0#intellectualEntity_contributed_by_account"/>
+        <Class abbreviatedIRI="socdont:IntellectualEntity"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/1.0#intellectualEntity_has_nextVersion"/>
+        <Class abbreviatedIRI="socdont:IntellectualEntity"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/1.0#intellectualEntity_has_oldVersion"/>
+        <Class abbreviatedIRI="socdont:IntellectualEntity"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/1.0#intellectualEntity_mentioned_by_account"/>
+        <Class abbreviatedIRI="socdont:IntellectualEntity"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/1.0#intellectualEntity_references_item"/>
+        <Class abbreviatedIRI="socdont:IntellectualEntity"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/1.0#item_affected_by_event"/>
+        <Class abbreviatedIRI="socdont:Item"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/1.0#item_created_by_account"/>
+        <Class abbreviatedIRI="socdont:Item"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/1.0#item_referenced_by_intellectualComponent"/>
+        <Class abbreviatedIRI="socdont:Item"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/1.0#item_referenced_by_intellectualEntity"/>
+        <Class abbreviatedIRI="socdont:Item"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/1.0#mailContainer_contains_mailMessage"/>
+        <Class IRI="/1.0#MailContainer"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/1.0#mailMessage_contained_in_mailContainer"/>
+        <Class IRI="/1.0#MailMessage"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/1.0#meetingContainer_contains_meeting"/>
+        <Class IRI="/1.0#MeetingContainer"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/1.0#meeting_contained_in_meetingContainer"/>
+        <Class IRI="/1.0#Meeting"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/1.0#organisation_related_to_agent"/>
+        <Class IRI="/1.0#Organisation"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/1.0#organisationalGroup_has_agent"/>
+        <Class IRI="/1.0#OrganisationalGroup"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/1.0#organisationalGroup_of_digitalWorkspace"/>
+        <Class IRI="/1.0#OrganisationalGroup"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/1.0#role_of_account"/>
+        <Class IRI="/1.0#Role"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/1.0#role_of_group"/>
+        <Class IRI="/1.0#Role"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/1.0#socialProfileContainer_contains_socialProfile"/>
+        <Class IRI="/1.0#SocialProfileContainer"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/1.0#socialProfile_contained_in_socialProfileContainer"/>
+        <Class IRI="/1.0#SocialProfile"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/1.0#socialProfile_of_account"/>
+        <Class IRI="/1.0#SocialProfile"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/1.0#space_contained_in_system"/>
+        <Class abbreviatedIRI="socdont:Space"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/1.0#space_has_group"/>
+        <Class abbreviatedIRI="socdont:Space"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/1.0#system_contained_in_digitalWorkspace"/>
+        <Class IRI="/1.0#System"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/1.0#system_contains_account"/>
+        <Class IRI="/1.0#System"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/1.0#system_contains_space"/>
+        <Class IRI="/1.0#System"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/1.0#wikiPage_contained_in_wiki"/>
+        <Class IRI="/1.0#WikiPage"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/1.0#wikiPage_has_child"/>
+        <Class IRI="/1.0#WikiPage"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/1.0#wikiPage_has_parent"/>
+        <Class IRI="/1.0#WikiPage"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/1.0#wiki_contains_wikiPage"/>
+        <Class abbreviatedIRI="socdont:Wiki"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="socdont:attachment_contained_in_comment"/>
+        <Class abbreviatedIRI="socdont:Attachment"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="socdont:attachment_has_comment"/>
+        <Class abbreviatedIRI="socdont:Attachment"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="socdont:blogPost_contained_in_weblog"/>
+        <Class abbreviatedIRI="socdont:BlogPost"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="socdont:boardPost_contained_in_messageBoard"/>
+        <Class abbreviatedIRI="socdont:BoardPost"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="socdont:collection_contains_socialDocument"/>
+        <Class abbreviatedIRI="socdont:Collection"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="socdont:collection_has_child"/>
+        <Class abbreviatedIRI="socdont:Collection"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="socdont:collection_has_parent"/>
+        <Class abbreviatedIRI="socdont:Collection"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="socdont:comment_contains_attachment"/>
+        <Class abbreviatedIRI="socdont:Comment"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="socdont:comment_has_child"/>
+        <Class abbreviatedIRI="socdont:Comment"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="socdont:comment_has_parent"/>
+        <Class abbreviatedIRI="socdont:Comment"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="socdont:comment_of_attachment"/>
+        <Class abbreviatedIRI="socdont:Comment"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="socdont:component_of_intellectualEntity"/>
+        <Class abbreviatedIRI="socdont:Component"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="socdont:container_contained_in_space"/>
+        <Class abbreviatedIRI="socdont:Container"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="socdont:container_contains_socialDocument"/>
+        <Class abbreviatedIRI="socdont:Container"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="socdont:fileLibrary_contains_file"/>
+        <Class IRI="/1.0#FileLibrary"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="socdont:intellectualComponent_has_previousVersion"/>
+        <Class abbreviatedIRI="socdont:IntellectualComponent"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="socdont:intellectualComponent_has_recentVersion"/>
+        <Class abbreviatedIRI="socdont:IntellectualComponent"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="socdont:intellectualComponent_has_simpleComponent"/>
+        <Class abbreviatedIRI="socdont:IntellectualComponent"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="socdont:intellectualEntity_has_component"/>
+        <Class abbreviatedIRI="socdont:IntellectualEntity"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="socdont:intellectualEntity_has_previousVersion"/>
+        <Class abbreviatedIRI="socdont:IntellectualEntity"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="socdont:intellectualEntity_has_recentVersion"/>
+        <Class abbreviatedIRI="socdont:IntellectualEntity"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="socdont:item_contained_in_socialDocument"/>
+        <Class abbreviatedIRI="socdont:Item"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="socdont:messageBoard_contains_boardPost"/>
+        <Class abbreviatedIRI="socdont:MessageBoard"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="socdont:microblogPost_contained_in_microblog"/>
+        <Class abbreviatedIRI="socdont:MicroblogPost"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="socdont:microblog_contains_microblogPost"/>
+        <Class abbreviatedIRI="socdont:MicroBlog"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="socdont:simpleComponent_of_intellectualComponent"/>
+        <Class abbreviatedIRI="socdont:SimpleComponent"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="socdont:socialDocument_contained_in_collection"/>
+        <Class abbreviatedIRI="socdont:SocialDocument"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="socdont:socialDocument_contained_in_container"/>
+        <Class abbreviatedIRI="socdont:SocialDocument"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="socdont:socialDocument_contains_item"/>
+        <Class abbreviatedIRI="socdont:SocialDocument"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="socdont:space_contains_container"/>
+        <Class abbreviatedIRI="socdont:Space"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="socdont:taskContainer_contains_task"/>
+        <Class abbreviatedIRI="socdont:TaskContainer"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="socdont:task_contained_in_taskContainer"/>
+        <Class abbreviatedIRI="socdont:Task"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="socdont:task_has_child"/>
+        <Class abbreviatedIRI="socdont:Task"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="socdont:task_has_parent"/>
+        <Class abbreviatedIRI="socdont:Task"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="socdont:weblog_contains_blogPost"/>
+        <Class abbreviatedIRI="socdont:Weblog"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/1.0#account_contained_in_group"/>
+        <Class IRI="/1.0#Group"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/1.0#account_contained_in_system"/>
+        <Class IRI="/1.0#System"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/1.0#account_contributed_to_intellectualComponent"/>
+        <Class abbreviatedIRI="socdont:IntellectualComponent"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/1.0#account_contributed_to_intellectualEntity"/>
+        <Class abbreviatedIRI="socdont:IntellectualEntity"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/1.0#account_created_item"/>
+        <Class abbreviatedIRI="socdont:Item"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/1.0#account_has_role"/>
+        <Class IRI="/1.0#Role"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/1.0#account_has_socialProfile"/>
+        <Class abbreviatedIRI="socdont:SocialDocument"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/1.0#account_known_by_account"/>
+        <Class IRI="/1.0#Account"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/1.0#account_knows_account"/>
+        <Class IRI="/1.0#Account"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/1.0#account_mentioned_intellectualComponent"/>
+        <Class abbreviatedIRI="socdont:IntellectualComponent"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/1.0#account_mentioned_intellectualEntity"/>
+        <Class abbreviatedIRI="socdont:IntellectualEntity"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/1.0#account_of_agent"/>
+        <Class IRI="/1.0#Agent"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/1.0#account_performed_event"/>
+        <Class IRI="/1.0#Event"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/1.0#agent_has_account"/>
+        <Class IRI="/1.0#Account"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/1.0#agent_of_digitalWorkspace"/>
+        <Class IRI="/1.0#DigitalWorkspace"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/1.0#agent_of_organisationalGroup"/>
+        <Class IRI="/1.0#OrganisationalGroup"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/1.0#agent_related_to_organisation"/>
+        <Class IRI="/1.0#Organisation"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/1.0#calendarEntry_contained_in_calendar"/>
+        <Class IRI="/1.0#Calendar"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/1.0#calendar_contains_calendarEntry"/>
+        <Class IRI="/1.0#CalendarEntry"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/1.0#chatChannel_contains_chatMessage"/>
+        <Class IRI="/1.0#ChatMessage"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/1.0#chatMessage_contained_in_chatChannel"/>
+        <Class IRI="/1.0#ChatChannel"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/1.0#container_contains_intellectualEntity"/>
+        <Class abbreviatedIRI="socdont:IntellectualEntity"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/1.0#digitalWorkspace_contains_system"/>
+        <Class IRI="/1.0#System"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/1.0#digitalWorkspace_has_agent"/>
+        <Class IRI="/1.0#Agent"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/1.0#digitalWorkspace_has_organisationalGroup"/>
+        <Class IRI="/1.0#OrganisationalGroup"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/1.0#event_affects_item"/>
+        <Class abbreviatedIRI="socdont:Item"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/1.0#event_performed_by_account"/>
+        <Class IRI="/1.0#Account"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/1.0#fileLibrary_contains_folder"/>
+        <Class IRI="/1.0#Folder"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/1.0#file_contained_in_fileLibrary"/>
+        <Class IRI="/1.0#FileLibrary"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/1.0#file_contained_in_folder"/>
+        <Class IRI="/1.0#Folder"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/1.0#folder_contained_in_fileLibrary"/>
+        <Class IRI="/1.0#FileLibrary"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/1.0#folder_contains_file"/>
+        <Class abbreviatedIRI="socdont:File"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/1.0#folder_has_child"/>
+        <Class IRI="/1.0#Folder"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/1.0#folder_has_parent"/>
+        <Class IRI="/1.0#Folder"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/1.0#group_contains_account"/>
+        <Class IRI="/1.0#Account"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/1.0#group_has_role"/>
+        <Class IRI="/1.0#Role"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/1.0#group_of_space"/>
+        <Class abbreviatedIRI="socdont:Space"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/1.0#intellectualComponent_contributed_by_account"/>
+        <Class IRI="/1.0#Account"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/1.0#intellectualComponent_has_nextVersion"/>
+        <Class abbreviatedIRI="socdont:IntellectualComponent"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/1.0#intellectualComponent_has_oldVersion"/>
+        <Class abbreviatedIRI="socdont:IntellectualComponent"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/1.0#intellectualComponent_has_recentVersion"/>
+        <Class abbreviatedIRI="socdont:IntellectualComponent"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/1.0#intellectualComponent_mentioned_by_account"/>
+        <Class IRI="/1.0#Account"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/1.0#intellectualComponent_references_item"/>
+        <Class abbreviatedIRI="socdont:Item"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/1.0#intellectualEntity_contained_in_container"/>
+        <Class abbreviatedIRI="socdont:Container"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/1.0#intellectualEntity_contributed_by_account"/>
+        <Class IRI="/1.0#Account"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/1.0#intellectualEntity_has_nextVersion"/>
+        <Class abbreviatedIRI="socdont:IntellectualEntity"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/1.0#intellectualEntity_has_oldVersion"/>
+        <Class abbreviatedIRI="socdont:IntellectualEntity"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/1.0#intellectualEntity_mentioned_by_account"/>
+        <Class IRI="/1.0#Account"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/1.0#intellectualEntity_references_item"/>
+        <Class abbreviatedIRI="socdont:Item"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/1.0#item_affected_by_event"/>
+        <Class IRI="/1.0#Event"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/1.0#item_created_by_account"/>
+        <Class IRI="/1.0#Account"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/1.0#item_referenced_by_intellectualComponent"/>
+        <Class abbreviatedIRI="socdont:IntellectualComponent"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/1.0#item_referenced_by_intellectualEntity"/>
+        <Class abbreviatedIRI="socdont:IntellectualEntity"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/1.0#mailContainer_contains_mailMessage"/>
+        <Class IRI="/1.0#MailMessage"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/1.0#mailMessage_contained_in_mailContainer"/>
+        <Class IRI="/1.0#MailContainer"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/1.0#meetingContainer_contains_meeting"/>
+        <Class IRI="/1.0#Meeting"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/1.0#meeting_contained_in_meetingContainer"/>
+        <Class IRI="/1.0#MeetingContainer"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/1.0#organisation_related_to_agent"/>
+        <Class IRI="/1.0#Agent"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/1.0#organisationalGroup_has_agent"/>
+        <Class IRI="/1.0#Agent"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/1.0#organisationalGroup_of_digitalWorkspace"/>
+        <Class IRI="/1.0#DigitalWorkspace"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/1.0#role_of_account"/>
+        <Class IRI="/1.0#Account"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/1.0#role_of_group"/>
+        <Class IRI="/1.0#Group"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/1.0#socialProfileContainer_contains_socialProfile"/>
+        <Class IRI="/1.0#SocialProfile"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/1.0#socialProfile_contained_in_socialProfileContainer"/>
+        <Class IRI="/1.0#SocialProfileContainer"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/1.0#socialProfile_of_account"/>
+        <Class IRI="/1.0#Account"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/1.0#space_contained_in_system"/>
+        <Class IRI="/1.0#System"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/1.0#space_has_group"/>
+        <Class IRI="/1.0#Group"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/1.0#system_contained_in_digitalWorkspace"/>
+        <Class IRI="/1.0#DigitalWorkspace"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/1.0#system_contains_account"/>
+        <Class IRI="/1.0#Account"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/1.0#system_contains_space"/>
+        <Class abbreviatedIRI="socdont:Space"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/1.0#wikiPage_contained_in_wiki"/>
+        <Class abbreviatedIRI="socdont:Wiki"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/1.0#wikiPage_has_child"/>
+        <Class IRI="/1.0#WikiPage"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/1.0#wikiPage_has_parent"/>
+        <Class IRI="/1.0#WikiPage"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/1.0#wiki_contains_wikiPage"/>
+        <Class IRI="/1.0#WikiPage"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="socdont:attachment_contained_in_comment"/>
+        <Class abbreviatedIRI="socdont:Comment"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="socdont:attachment_has_comment"/>
+        <Class abbreviatedIRI="socdont:Comment"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="socdont:blogPost_contained_in_weblog"/>
+        <Class abbreviatedIRI="socdont:Weblog"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="socdont:boardPost_contained_in_messageBoard"/>
+        <Class abbreviatedIRI="socdont:MessageBoard"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="socdont:collection_contains_socialDocument"/>
+        <Class abbreviatedIRI="socdont:SocialDocument"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="socdont:collection_has_child"/>
+        <Class abbreviatedIRI="socdont:Collection"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="socdont:collection_has_parent"/>
+        <Class abbreviatedIRI="socdont:Collection"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="socdont:comment_contains_attachment"/>
+        <Class abbreviatedIRI="socdont:Attachment"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="socdont:comment_has_child"/>
+        <Class abbreviatedIRI="socdont:Comment"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="socdont:comment_has_parent"/>
+        <Class abbreviatedIRI="socdont:Comment"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="socdont:comment_of_attachment"/>
+        <Class abbreviatedIRI="socdont:Attachment"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="socdont:component_of_intellectualEntity"/>
+        <Class abbreviatedIRI="socdont:IntellectualEntity"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="socdont:container_contained_in_space"/>
+        <Class abbreviatedIRI="socdont:Space"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="socdont:container_contains_socialDocument"/>
+        <Class abbreviatedIRI="socdont:SocialDocument"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="socdont:fileLibrary_contains_file"/>
+        <Class abbreviatedIRI="socdont:File"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="socdont:intellectualComponent_has_previousVersion"/>
+        <Class abbreviatedIRI="socdont:IntellectualComponent"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="socdont:intellectualComponent_has_recentVersion"/>
+        <Class abbreviatedIRI="socdont:IntellectualComponent"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="socdont:intellectualComponent_has_simpleComponent"/>
+        <Class abbreviatedIRI="socdont:SimpleComponent"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="socdont:intellectualEntity_has_component"/>
+        <Class abbreviatedIRI="socdont:Component"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="socdont:intellectualEntity_has_previousVersion"/>
+        <Class abbreviatedIRI="socdont:IntellectualEntity"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="socdont:intellectualEntity_has_recentVersion"/>
+        <Class abbreviatedIRI="socdont:IntellectualEntity"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="socdont:item_contained_in_socialDocument"/>
+        <Class abbreviatedIRI="socdont:SocialDocument"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="socdont:messageBoard_contains_boardPost"/>
+        <Class abbreviatedIRI="socdont:BoardPost"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="socdont:microblogPost_contained_in_microblog"/>
+        <Class abbreviatedIRI="socdont:MicroBlog"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="socdont:microblog_contains_microblogPost"/>
+        <Class abbreviatedIRI="socdont:MicroblogPost"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="socdont:simpleComponent_of_intellectualComponent"/>
+        <Class abbreviatedIRI="socdont:IntellectualComponent"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="socdont:socialDocument_contained_in_collection"/>
+        <Class abbreviatedIRI="socdont:Collection"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="socdont:socialDocument_contained_in_container"/>
+        <Class abbreviatedIRI="socdont:Container"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="socdont:socialDocument_contains_item"/>
+        <Class abbreviatedIRI="socdont:Item"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="socdont:space_contains_container"/>
+        <Class abbreviatedIRI="socdont:Container"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="socdont:taskContainer_contains_task"/>
+        <Class abbreviatedIRI="socdont:Task"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="socdont:task_contained_in_taskContainer"/>
+        <Class abbreviatedIRI="socdont:TaskContainer"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="socdont:task_has_child"/>
+        <Class abbreviatedIRI="socdont:Task"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="socdont:task_has_parent"/>
+        <Class abbreviatedIRI="socdont:Task"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="socdont:weblog_contains_blogPost"/>
+        <Class abbreviatedIRI="socdont:BlogPost"/>
+    </ObjectPropertyRange>
+    <FunctionalDataProperty>
+        <DataProperty IRI="/1.0#action"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="/1.0#birthday"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="/1.0#family_name"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="/1.0#given_name"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="/1.0#instance_title"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="/1.0#last_updated"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="/1.0#location"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="/1.0#private_name"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="/1.0#public_name"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="/1.0#software_product"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="/1.0#software_version"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty abbreviatedIRI="socdont:content"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty abbreviatedIRI="socdont:created"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty abbreviatedIRI="socdont:id"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty abbreviatedIRI="socdont:label"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty abbreviatedIRI="socdont:title"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty abbreviatedIRI="socdont:views"/>
+    </FunctionalDataProperty>
+    <DataPropertyDomain>
+        <DataProperty IRI="/1.0#action"/>
+        <Class IRI="/1.0#Event"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/1.0#birthday"/>
+        <Class IRI="/1.0#Person"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/1.0#email"/>
+        <Class IRI="/1.0#Account"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/1.0#email"/>
+        <Class IRI="/1.0#Agent"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/1.0#family_name"/>
+        <Class IRI="/1.0#Person"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/1.0#gender"/>
+        <Class IRI="/1.0#Person"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/1.0#given_name"/>
+        <Class IRI="/1.0#Person"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/1.0#instance_title"/>
+        <Class IRI="/1.0#System"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/1.0#last_updated"/>
+        <Class abbreviatedIRI="socdont:IntellectualComponent"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/1.0#last_updated"/>
+        <Class abbreviatedIRI="socdont:IntellectualEntity"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/1.0#location"/>
+        <Class IRI="/1.0#Account"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/1.0#location"/>
+        <Class IRI="/1.0#Event"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/1.0#phone"/>
+        <Class IRI="/1.0#Organisation"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/1.0#phone"/>
+        <Class IRI="/1.0#Person"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/1.0#private_name"/>
+        <Class IRI="/1.0#Account"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/1.0#public_name"/>
+        <Class IRI="/1.0#Account"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/1.0#software_product"/>
+        <Class IRI="/1.0#System"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/1.0#software_type"/>
+        <Class IRI="/1.0#System"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/1.0#software_vendor"/>
+        <Class IRI="/1.0#System"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/1.0#software_version"/>
+        <Class IRI="/1.0#System"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty abbreviatedIRI="socdont:content"/>
+        <Class abbreviatedIRI="socdont:IntellectualComponent"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty abbreviatedIRI="socdont:content"/>
+        <Class abbreviatedIRI="socdont:IntellectualEntity"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty abbreviatedIRI="socdont:created"/>
+        <Class IRI="/1.0#Account"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty abbreviatedIRI="socdont:created"/>
+        <Class IRI="/1.0#Event"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty abbreviatedIRI="socdont:created"/>
+        <Class abbreviatedIRI="socdont:Item"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty abbreviatedIRI="socdont:id"/>
+        <Class IRI="/1.0#Account"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty abbreviatedIRI="socdont:id"/>
+        <Class IRI="/1.0#Agent"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty abbreviatedIRI="socdont:id"/>
+        <Class IRI="/1.0#Event"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty abbreviatedIRI="socdont:id"/>
+        <Class abbreviatedIRI="socdont:Container"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty abbreviatedIRI="socdont:id"/>
+        <Class abbreviatedIRI="socdont:Item"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty abbreviatedIRI="socdont:id"/>
+        <Class abbreviatedIRI="socdont:SocialDocument"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty abbreviatedIRI="socdont:id"/>
+        <Class abbreviatedIRI="socdont:Space"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty abbreviatedIRI="socdont:label"/>
+        <Class abbreviatedIRI="socdont:Tag"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty abbreviatedIRI="socdont:title"/>
+        <Class IRI="/1.0#DigitalWorkspace"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty abbreviatedIRI="socdont:title"/>
+        <Class IRI="/1.0#Event"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty abbreviatedIRI="socdont:title"/>
+        <Class IRI="/1.0#Group"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty abbreviatedIRI="socdont:title"/>
+        <Class IRI="/1.0#Organisation"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty abbreviatedIRI="socdont:title"/>
+        <Class IRI="/1.0#OrganisationalGroup"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty abbreviatedIRI="socdont:title"/>
+        <Class IRI="/1.0#Role"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty abbreviatedIRI="socdont:title"/>
+        <Class abbreviatedIRI="socdont:Container"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty abbreviatedIRI="socdont:title"/>
+        <Class abbreviatedIRI="socdont:IntellectualComponent"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty abbreviatedIRI="socdont:title"/>
+        <Class abbreviatedIRI="socdont:IntellectualEntity"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty abbreviatedIRI="socdont:title"/>
+        <Class abbreviatedIRI="socdont:Space"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty abbreviatedIRI="socdont:views"/>
+        <Class abbreviatedIRI="socdont:IntellectualComponent"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty abbreviatedIRI="socdont:views"/>
+        <Class abbreviatedIRI="socdont:IntellectualEntity"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="/1.0#action"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="/1.0#action"/>
+        <DataOneOf>
+            <Literal>CREATED</Literal>
+            <Literal>DELETED</Literal>
+            <Literal>READ</Literal>
+            <Literal>UPDATED</Literal>
+        </DataOneOf>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="/1.0#birthday"/>
+        <Datatype abbreviatedIRI="xsd:dateTime"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="/1.0#email"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="/1.0#family_name"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="/1.0#gender"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="/1.0#given_name"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="/1.0#instance_title"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="/1.0#last_updated"/>
+        <Datatype abbreviatedIRI="xsd:dateTime"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="/1.0#location"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="/1.0#phone"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="/1.0#private_name"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="/1.0#public_name"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="/1.0#software_product"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="/1.0#software_type"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="/1.0#software_vendor"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="/1.0#software_version"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty abbreviatedIRI="socdont:content"/>
+        <Datatype abbreviatedIRI="xsd:object"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty abbreviatedIRI="socdont:created"/>
+        <Datatype abbreviatedIRI="xsd:dateTime"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty abbreviatedIRI="socdont:id"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty abbreviatedIRI="socdont:label"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty abbreviatedIRI="socdont:title"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty abbreviatedIRI="socdont:views"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/1.0#Account</IRI>
+        <Literal xml:lang="en">An Account is the technical means for an Agent to connect to a computer system.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/1.0#Account</IRI>
+        <Literal xml:lang="en">Account</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/1.0#Agent</IRI>
+        <Literal xml:lang="en">An Agent is the meta term for a real Person, an ArtificialAgent (e. g. a bot) or an Organisation.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/1.0#Agent</IRI>
+        <Literal xml:lang="en">Agent</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/1.0#ArtificialAgent</IRI>
+        <Literal xml:lang="en">The ArtificialAgent is an entity to address bots or similar non-human Agents.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/1.0#ArtificialAgent</IRI>
+        <Literal xml:lang="en">ArtificialAgent</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/1.0#Calendar</IRI>
+        <Literal xml:lang="en">The Calendar entity corresponds to a Container that can contain CalendarEvents.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/1.0#Calendar</IRI>
+        <Literal xml:lang="en">Calendar</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/1.0#CalendarEntry</IRI>
+        <Literal xml:lang="en">CalendarEntries describe the Entities that hold information on records in a Calendar.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/1.0#CalendarEntry</IRI>
+        <Literal xml:lang="en">CalendarEntry</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/1.0#ChatChannel</IRI>
+        <Literal xml:lang="en">The ChatChannel entity corresponds to a Container that can hold ChatMessages.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/1.0#ChatChannel</IRI>
+        <Literal xml:lang="en">ChatChannel</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/1.0#ChatMessage</IRI>
+        <Literal xml:lang="en">ChatMessages are text which is stored within ChatChannels.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/1.0#ChatMessage</IRI>
+        <Literal xml:lang="en">ChatMessage</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/1.0#DigitalWorkspace</IRI>
+        <Literal xml:lang="en">A DigitalWorkspace is a combination of functional modules selected for a specific work group (multi-system concept).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/1.0#DigitalWorkspace</IRI>
+        <Literal xml:lang="en">DigitalWorkspace</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/1.0#Event</IRI>
+        <Literal xml:lang="en">Events are digital records of the use of software functions by users in software. They are stored in event logs. For use in Process Mining, events must contain (1) an attribute that can be used to identify a particular process instance (the so-called Case ID), (2) the user and the performed activity and (3) a timestamp. In collaboration systems, events describe user actions on content items.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/1.0#Event</IRI>
+        <Literal xml:lang="en">Event</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/1.0#FileLibrary</IRI>
+        <Literal xml:lang="en">FileLibraries serve as a parent structure for Files and Folders.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/1.0#FileLibrary</IRI>
+        <Literal xml:lang="en">FileLibrary</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/1.0#Folder</IRI>
+        <Literal xml:lang="en">Folders are used to structure Files within FileLibrarys. Folders may only inherit little or no intellectual content.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/1.0#Folder</IRI>
+        <Literal xml:lang="en">Folder</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/1.0#Follow</IRI>
+        <Literal xml:lang="en">A Follow is a SimpleComponent that describes that an IntellectualEntity (and theoretically also an IntellectualComponent) is followed. This means that the user is informed about changes to the corresponding Item within the System.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/1.0#Follow</IRI>
+        <Literal xml:lang="en">Follow</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/1.0#Group</IRI>
+        <Literal xml:lang="en">Groups usually reflect organisational structures or working groups within Systems.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/1.0#Group</IRI>
+        <Literal xml:lang="en">Group</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/1.0#MailContainer</IRI>
+        <Literal xml:lang="en">MailContainers are Containers that can contain MailMessages.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/1.0#MailContainer</IRI>
+        <Literal xml:lang="en">MailContainer</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/1.0#MailMessage</IRI>
+        <Literal xml:lang="en">A MailMessage is an IntellectualEntity that can hold various intellectualContent and is stored in MailContainers.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/1.0#MailMessage</IRI>
+        <Literal xml:lang="en">MailMessage</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/1.0#Meeting</IRI>
+        <Literal xml:lang="en">We refer to Meetings as persistent information retained from synchronous  communitcations such as voice chat or video conferencing. This type of IntellectualEntity can be transcripts or audio/video files of the actual Meetings.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/1.0#Meeting</IRI>
+        <Literal xml:lang="en">Meeting</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/1.0#MeetingContainer</IRI>
+        <Literal xml:lang="en">MeetingContainers are the parent structure (Container) for Meetings like video conferences and voice chats.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/1.0#MeetingContainer</IRI>
+        <Literal xml:lang="en">MeetingContainer</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/1.0#Organisation</IRI>
+        <Literal xml:lang="en">The Organisation entity is a subclass of the Agent entity and describes a company as an Agent to which an Account can be assigned. Even though each employee usually has his or her own Account in an ECS, it is still possible for there to be a &quot;company account&quot;. Further Agents (e.g. a Person) can also be assigned to an Organisation. In this way, it is possible to observe processes across company boundaries in later analyses.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/1.0#Organisation</IRI>
+        <Literal xml:lang="en">Organisation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/1.0#OrganisationalGroup</IRI>
+        <Literal xml:lang="en">OrganisationalGroups aggregate Agents and relate those to DigitalWorkspaces.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/1.0#OrganisationalGroup</IRI>
+        <Literal xml:lang="en">OrganisationalGroup</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/1.0#Person</IRI>
+        <Literal xml:lang="en">A Person is a specific form of Agent. Persons correspond to &quot;natural&quot; persons and are used to be able to analyse a real person across different Systems. This is made possible by the fact that the Accounts from the different Systems converge here.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/1.0#Person</IRI>
+        <Literal xml:lang="en">Person</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/1.0#Reaction</IRI>
+        <Literal xml:lang="en">A Reaction usually refers to emojis or similar that occur as a &quot;reaction&quot; to an Item.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/1.0#Reaction</IRI>
+        <Literal xml:lang="en">Reaction</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/1.0#Role</IRI>
+        <Literal xml:lang="en">Roles (e.g. manager, member) originate from system-internal rights management and can be assigned to Accounts and Groups.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/1.0#Role</IRI>
+        <Literal xml:lang="en">Role</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/1.0#SocialProfile</IRI>
+        <Literal xml:lang="en">The SocialProfiles represent the informational user directory, while the Accounts are stored in the technical user directory. The separation of the two entities was done because not every ECS has an informational user directory. In addition, it makes sense to assign certain object properties to only one of the two user directories, since there are technical differences between these entities within the systems. The entity belongs to the IntellectualEntities and carries the content of the profile as content. In the FOAF ontology, the PersonalProfileDocument entity is defined, which assigns further properties to a person in relation to a &quot;document&quot;. Accordingly, the focus of the entity from the FOAF ontology is on the &quot;Document&quot;, whereas in the ColActDOnt the profile itself is understood as intellectual content.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/1.0#SocialProfile</IRI>
+        <Literal xml:lang="en">SocialProfile</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/1.0#SocialProfileContainer</IRI>
+        <Literal xml:lang="en">A SocialProfileContainer contains the SocialProfiles of Accounts. Thus, this concept contains the informational user directory.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/1.0#SocialProfileContainer</IRI>
+        <Literal xml:lang="en">SocialProfileContainer</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/1.0#Subscription</IRI>
+        <Literal xml:lang="en">A Subscription describes that an IntellectualEntity is &quot;subscribed&quot;. The difference between Follow and Subscription lies in the fact that Subscription is based on the assumption of a system-external notification by email.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/1.0#Subscription</IRI>
+        <Literal xml:lang="en">Subscription</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/1.0#System</IRI>
+        <Literal xml:lang="en">ColActDOnt uses the term system for a software product that provides functional modules that allow users to create content (items). A very small system can consist of only one functional module. Integrated sys-tems contain multiple different functional modules under a joint interface.
+A system is characterised by the following important aspects. A system…
+… provides spaces for groups. Spaces are areas of the system that can only be accessed by the users that are in the member list of that space.
+… has its own independent user directory (UD). This “internal” UD needs to be linked to the central UD to enable single-sign-on (SSO) for users.
+… uses its own proprietary logging format.
+In many cases, systems are provided by a single software vendor. Integrated systems, however, can contain functional modules from third parties which then become an integral part of the system (e. g. HuddoBoards in HCL Connections). Following this definition, systems in ColActDOnt can range from lightweight tools with one/few functions to large-scale integrated Enterprise Collaboration Systems (ECS) (e.g. Alfresco or HCL Connections) with many different software modules. Organisations combine portfolios of “systems” to build Enterprise Col-laboration Platforms (ECP).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/1.0#System</IRI>
+        <Literal xml:lang="en">System</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/1.0#Vote</IRI>
+        <Literal xml:lang="en">Votes are SimpleComponents, which represent feedback on other Items.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/1.0#Vote</IRI>
+        <Literal xml:lang="en">Vote</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/1.0#WikiPage</IRI>
+        <Literal xml:lang="en">WikiArticles correspond to the entries in a wiki. Within a wiki, they are usually represented as a separate &quot;page&quot;. Replies to a WikiArticle are mapped to the Comment entity. Attachments, which are not part of the actual content, are called Attachment.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/1.0#WikiPage</IRI>
+        <Literal xml:lang="en">WikiPage</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>socdont:Attachment</AbbreviatedIRI>
+        <Literal xml:lang="en">The Attachment is one of the IntellectualComponents and describes an appendage of intellectual content to an IntellectualEntity or to a Comment.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>socdont:Attachment</AbbreviatedIRI>
+        <Literal xml:lang="en">Attachment</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>socdont:BlogPost</AbbreviatedIRI>
+        <Literal xml:lang="en">BlogPosts belong to the IntellectualEntities and thus describe entries that are posted in Weblogs.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>socdont:BlogPost</AbbreviatedIRI>
+        <Literal xml:lang="en">BlogPost</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>socdont:BoardPost</AbbreviatedIRI>
+        <Literal xml:lang="en">BoardPosts belong to the IntellectualEntities and thus describe entries that are made in message boards, also called forums. Responses to BoardPosts are called Comments, since they, as an IntellectualComponents, extend SocialDocuments.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>socdont:BoardPost</AbbreviatedIRI>
+        <Literal xml:lang="en">BoardPost</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>socdont:Collection</AbbreviatedIRI>
+        <Literal xml:lang="en">A Collection is a set of at least two SocialDocuments, which is used to group SocialDocuments. Collections can be used to represent hierarchical structures through the child and parent relations.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>socdont:Collection</AbbreviatedIRI>
+        <Literal xml:lang="en">Collection</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>socdont:Comment</AbbreviatedIRI>
+        <Literal xml:lang="en">The Comment entity is an IntellectualComponent that contains intellectual content about Attachments or IntellectualEntities.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>socdont:Comment</AbbreviatedIRI>
+        <Literal xml:lang="en">Comment</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>socdont:Component</AbbreviatedIRI>
+        <Literal xml:lang="en">The Component entity is an abstract class that is used to assign an IntellectualEntity to each of the subclasses IntellectualComponent and SimpleComponent. Accordingly, this class only supports the &quot;bundling&quot; of the sub-classes.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>socdont:Component</AbbreviatedIRI>
+        <Literal xml:lang="en">Component</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>socdont:Container</AbbreviatedIRI>
+        <Literal xml:lang="en">The Container entity serves as a superclass for the various subordinate classes, which in turn can contain the various forms of IntellectualEntities. With the Containers, just as with the Collections, nested structures can be created through the child-parent relations. The concept is always assigned to a Space and contains SocialDocuments whose IntellectualEntities correspond to the same type. Containers can be created automatically by the application or manually by the user. A Container is the content store used by a functional module. To give an example, a chat message in Skype (= the functional module) is stored in a “chat channel” (= the container).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>socdont:Container</AbbreviatedIRI>
+        <Literal xml:lang="en">Container</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>socdont:File</AbbreviatedIRI>
+        <Literal xml:lang="en">A file is used to represent files that have been created within or uploaded to a collaboration system. Files that are to be assigned to other IntellectualEntities are excluded.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>socdont:File</AbbreviatedIRI>
+        <Literal xml:lang="en">File</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>socdont:GroupWorkspace</AbbreviatedIRI>
+        <Literal xml:lang="en">GroupWorkspaces describe spaces that are accessible to several people. Thus, they are positioned between UserWorkspace and OrganisationalPlatform and enable collaborative work, since they include the respective containers.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>socdont:GroupWorkspace</AbbreviatedIRI>
+        <Literal xml:lang="en">GroupWorkspace</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>socdont:IntellectualComponent</AbbreviatedIRI>
+        <Literal xml:lang="en">Attachments and Comments are subordinated to the IntellectualComponent entity. These differ from SimpleComponents by their &quot;intellectual content&quot;.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>socdont:IntellectualComponent</AbbreviatedIRI>
+        <Literal xml:lang="en">IntellectualComponent</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>socdont:IntellectualEntity</AbbreviatedIRI>
+        <Literal xml:lang="en">IntellectualEntities describe the core of a SocialDocument, for example a File or a BlogPost, which can be enriched by Components.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>socdont:IntellectualEntity</AbbreviatedIRI>
+        <Literal xml:lang="en">IntellectualEntity</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>socdont:Item</AbbreviatedIRI>
+        <Literal xml:lang="en">Through the Item entity, all properties that are consistent for the components of a SocialDocument are bundled. For this reason, the object properties are of a general nature and yet each represent a single piece of social content. The Item also serves to provide the link to the actual SocialDocument, which consists of at least one IntellectualEntity. Items are objects that are created, read, updated or deleted by a user. They represent intellectual content (e.g. text) or simple pieces of content (e.g. an emoticon).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>socdont:Item</AbbreviatedIRI>
+        <Literal xml:lang="en">Item</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>socdont:Like</AbbreviatedIRI>
+        <Literal xml:lang="en">The entity Like, which is also called &quot;recommendation&quot;, is a SimpleComponent, which can be related to an IntellectualComponent or an IntellectualEntity. Since they have no inherent intellectual content, they, as all SimpleComponents, are not mutually related. Since a like within SocDOnt can only refer to IntellectualEntities, it is not possible to represent the &quot;liking&quot; of a Container.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>socdont:Like</AbbreviatedIRI>
+        <Literal xml:lang="en">Like</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>socdont:MessageBoard</AbbreviatedIRI>
+        <Literal xml:lang="en">MessageBoards are often called &quot;forums&quot; within ECS and contain any number of BoardPosts. This Container type can therefore contain several IntellectualEntities. The answers to the original message in the MessageBoard are represented by Comments.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>socdont:MessageBoard</AbbreviatedIRI>
+        <Literal xml:lang="en">MessageBoard</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>socdont:MicroBlog</AbbreviatedIRI>
+        <Literal xml:lang="en">The Microblog, like the MessageBoard, is a Container. The entity can contain MicroblogPosts, whose responses within the SocDOnt are called Comments.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>socdont:MicroBlog</AbbreviatedIRI>
+        <Literal xml:lang="en">MicroBlog</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>socdont:MicroblogPost</AbbreviatedIRI>
+        <Literal xml:lang="en">MicroblogPosts are among the IntellectualEntities and are contained in Microblogs. As with the other IntellectualEntities, replies are represented in the form of Comments.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>socdont:MicroblogPost</AbbreviatedIRI>
+        <Literal xml:lang="en">MicroblogPost</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>socdont:OrganisationalPlatform</AbbreviatedIRI>
+        <Literal xml:lang="en">The OrganisationalPlatform entity describes a space that is accessible to all participants of the system.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>socdont:OrganisationalPlatform</AbbreviatedIRI>
+        <Literal xml:lang="en">OrganisationalPlatform</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>socdont:SimpleComponent</AbbreviatedIRI>
+        <Literal xml:lang="en">SimpleComponents add further data (Likes and Tags) to IntellectualComponents or IntellectualEntities. With the exception of the Tag, these types of Components do not carry any other data properties and thus no intellectual content. Because of their lack of intellectual content, Tags and Likes can never be associated with each other or with any other instance of themselves. This is because tagging a tag, liking a like, or tagging a like makes no sense. While liking a Tag would be conceivable, it is a very atypical use case. In some ECS, it is possible to also like a Space or Container, but in the context of SocDOnt, the focus is on applying these Components to SocialDocuments.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>socdont:SimpleComponent</AbbreviatedIRI>
+        <Literal xml:lang="en">SimpleComponent</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>socdont:SocialDocument</AbbreviatedIRI>
+        <Literal xml:lang="en">The SocialDocument represents, as the name of the ontology already indicates, a central element of SocDOnt. This &quot;compound document&quot; (Williams, Mosen and Schubert, 2020, p. 3) is composed of IntellectualEntity, IntellectualComponents and SimpleComponents. Only the IntellectualEntity is mandatory. The SocialDocument is assigned to the same container as the corresponding IntellectualEntity. For the SocialDocument, no distinction is made within the SocDOnt as to whether this already originally has &quot;social content&quot; (collaboratively created content) (for example, a WikiArticle edited by two authors) or only becomes such through Components (for example, in the case of a PDF or Word file). Hausmann (2018, p. 210) calls these different forms &quot;born social&quot; and &quot;become social&quot; and refers to Hodge (2000), who first described documents that are created and distributed in electronic form in this way.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>socdont:SocialDocument</AbbreviatedIRI>
+        <Literal xml:lang="en">SocialDocument</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>socdont:Space</AbbreviatedIRI>
+        <Literal xml:lang="en">A space provides a bundle of functional modules and their respective containers in a specific system (single-system concept).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>socdont:Space</AbbreviatedIRI>
+        <Literal xml:lang="en">The types of Spaces describe the different areas in which social content is created (Williams, Mosen, and Schubert, 2020). The different container types are assigned to the Spaces.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>socdont:Space</AbbreviatedIRI>
+        <Literal xml:lang="en">Space</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>socdont:Tag</AbbreviatedIRI>
+        <Literal xml:lang="en">Tags belong to SimpleComponents and include a label that identifies the Tag. Tags are used to describe IntellectualComponents or IntellectualEntities more detailed.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>socdont:Tag</AbbreviatedIRI>
+        <Literal xml:lang="en">Tag</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>socdont:Task</AbbreviatedIRI>
+        <Literal xml:lang="en">The Task entity belongs to the IntellectualEntities and describes a task. These Tasks can be organized in hierarchical structures, since parent-child relations are given. Subordinate Tasks can also be called subtasks, but they follow the same structure as parent Tasks.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>socdont:Task</AbbreviatedIRI>
+        <Literal xml:lang="en">Task</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>socdont:TaskContainer</AbbreviatedIRI>
+        <Literal xml:lang="en">TaskContainers can hold any number of Tasks. TaskContainers are unambiguously assigned to a Space.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>socdont:TaskContainer</AbbreviatedIRI>
+        <Literal xml:lang="en">TaskContainer</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>socdont:UserWorkspace</AbbreviatedIRI>
+        <Literal xml:lang="en">The UserWorkspace serves as a space that is only accessible to a specific user. Thus, this type of space represents the counterpart to an organizational platform, which is accessible to all users.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>socdont:UserWorkspace</AbbreviatedIRI>
+        <Literal xml:lang="en">UserWorkspace</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>socdont:Weblog</AbbreviatedIRI>
+        <Literal xml:lang="en">Weblogs are regularly referred to as &quot;blogs&quot; within ECS and contain BlogPosts. This Container can therefore hold several IntellectualEntities. The contained replies to the original message in the Weblog are Comments.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>socdont:Weblog</AbbreviatedIRI>
+        <Literal xml:lang="en">Weblog</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>socdont:Wiki</AbbreviatedIRI>
+        <Literal xml:lang="en">Wikis serve as containers for WikiArticles and are subordinate to the concept of Spaces. Containers of this type can also hold multiple IntellectualEntities.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>socdont:Wiki</AbbreviatedIRI>
+        <Literal xml:lang="en">Wiki</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
