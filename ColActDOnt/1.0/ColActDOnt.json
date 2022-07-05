@@ -582,7 +582,7 @@
   } ],
   "http://purl.org/dc/elements/1.1/description" : [ {
     "@language" : "en",
-    "@value" : "The Collaborative Actions on Documents Ontology (ColActDOnt) expresses the structure of actions on documents within collaborative systems."
+    "@value" : "The Collaborative Actions on Documents Ontology (ColActDOnt) expresses the structure of actions on documents within collaboration systems."
   } ],
   "http://purl.org/dc/elements/1.1/publisher" : [ {
     "@value" : "https://ceir.de"

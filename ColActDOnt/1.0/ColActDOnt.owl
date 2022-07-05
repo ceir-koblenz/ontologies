@@ -31,7 +31,7 @@
     </Annotation>
     <Annotation>
         <AnnotationProperty abbreviatedIRI="dc:description"/>
-        <Literal xml:lang="en">The Collaborative Actions on Documents Ontology (ColActDOnt) expresses the structure of actions on documents within collaborative systems.</Literal>
+        <Literal xml:lang="en">The Collaborative Actions on Documents Ontology (ColActDOnt) expresses the structure of actions on documents within collaboration systems.</Literal>
     </Annotation>
     <Annotation>
         <AnnotationProperty abbreviatedIRI="dc:publisher"/>

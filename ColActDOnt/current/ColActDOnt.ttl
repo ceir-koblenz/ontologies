@@ -15,7 +15,7 @@
                                dc:creator "Martin Just" ,
                                           "Petra Schubert" ;
                                dc:date "06/2022" ;
-                               dc:description "The Collaborative Actions on Documents Ontology (ColActDOnt) expresses the structure of actions on documents within collaborative systems."@en ;
+                               dc:description "The Collaborative Actions on Documents Ontology (ColActDOnt) expresses the structure of actions on documents within collaboration systems."@en ;
                                dc:publisher "https://ceir.de" ;
                                dc:rights "https://creativecommons.org/licenses/by/4.0" ;
                                dc:title "ColActDOnt - Collaborative Actions on Documents Ontology"@en ;
