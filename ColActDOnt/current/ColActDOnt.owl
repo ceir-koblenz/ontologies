@@ -701,14 +701,14 @@
         <Class IRI="/1.0#Event"/>
         <ObjectExactCardinality cardinality="1">
             <ObjectProperty IRI="/1.0#event_affects_item"/>
-            <Class IRI="/1.0#SocialProfileContainer"/>
+            <Class abbreviatedIRI="socdont:Item"/>
         </ObjectExactCardinality>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="/1.0#Event"/>
         <ObjectExactCardinality cardinality="1">
             <ObjectProperty IRI="/1.0#event_performed_by_account"/>
-            <Class IRI="/1.0#SocialProfileContainer"/>
+            <Class IRI="/1.0#Account"/>
         </ObjectExactCardinality>
     </SubClassOf>
     <SubClassOf>
@@ -2355,6 +2355,9 @@
         <ObjectProperty abbreviatedIRI="socdont:task_has_parent"/>
     </FunctionalObjectProperty>
     <InverseFunctionalObjectProperty>
+        <ObjectProperty IRI="/1.0#account_performed_event"/>
+    </InverseFunctionalObjectProperty>
+    <InverseFunctionalObjectProperty>
         <ObjectProperty IRI="/1.0#container_contains_intellectualEntity"/>
     </InverseFunctionalObjectProperty>
     <InverseFunctionalObjectProperty>
@@ -2365,6 +2368,9 @@
     </InverseFunctionalObjectProperty>
     <InverseFunctionalObjectProperty>
         <ObjectProperty IRI="/1.0#folder_has_child"/>
+    </InverseFunctionalObjectProperty>
+    <InverseFunctionalObjectProperty>
+        <ObjectProperty IRI="/1.0#item_affected_by_event"/>
     </InverseFunctionalObjectProperty>
     <InverseFunctionalObjectProperty>
         <ObjectProperty IRI="/1.0#system_contains_account"/>

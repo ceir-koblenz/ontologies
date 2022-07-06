@@ -55,7 +55,7 @@
   "@id" : "_:genid13",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onClass" : [ {
-    "@id" : "https://w3id.org/ColActDOnt/1.0#SocialProfileContainer"
+    "@id" : "https://w3id.org/SocDOnt/1.0#Item"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "https://w3id.org/ColActDOnt/1.0#event_affects_item"
@@ -68,7 +68,7 @@
   "@id" : "_:genid14",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onClass" : [ {
-    "@id" : "https://w3id.org/ColActDOnt/1.0#SocialProfileContainer"
+    "@id" : "https://w3id.org/ColActDOnt/1.0#Account"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "https://w3id.org/ColActDOnt/1.0#event_performed_by_account"
@@ -1549,7 +1549,7 @@
   } ]
 }, {
   "@id" : "https://w3id.org/ColActDOnt/1.0#account_performed_event",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#InverseFunctionalProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://w3id.org/ColActDOnt/1.0#Account"
   } ],
@@ -2036,7 +2036,7 @@
   } ]
 }, {
   "@id" : "https://w3id.org/ColActDOnt/1.0#item_affected_by_event",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#InverseFunctionalProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://w3id.org/SocDOnt/1.0#Item"
   } ],

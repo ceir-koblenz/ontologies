@@ -153,6 +153,7 @@ colactdont:account_of_agent rdf:type owl:ObjectProperty ;
 ###  https://w3id.org/ColActDOnt/1.0#account_performed_event
 colactdont:account_performed_event rdf:type owl:ObjectProperty ;
                                    owl:inverseOf colactdont:event_performed_by_account ;
+                                   rdf:type owl:InverseFunctionalProperty ;
                                    rdfs:domain colactdont:Account ;
                                    rdfs:range colactdont:Event .
 
@@ -414,7 +415,8 @@ colactdont:intellectualEntity_references_item rdf:type owl:ObjectProperty ;
 
 
 ###  https://w3id.org/ColActDOnt/1.0#item_affected_by_event
-colactdont:item_affected_by_event rdf:type owl:ObjectProperty ;
+colactdont:item_affected_by_event rdf:type owl:ObjectProperty ,
+                                           owl:InverseFunctionalProperty ;
                                   rdfs:domain socdont:Item ;
                                   rdfs:range colactdont:Event .
 
@@ -1199,12 +1201,12 @@ colactdont:Event rdf:type owl:Class ;
                  rdfs:subClassOf [ rdf:type owl:Restriction ;
                                    owl:onProperty colactdont:event_affects_item ;
                                    owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                   owl:onClass colactdont:SocialProfileContainer
+                                   owl:onClass socdont:Item
                                  ] ,
                                  [ rdf:type owl:Restriction ;
                                    owl:onProperty colactdont:event_performed_by_account ;
                                    owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                   owl:onClass colactdont:SocialProfileContainer
+                                   owl:onClass colactdont:Account
                                  ] ;
                  owl:disjointWith colactdont:Group ,
                                   colactdont:OrganisationalGroup ,
