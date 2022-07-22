@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xesextension
+        name="ColActDOnt"
+        prefix="colactdont"
+        uri="https://w3id.org/ColActDOnt/1.0.xesext">
+    <!--
+        The Collaborative Actions on Documents Ontology (ColActDOnt) extension defines
+          the semantic for storing event attributes for events extracted from collaboration systems.
+        We refer to https://w3id.org/ColActDOnt for a complete description of the ColActDOnt.
+    -->
+    <event>
+        <string key="agentType">
+            <!--
+            https://w3id.org/ColActDOnt/1.0#ArtificialAgent
+            https://w3id.org/ColActDOnt/1.0#Organisation
+            https://w3id.org/ColActDOnt/1.0#Person
+        -->
+            <alias mapping="EN"
+                   name="An Agent is the meta term for a real Person, an ArtificialAgent (e. g. a bot) or an Organisation. We store the type of the subclass of the agent. For instance the ArtificialAgent"/>
+        </string>
+        <string key="agentId">
+            <!--
+                https://w3id.org/ColActDOnt/1.0#Agent
+            -->
+            <alias mapping="EN"
+                   name="An Agent is the meta term for a real Person, an ArtificialAgent (e. g. a bot) or an Organisation. We store the Id of the agent in the event log."/>
+        </string>
+
+        <string key="accountId">
+            <!--
+                https://w3id.org/ColActDOnt/1.0#Account
+            -->
+            <alias mapping="EN" name="An Account is the technical means for an Agent to connect to a computer system."/>
+        </string>
+
+        <string key="systemInstance">
+            <!--
+                https://w3id.org/ColActDOnt/1.0#System
+            -->
+            <alias mapping="EN"
+                   name="ColActDOnt uses the term system for a software product that provides functional modules that allow users to create content (items)."/>
+        </string>
+
+        <string key="spaceType">
+            <!--
+                https://w3id.org/ColActDOnt/1.0#UserWorkspace
+                https://w3id.org/ColActDOnt/1.0#GroupWorkspace
+                https://w3id.org/ColActDOnt/1.0#OrganisationalPlatform
+            -->
+            <alias mapping="EN"
+                   name="A space provides a bundle of functional modules and their respective containers in a specific system (single-system concept). We store the type of the space. E.g., UserWorkspace, GroupWorkspace, or OrganisationalPlatform"/>
+        </string>
+        <string key="spaceId">
+            <!--
+                https://w3id.org/ColActDOnt/1.0#Space
+            -->
+            <alias mapping="EN"
+                   name="A space provides a bundle of functional modules and their respective containers in a specific system (single-system concept). We store the id of the space."/>
+        </string>
+
+        <string key="containerType">
+            <!--
+                https://w3id.org/ColActDOnt/1.0#Calendar
+                https://w3id.org/ColActDOnt/1.0#ChatChannel
+                https://w3id.org/ColActDOnt/1.0#FileLibrary
+                https://w3id.org/ColActDOnt/1.0#MailContainer
+                https://w3id.org/ColActDOnt/1.0#MeetingContainer
+                https://w3id.org/ColActDOnt/1.0#MessageBoard
+                https://w3id.org/ColActDOnt/1.0#MicroBlog
+                https://w3id.org/ColActDOnt/1.0#SocialProfileContainer
+                https://w3id.org/ColActDOnt/1.0#TaskContainer
+                https://w3id.org/ColActDOnt/1.0#Weblog
+                https://w3id.org/ColActDOnt/1.0#Wiki
+            -->
+            <alias mapping="EN"
+                   name="The Container entity serves as a superclass for the various subordinate classes, which in turn can contain the various forms of IntellectualEntities. We store the type of the container, e.g., Calendar, ChatChannel, FileLibrary, MailContainer, MeetingContainer, MessageBoard, MicroBlog, SocialProfileContainer, TaskContainer, Weblog, Wiki"/>
+        </string>
+        <string key="containerId">
+            <!--
+                https://w3id.org/SocDOnt/1.0#Container
+            -->
+            <alias mapping="EN"
+                   name="The Container entity serves as a superclass for the various subordinate classes, which in turn can contain the various forms of IntellectualEntities. We store the id of the container. "/>
+        </string>
+
+        <string key="intellectualEntityType">
+            <!--
+                https://w3id.org/ColActDOnt/1.0#BlogPost
+                https://w3id.org/ColActDOnt/1.0#BoardPost
+                https://w3id.org/ColActDOnt/1.0#CalendarEntry
+                https://w3id.org/ColActDOnt/1.0#ChatMessage
+                https://w3id.org/ColActDOnt/1.0#File
+                https://w3id.org/ColActDOnt/1.0#Folder
+                https://w3id.org/ColActDOnt/1.0#MailMessage
+                https://w3id.org/ColActDOnt/1.0#Meeting
+                https://w3id.org/ColActDOnt/1.0#MicroblogPost
+                https://w3id.org/ColActDOnt/1.0#SocialProfile
+                https://w3id.org/ColActDOnt/1.0#Task
+                https://w3id.org/ColActDOnt/1.0#WikiPage
+            -->
+            <alias mapping="EN"
+                   name="IntellectualEntities describe the core of a SocialDocument, for example a File or a BlogPost, which can be enriched by Components. We store the type of the IntellectualEntity. Valid values are BlogPost, BoardPost, CalendarEntry, ChatMessage, File, Folder, MailMessage, Meeting, MicroblogPost, SocialProfile, Task, WikiPage"/>
+        </string>
+        <string key="intellectualEntityId">
+            <!--
+                https://w3id.org/SocDOnt/1.0#IntellectualEntity
+            -->
+            <alias mapping="EN"
+                   name="IntellectualEntities describe the core of a SocialDocument, for example a File or a BlogPost, which can be enriched by Components. We store the id of the IntellectualEntity."/>
+        </string>
+
+        <string key="intellectualComponentType">
+            <!--
+                https://w3id.org/ColActDOnt/1.0#Attachment
+                https://w3id.org/ColActDOnt/1.0#Comment
+            -->
+            <alias mapping="EN"
+                   name="Attachments and Comments are subordinated to the IntellectualComponent entity. We store the type of the IntellectualComponent. Valid values are Attachment, or Comment"/>
+        </string>
+        <string key="intellectualComponentId">
+            <!--
+                https://w3id.org/SocDOnt/1.0#IntellectualComponent
+            -->
+            <alias mapping="EN"
+                   name="Attachments and Comments are subordinated to the IntellectualComponent entity. We store the Id of the IntellectualComponent."/>
+        </string>
+
+        <string key="simpleComponentType">
+            <!--
+                https://w3id.org/ColActDOnt/1.0#Follow
+                https://w3id.org/ColActDOnt/1.0#Like
+                https://w3id.org/ColActDOnt/1.0#Reaction
+                https://w3id.org/ColActDOnt/1.0#Subscription
+                https://w3id.org/ColActDOnt/1.0#Tag
+                https://w3id.org/ColActDOnt/1.0#Vote
+            -->
+            <alias mapping="EN"
+                   name="SimpleComponents add further data (Likes and Tags) to IntellectualComponents or IntellectualEntities. We store the type of the SimpleComponent. Valid values are Follow, Like, Reaction, Subscription, Tag, Vote"/>
+        </string>
+        <string key="simpleComponentId">
+            <!--
+                https://w3id.org/SocDOnt/1.0#SimpleComponent
+            -->
+            <alias mapping="EN"
+                   name="SimpleComponents add further data (Likes and Tags) to IntellectualComponents or IntellectualEntities. We store the if of the SimpleComponent."/>
+        </string>
+
+        <string key="eventId">
+            <!--
+                https://w3id.org/ColActDOnt/1.0#Event
+            -->
+            <alias mapping="EN" name="The raw event id from the system."/>
+        </string>
+
+        <string key="action">
+            <!--
+                https://w3id.org/ColActDOnt/1.0#action
+                is data property of an 'event' https://w3id.org/ColActDOnt/1.0#Event
+            -->
+            <alias mapping="EN" name="An action defines a CRUD operation. One of CREATED, DELETED, READ, UPDATED"/>
+        </string>
+    </event>
+</xesextension>

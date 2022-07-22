@@ -1,0 +1,383 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="XES Extension according to the ColActDOnt.">
+    <title>XES Extension based on the ColActDOnt</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!--<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+            crossorigin="anonymous"></script>-->
+</head>
+<body>
+<div class="container-fluid">
+    <h1>XES Extension based on the ColActDOnt</h1>
+    <div class="mb-2">
+        The ColActDOnt XES Extension defines the possible event attributes according to the Collaborative Actions on
+        Documents Ontology (ColActDOnt). It thus determines the semantics for events extracted from collaboration systems.
+    </div>
+    <h3>Links</h3>
+    <div class="card my-4">
+        <div class="card-header">
+            ColActDOnt URL
+        </div>
+        <div class="card-body">
+            <a href="https://w3id.org/ColActDOnt"><span id="colactdont-url">https://w3id.org/ColActDOnt</span></a>
+        </div>
+    </div>
+    <div class="card my-4">
+        <div class="card-header">
+            ColActDOnt XES Extension URL
+        </div>
+        <div class="card-body">
+            <a href="https://w3id.org/ColActDOnt/1.0.xesext"><span id="colactdont-xes-ext-url">https://w3id.org/ColActDOnt/1.0.xesext</span></a>
+        </div>
+    </div>
+    <div class="card my-4">
+        <div class="card-header">
+            XES Extension attribute
+        </div>
+        <div class="card-body">
+            <pre class="bg-light"><code class="user-select-all">&lt;extension name="ColActDOnt" prefix="colactdont" uri="https://w3id.org/ColActDOnt/1.0.xesext"/&gt</code></pre>
+        </div>
+    </div>
+    <h3>Event Attributes</h3>
+    <table class="table table-sm table-hover">
+        <caption>XES Event Attributes</caption>
+        <thead class="table-light">
+        <tr>
+            <th scope="col">XES Attribute key</th>
+            <th scope="col">Related ColActDOnt Element</th>
+            <th scope="col">Definition</th>
+            <th scope="col">XES dataype</th>
+            <th scope="col">Occ.</th>
+            <th scope="col">Allowed values, examples, other constraints</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <th scope="row" class="user-select-all">colactdont:agentType</th>
+            <td>
+                <ul>
+                    <li><a href="https://w3id.org/ColActDOnt/1.0#ArtificialAgent">https://w3id.org/ColActDOnt/1.0#ArtificialAgent</a>
+                    </li>
+                    <li><a href="https://w3id.org/ColActDOnt/1.0#Organisation">https://w3id.org/ColActDOnt/1.0#Organisation</a>
+                    </li>
+                    <li><a href="https://w3id.org/ColActDOnt/1.0#Person">https://w3id.org/ColActDOnt/1.0#Person</a></li>
+                </ul>
+            </td>
+            <td>An Agent is the meta term for a real Person, an ArtificialAgent (e.g., a bot) or an Organisation. We
+                store the type of the subclass of the agent.
+            </td>
+            <td>string</td>
+            <td>0..1</td>
+            <td>Person, ArtificialAgent, Organisation</td>
+        </tr>
+        <tr>
+            <th scope="row" class="user-select-all">colactdont:agentId</th>
+            <td>
+                <ul>
+                    <li><a href="https://w3id.org/ColActDOnt/1.0#Agent">https://w3id.org/ColActDOnt/1.0#Agent</a></li>
+                </ul>
+            </td>
+            <td>An Agent is the meta term for a real Person, an ArtificialAgent (e. g. a bot) or an Organisation. We
+                store the Id of the agent in the event log.
+            </td>
+            <td>string</td>
+            <td>0..1</td>
+            <td>UUID or another type of unique Id</td>
+        </tr>
+        <tr>
+            <th scope="row" class="user-select-all">colactdont:accountId</th>
+            <td>
+                <ul>
+                    <li><a href="https://w3id.org/ColActDOnt/1.0#Account">https://w3id.org/ColActDOnt/1.0#Account</a>
+                    </li>
+                </ul>
+            </td>
+            <td>An Account is the technical means for an Agent to connect to a computer system.
+            </td>
+            <td>string</td>
+            <td>0..1</td>
+            <td>UUID or another type of unique Id</td>
+        </tr>
+        <tr>
+            <th scope="row" class="user-select-all">colactdont:systemInstance</th>
+            <td>
+                <ul>
+                    <li><a href="https://w3id.org/ColActDOnt/1.0#System">https://w3id.org/ColActDOnt/1.0#System</a></li>
+                </ul>
+            </td>
+            <td>ColActDOnt uses the term system for a software product that provides functional modules that allow users
+                to create content (items).
+            </td>
+            <td>string</td>
+            <td>0..1</td>
+            <td>Any kind of string value</td>
+        </tr>
+        <tr>
+            <th scope="row" class="user-select-all">colactdont:spaceType</th>
+            <td>
+                <ul>
+                    <li><a href="https://w3id.org/ColActDOnt/1.0#UserWorkspace">https://w3id.org/ColActDOnt/1.0#UserWorkspace</a>
+                    </li>
+                    <li><a href="https://w3id.org/ColActDOnt/1.0#GroupWorkspace">https://w3id.org/ColActDOnt/1.0#GroupWorkspace</a>
+                    </li>
+                    <li><a href="https://w3id.org/ColActDOnt/1.0#OrganisationalPlatform">https://w3id.org/ColActDOnt/1.0#OrganisationalPlatform</a>
+                    </li>
+                </ul>
+            </td>
+            <td>A space provides a bundle of functional modules and their respective containers in a specific system
+                (single-system concept). We store the type of the space.
+            </td>
+            <td>string</td>
+            <td>0..1</td>
+            <td>UserWorkspace, GroupWorkspace, OrganisationalPlatform</td>
+        </tr>
+        <tr>
+            <th scope="row" class="user-select-all">colactdont:spaceId</th>
+            <td>
+                <ul>
+                    <li><a href="https://w3id.org/ColActDOnt/1.0#Space">https://w3id.org/ColActDOnt/1.0#Space</a></li>
+                </ul>
+            </td>
+            <td>A space provides a bundle of functional modules and their respective containers in a specific system
+                (single-system concept). We store the id of the space.
+            </td>
+            <td>string</td>
+            <td>0..1</td>
+            <td>UUID or another type of unique Id</td>
+        </tr>
+        <tr>
+            <th scope="row" class="user-select-all">colactdont:containerType</th>
+            <td>
+                <ul>
+                    <li><a href="https://w3id.org/ColActDOnt/1.0#Calendar">https://w3id.org/ColActDOnt/1.0#Calendar</a>
+                    </li>
+                    <li><a href="https://w3id.org/ColActDOnt/1.0#ChatChannel">https://w3id.org/ColActDOnt/1.0#ChatChannel</a>
+                    </li>
+                    <li><a href="https://w3id.org/ColActDOnt/1.0#FileLibrary">https://w3id.org/ColActDOnt/1.0#FileLibrary</a>
+                    </li>
+                    <li><a href="https://w3id.org/ColActDOnt/1.0#MailContainer">https://w3id.org/ColActDOnt/1.0#MailContainer</a>
+                    </li>
+                    <li><a href="https://w3id.org/ColActDOnt/1.0#MeetingContainer">https://w3id.org/ColActDOnt/1.0#MeetingContainer</a>
+                    </li>
+                    <li><a href="https://w3id.org/ColActDOnt/1.0#MessageBoard">https://w3id.org/ColActDOnt/1.0#MessageBoard</a>
+                    </li>
+                    <li>
+                        <a href="https://w3id.org/ColActDOnt/1.0#MicroBlog">https://w3id.org/ColActDOnt/1.0#MicroBlog</a>
+                    </li>
+                    <li><a href="https://w3id.org/ColActDOnt/1.0#SocialProfileContainer">https://w3id.org/ColActDOnt/1.0#SocialProfileContainer</a>
+                    </li>
+                    <li><a href="https://w3id.org/ColActDOnt/1.0#TaskContainer">https://w3id.org/ColActDOnt/1.0#TaskContainer</a>
+                    </li>
+                    <li><a href="https://w3id.org/ColActDOnt/1.0#Weblog">https://w3id.org/ColActDOnt/1.0#Weblog</a></li>
+                    <li><a href="https://w3id.org/ColActDOnt/1.0#Wiki">https://w3id.org/ColActDOnt/1.0#Wiki</a></li>
+                </ul>
+            </td>
+            <td>The Container entity serves as a superclass for the various subordinate classes, which in turn can
+                contain the various forms of IntellectualEntities. We store the type of the container.
+            </td>
+            <td>string</td>
+            <td>0..1</td>
+            <td>Calendar, ChatChannel, FileLibrary, MailContainer, MeetingContainer, MessageBoard, MicroBlog,
+                SocialProfileContainer, TaskContainer, Weblog, Wiki
+            </td>
+        </tr>
+        <tr>
+            <th scope="row" class="user-select-all">colactdont:containerId</th>
+            <td>
+                <ul>
+                    <li><a href="https://w3id.org/SocDOnt/1.0#Container">https://w3id.org/SocDOnt/1.0#Container</a></li>
+                </ul>
+            </td>
+            <td>The Container entity serves as a superclass for the various subordinate classes, which in turn can
+                contain the various forms of IntellectualEntities. We store the id of the container.
+            </td>
+            <td>string</td>
+            <td>0..1</td>
+            <td>UUID or another type of unique Id</td>
+        </tr>
+        <tr>
+            <th scope="row" class="user-select-all">colactdont:intellectualEntityType</th>
+            <td>
+                <ul>
+                    <li><a href="https://w3id.org/ColActDOnt/1.0#BlogPost">https://w3id.org/ColActDOnt/1.0#BlogPost</a>
+                    </li>
+                    <li>
+                        <a href="https://w3id.org/ColActDOnt/1.0#BoardPost">https://w3id.org/ColActDOnt/1.0#BoardPost</a>
+                    </li>
+                    <li><a href="https://w3id.org/ColActDOnt/1.0#CalendarEntry">https://w3id.org/ColActDOnt/1.0#CalendarEntry</a>
+                    </li>
+                    <li><a href="https://w3id.org/ColActDOnt/1.0#ChatMessage">https://w3id.org/ColActDOnt/1.0#ChatMessage</a>
+                    </li>
+                    <li><a href="https://w3id.org/ColActDOnt/1.0#File">https://w3id.org/ColActDOnt/1.0#File</a></li>
+                    <li><a href="https://w3id.org/ColActDOnt/1.0#Folder">https://w3id.org/ColActDOnt/1.0#Folder</a></li>
+                    <li><a href="https://w3id.org/ColActDOnt/1.0#MailMessage">https://w3id.org/ColActDOnt/1.0#MailMessage</a>
+                    </li>
+                    <li><a href="https://w3id.org/ColActDOnt/1.0#Meeting">https://w3id.org/ColActDOnt/1.0#Meeting</a>
+                    </li>
+                    <li><a href="https://w3id.org/ColActDOnt/1.0#MicroblogPost">https://w3id.org/ColActDOnt/1.0#MicroblogPost</a>
+                    </li>
+                    <li><a href="https://w3id.org/ColActDOnt/1.0#SocialProfile">https://w3id.org/ColActDOnt/1.0#SocialProfile</a>
+                    </li>
+                    <li><a href="https://w3id.org/ColActDOnt/1.0#Task">https://w3id.org/ColActDOnt/1.0#Task</a></li>
+                    <li><a href="https://w3id.org/ColActDOnt/1.0#WikiPage">https://w3id.org/ColActDOnt/1.0#WikiPage</a>
+                    </li>
+                </ul>
+            </td>
+            <td>IntellectualEntities describe the core of a SocialDocument, for example a File or a BlogPost, which can
+                be enriched by Components. We store the type of the IntellectualEntity.
+            </td>
+            <td>string</td>
+            <td>0..1</td>
+            <td>BlogPost, BoardPost, CalendarEntry, ChatMessage, File, Folder, MailMessage, Meeting, MicroblogPost,
+                SocialProfile, Task, WikiPage
+            </td>
+        </tr>
+        <tr>
+            <th scope="row" class="user-select-all">colactdont:intellectualEntityId</th>
+            <td>
+                <ul>
+                    <li><a href="https://w3id.org/SocDOnt/1.0#IntellectualEntity">https://w3id.org/SocDOnt/1.0#IntellectualEntity</a>
+                    </li>
+                </ul>
+            </td>
+            <td>IntellectualEntities describe the core of a SocialDocument, for example a File or a BlogPost, which can
+                be enriched by Components. We store the id of the IntellectualEntity.
+            </td>
+            <td>string</td>
+            <td>0..1</td>
+            <td>UUID or another type of unique Id</td>
+        </tr>
+        <tr>
+            <th scope="row" class="user-select-all">colactdont:intellectualComponentType</th>
+            <td>
+                <ul>
+                    <li>
+                        <a href="https://w3id.org/ColActDOnt/1.0#Attachment">https://w3id.org/ColActDOnt/1.0#Attachment</a>
+                    </li>
+                    <li><a href="https://w3id.org/ColActDOnt/1.0#Comment">https://w3id.org/ColActDOnt/1.0#Comment</a>
+                    </li>
+                </ul>
+            </td>
+            <td>Attachments and Comments are subordinated to the IntellectualComponent entity. We store the type of the
+                IntellectualComponent.
+            </td>
+            <td>string</td>
+            <td>0..1</td>
+            <td>Attachment or Comment</td>
+        </tr>
+        <tr>
+            <th scope="row" class="user-select-all">colactdont:intellectualComponentId</th>
+            <td>
+                <ul>
+                    <li><a href="https://w3id.org/SocDOnt/1.0#IntellectualComponent">https://w3id.org/SocDOnt/1.0#IntellectualComponent</a>
+                    </li>
+                </ul>
+            </td>
+            <td>ttachments and Comments are subordinated to the IntellectualComponent entity. We store the Id of the
+                IntellectualComponent.
+            </td>
+            <td>string</td>
+            <td>0..1</td>
+            <td>UUID or another type of unique Id</td>
+        </tr>
+        <tr>
+            <th scope="row" class="user-select-all">colactdont:simpleComponentType</th>
+            <td>
+                <ul>
+                    <li><a href="https://w3id.org/ColActDOnt/1.0#Follow">https://w3id.org/ColActDOnt/1.0#Follow</a></li>
+                    <li><a href="https://w3id.org/ColActDOnt/1.0#Like">https://w3id.org/ColActDOnt/1.0#Like</a></li>
+                    <li><a href="https://w3id.org/ColActDOnt/1.0#Reaction">https://w3id.org/ColActDOnt/1.0#Reaction</a>
+                    </li>
+                    <li><a href="https://w3id.org/ColActDOnt/1.0#Subscription">https://w3id.org/ColActDOnt/1.0#Subscription</a>
+                    </li>
+                    <li><a href="https://w3id.org/ColActDOnt/1.0#Tag">https://w3id.org/ColActDOnt/1.0#Tag</a></li>
+                    <li><a href="https://w3id.org/ColActDOnt/1.0#Vote">https://w3id.org/ColActDOnt/1.0#Vote</a></li>
+                </ul>
+            </td>
+            <td>SimpleComponents add further data (Likes and Tags) to IntellectualComponents or IntellectualEntities. We
+                store the type of the SimpleComponent.
+            </td>
+            <td>string</td>
+            <td>0..1</td>
+            <td>Follow, Like, Reaction, Subscription, Tag, Vote</td>
+        </tr>
+        <tr>
+            <th scope="row" class="user-select-all">colactdont:simpleComponentId</th>
+            <td>
+                <ul>
+                    <li><a href=" https://w3id.org/SocDOnt/1.0#SimpleComponent">https://w3id.org/SocDOnt/1.0#SimpleComponent</a>
+                    </li>
+                </ul>
+            </td>
+            <td>SimpleComponents add further data (Likes and Tags) to IntellectualComponents or IntellectualEntities. We
+                store the if of the SimpleComponent.
+            </td>
+            <td>string</td>
+            <td>0..1</td>
+            <td>UUID or another type of unique Id</td>
+        </tr>
+        <tr>
+            <th scope="row" class="user-select-all">colactdont:eventId</th>
+            <td>
+                <ul>
+                    <li><a href="https://w3id.org/ColActDOnt/1.0#Event">https://w3id.org/ColActDOnt/1.0#Event</a></li>
+                </ul>
+            </td>
+            <td>
+                The raw event id from the system.
+            </td>
+            <td>string</td>
+            <td>0..1</td>
+            <td>UUID or another type of unique Id</td>
+        </tr>
+        <tr>
+            <th scope="row" class="user-select-all">colactdont:action</th>
+            <td>
+                <ul>
+                    <li><a href="https://w3id.org/ColActDOnt/1.0#action">https://w3id.org/ColActDOnt/1.0#action</a></li>
+                    as data property of an 'event' <a href="https://w3id.org/ColActDOnt/1.0#Event">https://w3id.org/ColActDOnt/1.0#Event</a>
+                </ul>
+            </td>
+            <td>An action defines a CRUD operation.
+            </td>
+            <td>string</td>
+            <td>0..1</td>
+            <td>CREATED, DELETED, READ, UPDATED</td>
+        </tr>
+        </tbody>
+    </table>
+    <div class="card my-4">
+        <div class="card-header">
+            Relation to the <strong>concept:name</strong>
+        </div>
+        <div class="card-body">
+            The <strong>concept:name</strong> (activity) is usually defined by a combination of the attributes
+            <strong>colactdont:system</strong>,
+            <strong>colactdont:spaceType</strong>,
+            <strong>colactdont:containerType</strong>,
+            <strong>colactdont:intellectualEntityType</strong>,
+            <strong>colactdont:intellectualComponentType</strong>,
+            <strong>colactdont:simpleComponentType</strong>.
+            For instance, <strong>Uct.GroupWorkspace.FileLibrary.File.Comment.Like.CREATED</strong> is a possible value
+            for the <strong>concept:name</strong>.
+        </div>
+    </div>
+    <div class="card my-4">
+        <div class="card-header">
+            Relation to the <strong>org:resource</strong>
+        </div>
+        <div class="card-body">
+            The <strong>org:resource</strong> (user) is usually defined by either the
+            <strong>colactdont:agentId</strong>
+            or the
+            <strong>colactdont:accountId</strong> depending of the scope of the event log file.
+        </div>
+    </div>
+</div>
+</body>
+</html>
