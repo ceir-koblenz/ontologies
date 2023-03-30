@@ -949,7 +949,7 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "Folders are used to structure Files within FileLibrarys. Folders may only inherit little or no intellectual content."
+    "@value" : "Folders are used to structure Files within FileLibraries. Folders may only inherit little or no intellectual content."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -1338,7 +1338,7 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "ColActDOnt uses the term system for a software product that provides functional modules that allow users to create content (items). A very small system can consist of only one functional module. Integrated sys-tems contain multiple different functional modules under a joint interface.\r\nA system is characterised by the following important aspects. A system…\r\n… provides spaces for groups. Spaces are areas of the system that can only be accessed by the users that are in the member list of that space.\r\n… has its own independent user directory (UD). This “internal” UD needs to be linked to the central UD to enable single-sign-on (SSO) for users.\r\n… uses its own proprietary logging format.\r\nIn many cases, systems are provided by a single software vendor. Integrated systems, however, can contain functional modules from third parties which then become an integral part of the system (e. g. HuddoBoards in HCL Connections). Following this definition, systems in ColActDOnt can range from lightweight tools with one/few functions to large-scale integrated Enterprise Collaboration Systems (ECS) (e.g. Alfresco or HCL Connections) with many different software modules. Organisations combine portfolios of “systems” to build Enterprise Col-laboration Platforms (ECP)."
+    "@value" : "ColActDOnt uses the term system for a software product that provides functional modules that allow users to create content (items). A very small system can consist of only one functional module. Integrated systems contain multiple different functional modules under a joint interface.\nA system is characterised by the following important aspects. A system…\n… provides spaces for groups. Spaces are areas of the system that can only be accessed by the users that are in the member list of that space.\n… has its own independent user directory (UD). This “internal” UD needs to be linked to the central UD to enable single-sign-on (SSO) for users.\n… uses its own proprietary logging format.\nIn many cases, systems are provided by a single software vendor. Integrated systems, however, can contain functional modules from third parties which then become an integral part of the system (e. g. HuddoBoards in HCL Connections). Following this definition, systems in ColActDOnt can range from lightweight tools with one/few functions to large-scale integrated Enterprise Collaboration Systems (ECS) (e.g. Alfresco or HCL Connections) with many different software modules. Organisations combine portfolios of “systems” to build Enterprise Collaboration Platforms (ECP)."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -1382,7 +1382,7 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "WikiArticles correspond to the entries in a wiki. Within a wiki, they are usually represented as a separate \"page\". Replies to a WikiArticle are mapped to the Comment entity. Attachments, which are not part of the actual content, are called Attachment."
+    "@value" : "WikiPages correspond to the entries in a wiki. Within a wiki, they are usually represented as a separate \"page\". Replies to a WikiPage are mapped to the Comment entity. Attachments, which are not part of the actual content, are called Attachment."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -1485,7 +1485,7 @@
     "@id" : "https://w3id.org/ColActDOnt/1.0#Account"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://w3id.org/SocDOnt/1.0#SocialDocument"
+    "@id" : "https://w3id.org/ColActDOnt/1.0#SocialProfile"
   } ],
   "http://www.w3.org/2002/07/owl#inverseOf" : [ {
     "@id" : "https://w3id.org/ColActDOnt/1.0#socialProfile_of_account"
@@ -2758,7 +2758,7 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "The SocialDocument represents, as the name of the ontology already indicates, a central element of SocDOnt. This \"compound document\" (Williams, Mosen and Schubert, 2020, p. 3) is composed of IntellectualEntity, IntellectualComponents and SimpleComponents. Only the IntellectualEntity is mandatory. The SocialDocument is assigned to the same container as the corresponding IntellectualEntity. For the SocialDocument, no distinction is made within the SocDOnt as to whether this already originally has \"social content\" (collaboratively created content) (for example, a WikiArticle edited by two authors) or only becomes such through Components (for example, in the case of a PDF or Word file). Hausmann (2018, p. 210) calls these different forms \"born social\" and \"become social\" and refers to Hodge (2000), who first described documents that are created and distributed in electronic form in this way."
+    "@value" : "The SocialDocument represents, as the name of the ontology already indicates, a central element of SocDOnt. This \"compound document\" (Williams, Mosen and Schubert, 2020, p. 3) is composed of IntellectualEntity, IntellectualComponents and SimpleComponents. Only the IntellectualEntity is mandatory. The SocialDocument is assigned to the same container as the corresponding IntellectualEntity. For the SocialDocument, no distinction is made within the SocDOnt as to whether this already originally has \"social content\" (collaboratively created content) (for example, a WikiPage edited by two authors) or only becomes such through Components (for example, in the case of a PDF or Word file). Hausmann (2018, p. 210) calls these different forms \"born social\" and \"become social\" and refers to Hodge (2000), who first described documents that are created and distributed in electronic form in this way."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -2876,7 +2876,7 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "Wikis serve as containers for WikiArticles and are subordinate to the concept of Spaces. Containers of this type can also hold multiple IntellectualEntities."
+    "@value" : "Wikis serve as containers for WikiPages and are subordinate to the concept of Spaces. Containers of this type can also hold multiple IntellectualEntities."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
