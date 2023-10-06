@@ -348,16 +348,9 @@ colactdont:intellectualComponent_has_nextVersion rdf:type owl:ObjectProperty ;
 
 ###  https://w3id.org/ColActDOnt/1.0#intellectualComponent_has_oldVersion
 colactdont:intellectualComponent_has_oldVersion rdf:type owl:ObjectProperty ;
-                                                owl:inverseOf colactdont:intellectualComponent_has_recentVersion ;
+                                                owl:inverseOf socdont:intellectualComponent_has_recentVersion ;
                                                 rdfs:domain socdont:IntellectualComponent ;
                                                 rdfs:range socdont:IntellectualComponent .
-
-
-###  https://w3id.org/ColActDOnt/1.0#intellectualComponent_has_recentVersion
-colactdont:intellectualComponent_has_recentVersion rdf:type owl:ObjectProperty ,
-                                                            owl:FunctionalProperty ;
-                                                   rdfs:domain socdont:IntellectualComponent ;
-                                                   rdfs:range socdont:IntellectualComponent .
 
 
 ###  https://w3id.org/ColActDOnt/1.0#intellectualComponent_mentioned_by_account
@@ -705,7 +698,8 @@ socdont:intellectualComponent_has_previousVersion rdf:type owl:ObjectProperty ,
 
 
 ###  https://w3id.org/SocDOnt/1.0#intellectualComponent_has_recentVersion
-socdont:intellectualComponent_has_recentVersion rdf:type owl:ObjectProperty ;
+socdont:intellectualComponent_has_recentVersion rdf:type owl:ObjectProperty ,
+                                                         owl:FunctionalProperty ;
                                                 rdfs:domain socdont:IntellectualComponent ;
                                                 rdfs:range socdont:IntellectualComponent .
 

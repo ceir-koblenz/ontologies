@@ -1939,16 +1939,7 @@
     "@id" : "https://w3id.org/SocDOnt/1.0#IntellectualComponent"
   } ],
   "http://www.w3.org/2002/07/owl#inverseOf" : [ {
-    "@id" : "https://w3id.org/ColActDOnt/1.0#intellectualComponent_has_recentVersion"
-  } ]
-}, {
-  "@id" : "https://w3id.org/ColActDOnt/1.0#intellectualComponent_has_recentVersion",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/SocDOnt/1.0#IntellectualComponent"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://w3id.org/SocDOnt/1.0#IntellectualComponent"
+    "@id" : "https://w3id.org/SocDOnt/1.0#intellectualComponent_has_recentVersion"
   } ]
 }, {
   "@id" : "https://w3id.org/ColActDOnt/1.0#intellectualComponent_mentioned_by_account",
@@ -3112,7 +3103,7 @@
   } ]
 }, {
   "@id" : "https://w3id.org/SocDOnt/1.0#intellectualComponent_has_recentVersion",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://w3id.org/SocDOnt/1.0#IntellectualComponent"
   } ],

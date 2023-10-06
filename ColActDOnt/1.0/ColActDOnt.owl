@@ -332,9 +332,6 @@
         <ObjectProperty IRI="/1.0#intellectualComponent_has_oldVersion"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="/1.0#intellectualComponent_has_recentVersion"/>
-    </Declaration>
-    <Declaration>
         <ObjectProperty IRI="/1.0#intellectualComponent_mentioned_by_account"/>
     </Declaration>
     <Declaration>
@@ -2181,7 +2178,7 @@
     </InverseObjectProperties>
     <InverseObjectProperties>
         <ObjectProperty IRI="/1.0#intellectualComponent_has_oldVersion"/>
-        <ObjectProperty IRI="/1.0#intellectualComponent_has_recentVersion"/>
+        <ObjectProperty abbreviatedIRI="socdont:intellectualComponent_has_recentVersion"/>
     </InverseObjectProperties>
     <InverseObjectProperties>
         <ObjectProperty IRI="/1.0#intellectualComponent_references_item"/>
@@ -2301,9 +2298,6 @@
         <ObjectProperty IRI="/1.0#intellectualComponent_has_nextVersion"/>
     </FunctionalObjectProperty>
     <FunctionalObjectProperty>
-        <ObjectProperty IRI="/1.0#intellectualComponent_has_recentVersion"/>
-    </FunctionalObjectProperty>
-    <FunctionalObjectProperty>
         <ObjectProperty IRI="/1.0#intellectualEntity_contained_in_container"/>
     </FunctionalObjectProperty>
     <FunctionalObjectProperty>
@@ -2335,6 +2329,9 @@
     </FunctionalObjectProperty>
     <FunctionalObjectProperty>
         <ObjectProperty abbreviatedIRI="socdont:intellectualComponent_has_previousVersion"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty abbreviatedIRI="socdont:intellectualComponent_has_recentVersion"/>
     </FunctionalObjectProperty>
     <FunctionalObjectProperty>
         <ObjectProperty abbreviatedIRI="socdont:intellectualEntity_has_previousVersion"/>
@@ -2563,10 +2560,6 @@
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="/1.0#intellectualComponent_has_oldVersion"/>
-        <Class abbreviatedIRI="socdont:IntellectualComponent"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="/1.0#intellectualComponent_has_recentVersion"/>
         <Class abbreviatedIRI="socdont:IntellectualComponent"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
@@ -2999,10 +2992,6 @@
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="/1.0#intellectualComponent_has_oldVersion"/>
-        <Class abbreviatedIRI="socdont:IntellectualComponent"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="/1.0#intellectualComponent_has_recentVersion"/>
         <Class abbreviatedIRI="socdont:IntellectualComponent"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
